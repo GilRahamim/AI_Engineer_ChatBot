@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-engineer-course"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "langchain>=0.3",
+    "langchain-community>=0.3",
+    "langchain-text-splitters>=0.3",
+    "pymupdf>=1.24",
+    "pymupdf4llm>=0.0.17",
+    "nbformat>=5.9",
+    "FlagEmbedding>=1.2",
+    "chromadb>=0.5",
+    "openai>=1.0",
+    "tqdm>=4.0",
+    "bm25s>=0.2",
+    "sentence-transformers>=3.0",
+    "ragas>=0.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

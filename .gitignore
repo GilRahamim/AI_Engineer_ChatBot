@@ -1,0 +1,34 @@
+# Data — large files and generated indexes
+data/chroma_db/
+data/bm25_index/
+data/eval/results/
+data/docs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# Model caches
+.cache/
+*.bin
+*.pt
+*.safetensors
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
