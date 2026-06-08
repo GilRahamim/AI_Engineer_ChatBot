@@ -32,7 +32,7 @@ def main() -> None:
 
     header = f"Task: {args.task}" + (f"  |  Topic: {args.topic}" if args.topic else "")
     print("=" * 60)
-    print("  Course RAG — Chat Mode")
+    print("  AI Engineer - Course  ")
     print(f"  {header}")
     print("  Type 'quit' or Ctrl+C to exit")
     print("=" * 60)

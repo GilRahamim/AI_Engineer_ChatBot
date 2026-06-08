@@ -22,8 +22,15 @@ embedding:
 
 retrieval:
   dense_top_k: 20
-  final_top_k: 5
+  sparse_top_k: 20
   collection_name: "course_docs"
+  fusion:
+    k: 60
+    top_n: 20
+  reranker:
+    enabled: true
+    model: "BAAI/bge-reranker-v2-m3"
+    top_n: 5
 
 generation:
   base_url: "http://localhost:1234/v1"

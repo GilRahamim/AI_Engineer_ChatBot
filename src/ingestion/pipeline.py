@@ -8,6 +8,7 @@ from src.ingestion.chunkers import chunk_document
 from src.ingestion.loaders import load_document
 from src.ingestion.manifest import Manifest, load_manifest, save_manifest
 from src.retrieval.dense import DenseRetriever
+from src.retrieval.sparse import SparseRetriever
 from src.utils.config import get_config
 
 logger = logging.getLogger(__name__)
@@ -17,10 +18,12 @@ def ingest_files(paths: list[Path], rebuild: bool = False) -> int:
     cfg = get_config()
     manifest = load_manifest()
     embedder = get_embedder()
-    retriever = DenseRetriever()
+    dense = DenseRetriever()
+    sparse = SparseRetriever()
 
     if rebuild:
-        retriever.reset()
+        dense.reset()
+        sparse.reset()
         manifest = Manifest()
         logger.info("Rebuild mode: cleared existing index and manifest")
 
@@ -42,7 +45,8 @@ def ingest_files(paths: list[Path], rebuild: bool = False) -> int:
 
         texts = [c.text for c in chunks]
         embeddings = embedder.embed(texts)
-        retriever.add(chunks, embeddings)
+        dense.add(chunks, embeddings)
+        sparse.add(chunks)
         manifest.record(path, len(chunks))
         total_chunks += len(chunks)
         logger.info("  -> %d chunks from %s", len(chunks), path.name)

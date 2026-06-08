@@ -2,462 +2,462 @@
   "files": {
     "data\\docs\\RAG, Agents, MCP\\1.  LLM Methodology & Ecosystem\\1.  LLM Methodology & Ecosystem.pdf": {
       "hash": "866166c65a224ede2a80d45192a922062ed085014a4180df00cd823a69590a10",
-      "ingested_at": "2026-05-28T13:20:15.910455+00:00",
+      "ingested_at": "2026-06-08T09:32:22.963861+00:00",
       "chunk_count": 83
     },
     "data\\docs\\RAG, Agents, MCP\\1.  LLM Methodology & Ecosystem\\Code\\llm_methodology_ecosystem.ipynb": {
       "hash": "4a62cc6a11dd82cd542418c25cd9b45e0a50af6e291cff80d1723839e52117c3",
-      "ingested_at": "2026-05-28T13:20:16.214617+00:00",
+      "ingested_at": "2026-06-08T09:32:23.337467+00:00",
       "chunk_count": 79
     },
     "data\\docs\\RAG, Agents, MCP\\7. KG RAG\\7. KG RAG.pdf": {
       "hash": "f0d4b0cfe771795e87daf33ab07d528de070901ac16111b3033d2aec349a2388",
-      "ingested_at": "2026-05-28T13:20:18.079295+00:00",
+      "ingested_at": "2026-06-08T09:32:25.323288+00:00",
       "chunk_count": 30
     },
     "data\\docs\\RAG, Agents, MCP\\7. KG RAG\\Code\\knowledge_graph_rag_react_demo.ipynb": {
       "hash": "fd6e7bc2cfc571430c51513f321435234c8b41a361cb1b2d5f3c50fe180ae0f0",
-      "ingested_at": "2026-05-28T13:20:18.504896+00:00",
+      "ingested_at": "2026-06-08T09:32:25.767181+00:00",
       "chunk_count": 117
     },
     "data\\docs\\RAG, Agents, MCP\\8. LLM Model Fine-Tuning\\8. LLM Model Fine-Tuning.pdf": {
       "hash": "ed34a8800f8258e36a1a05636853d92cf613bbb5d261a5e79fa7b18a7439337e",
-      "ingested_at": "2026-05-28T13:20:21.313216+00:00",
+      "ingested_at": "2026-06-08T09:32:28.744297+00:00",
       "chunk_count": 52
     },
     "data\\docs\\RAG, Agents, MCP\\8. LLM Model Fine-Tuning\\Code\\fine_tune_embedding.ipynb": {
       "hash": "697b060df4f30e738254bf0468cdc35813a4ca87b6feaab5089b1df6a6185945",
-      "ingested_at": "2026-05-28T13:20:21.689262+00:00",
+      "ingested_at": "2026-06-08T09:32:29.211665+00:00",
       "chunk_count": 104
     },
     "data\\docs\\RAG, Agents, MCP\\8. LLM Model Fine-Tuning\\Code\\finetune_TinyLama_llm.ipynb": {
       "hash": "fa16c28eecdbc473e3cddae6b87a0f6ede7721d86b77b021a08aa63af89ba5b6",
-      "ingested_at": "2026-05-28T13:20:22.008521+00:00",
+      "ingested_at": "2026-06-08T09:32:29.608448+00:00",
       "chunk_count": 70
     },
     "data\\docs\\RAG, Agents, MCP\\8. LLM Model Fine-Tuning\\Code\\full_finetune_dolly_demo.ipynb": {
       "hash": "7658d5af8576fd1c59d47a596cfa6fbb18efd96b09ac81ad86d1ac1fad2d1685",
-      "ingested_at": "2026-05-28T13:20:22.122419+00:00",
+      "ingested_at": "2026-06-08T09:32:29.778625+00:00",
       "chunk_count": 18
     },
     "data\\docs\\RAG, Agents, MCP\\9. Yolo\\11. Yolo.pdf": {
       "hash": "3c4c513ba58b77dbc41ba7e9713b2ae3010cbd42a2a3978f65faf034a2af18ed",
-      "ingested_at": "2026-05-28T13:20:23.699478+00:00",
+      "ingested_at": "2026-06-08T09:32:31.664295+00:00",
       "chunk_count": 21
     },
     "data\\docs\\RAG, Agents, MCP\\AIIndustryLectureAI-Eng.pdf": {
       "hash": "ce08d3f6224d62f5cf99f50bb605dbdd3d1cba6b63a3326c7865a54764aeabac",
-      "ingested_at": "2026-05-28T13:20:26.918918+00:00",
+      "ingested_at": "2026-06-08T09:32:35.506879+00:00",
       "chunk_count": 35
     },
     "data\\docs\\RAG, Agents, MCP\\Intro\\1. Intro.pdf": {
       "hash": "99a71e2819aeff28419eb0c3d3741323f45b369d5fd6a6e3f9c75c346f1829f4",
-      "ingested_at": "2026-05-28T13:20:30.184205+00:00",
+      "ingested_at": "2026-06-08T09:32:39.342012+00:00",
       "chunk_count": 36
     },
     "data\\docs\\RAG, Agents, MCP\\Intro\\Code\\WebAPItoLLM.ipynb": {
       "hash": "27fab7bd5cc5c927750c255eb66d4c360ac2432f511b167c695279576c267990",
-      "ingested_at": "2026-05-28T13:20:30.521538+00:00",
+      "ingested_at": "2026-06-08T09:32:39.760614+00:00",
       "chunk_count": 67
     },
     "data\\docs\\RAG, Agents, MCP\\Lecture 2\\2. LLM as an instrument.pdf": {
       "hash": "6088df9df0f00455444a0a36a6907fea59368ec928316410c5040380a3eb6cc9",
-      "ingested_at": "2026-05-28T13:20:34.965320+00:00",
+      "ingested_at": "2026-06-08T09:32:44.773594+00:00",
       "chunk_count": 91
     },
     "data\\docs\\RAG, Agents, MCP\\Lecture 2\\llm_as_an_instument.ipynb": {
       "hash": "065ef5c66ef2d2bbc33c9a3e92a014dcf58ad820d39958c634e9f9542200b99e",
-      "ingested_at": "2026-05-28T13:20:35.482972+00:00",
+      "ingested_at": "2026-06-08T09:32:45.382304+00:00",
       "chunk_count": 191
     },
     "data\\docs\\RAG, Agents, MCP\\Lecture 3\\3. Embedding Strategies, Retrieval Pipelines, & Vector Stores - with HNSW.pdf": {
       "hash": "28e9b3b74a5517bbfed8a9b4c35be4ac08a26a76d77c548ffe1efec874e886d0",
-      "ingested_at": "2026-05-28T13:20:38.953800+00:00",
+      "ingested_at": "2026-06-08T09:32:49.471981+00:00",
       "chunk_count": 81
     },
     "data\\docs\\RAG, Agents, MCP\\Lecture 3\\ANN-Tutorial.ipynb": {
       "hash": "076209c1fc8e2067f6c2f7c7ffa8f3e4e72ef5db22b3dfbbb88fa9a576b94712",
-      "ingested_at": "2026-05-28T13:20:39.045894+00:00",
+      "ingested_at": "2026-06-08T09:32:49.674599+00:00",
       "chunk_count": 14
     },
     "data\\docs\\RAG, Agents, MCP\\Lecture 3\\embedding_strategies.ipynb": {
       "hash": "69403cbfc18d5d2ed5335f314e7f6d6fab0b8942ecbadefc7bd3554a30d16b99",
-      "ingested_at": "2026-05-28T13:20:39.371335+00:00",
+      "ingested_at": "2026-06-08T09:32:50.104850+00:00",
       "chunk_count": 82
     },
     "data\\docs\\RAG, Agents, MCP\\Lecture 3\\glove_pca.ipynb": {
       "hash": "7f0fb29e46f8af192b2a41c457986bd8a28c96475d5a4086ff0d7b8d1d485cc9",
-      "ingested_at": "2026-05-28T13:20:39.647712+00:00",
+      "ingested_at": "2026-06-08T09:32:50.535337+00:00",
       "chunk_count": 35
     },
     "data\\docs\\RAG, Agents, MCP\\Lecture 3\\RAG_Pipeline_Demo.ipynb": {
       "hash": "7712a055d7de532932f3a65b111d531abd4bad8a5af6a72c991bebfae29890cf",
-      "ingested_at": "2026-05-28T13:20:39.879842+00:00",
+      "ingested_at": "2026-06-08T09:32:50.866535+00:00",
       "chunk_count": 41
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 4\\4. RAG Architecture & Variants.pdf": {
       "hash": "d20a167fd7df2a456399b6fa3e6fef7bbcbe22b81fedf07fa66728b8efd59a16",
-      "ingested_at": "2026-05-28T13:20:43.255670+00:00",
+      "ingested_at": "2026-06-08T09:32:54.844856+00:00",
       "chunk_count": 93
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 4\\RAG Exercise\\RAG exercise.pdf": {
       "hash": "4b43421a22c2b9b5599e36d2ff14d0e26ee102b17e4a45e2bea66aa53cc37f71",
-      "ingested_at": "2026-05-28T13:20:43.584932+00:00",
+      "ingested_at": "2026-06-08T09:32:55.285268+00:00",
       "chunk_count": 6
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 4\\rag_architecture_notebook.ipynb": {
       "hash": "82d5eb477f0bd9a88cd5f933e0a5bc8ae0a25a42490874bd39d2d544ecb13989",
-      "ingested_at": "2026-05-28T13:20:43.872572+00:00",
+      "ingested_at": "2026-06-08T09:32:55.686663+00:00",
       "chunk_count": 83
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\1_query_rewrite.ipynb": {
       "hash": "8d49b13c7c146dd533b1e779a9048038290314c196e2bde66e28ca9bdd82f302",
-      "ingested_at": "2026-05-28T13:20:43.996520+00:00",
+      "ingested_at": "2026-06-08T09:32:55.906772+00:00",
       "chunk_count": 17
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\2_conversational_rag.ipynb": {
       "hash": "d960f33c9431860042c64e2643d26039dae3706dfdb27d4009d2d5668c21ea8a",
-      "ingested_at": "2026-05-28T13:20:44.138302+00:00",
+      "ingested_at": "2026-06-08T09:32:56.151887+00:00",
       "chunk_count": 20
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\3_react_rag.ipynb": {
       "hash": "d8e317e18a3fbc08e768b90ceb0599d626482f4a66548e998ce00f2c0ec049a8",
-      "ingested_at": "2026-05-28T13:20:44.257950+00:00",
+      "ingested_at": "2026-06-08T09:32:56.358833+00:00",
       "chunk_count": 16
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\4_multihop_retrieval.ipynb": {
       "hash": "4a52562e3c4c378df336a13d9d7982e9e7675e4cb2326ba1f33384fdb61de64e",
-      "ingested_at": "2026-05-28T13:20:44.423650+00:00",
+      "ingested_at": "2026-06-08T09:32:56.623787+00:00",
       "chunk_count": 24
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\5_multivector_retrieval.ipynb": {
       "hash": "4ed9797005cd5537f344b20379daffa22b45817648406588a7ccde494fc92d59",
-      "ingested_at": "2026-05-28T13:20:44.560675+00:00",
+      "ingested_at": "2026-06-08T09:32:56.872759+00:00",
       "chunk_count": 20
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\6_streaming_rag.ipynb": {
       "hash": "bdca816cc4b8f83bbdc21d6ee9bd7d51930df4074e0ff00db4c74017e57d4232",
-      "ingested_at": "2026-05-28T13:20:44.683555+00:00",
+      "ingested_at": "2026-06-08T09:32:57.115478+00:00",
       "chunk_count": 17
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\5. AI Agents & Crews.pdf": {
       "hash": "44f0e628ede5a78d6f54fd0240e2115ce17282a335ff6de1af998baa48055616",
-      "ingested_at": "2026-05-28T13:20:50.837860+00:00",
+      "ingested_at": "2026-06-08T09:33:03.904954+00:00",
       "chunk_count": 130
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Agents_audio_demo.ipynb": {
       "hash": "39a9c2b2ddbdff53732560bfc82ab6a91eb14888a92d9f91542233d685ebd10d",
-      "ingested_at": "2026-05-28T13:20:51.117615+00:00",
+      "ingested_at": "2026-06-08T09:33:04.376639+00:00",
       "chunk_count": 81
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Agents_image_demo.ipynb": {
       "hash": "5730cf32ca49aec54c6aabae418c6d68c2ec57ff40f4e20119b1ea66fcc52705",
-      "ingested_at": "2026-05-28T13:20:51.735449+00:00",
+      "ingested_at": "2026-06-08T09:33:05.166643+00:00",
       "chunk_count": 189
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Agents_youtube_video_demo.ipynb": {
       "hash": "b95ada7ecb8bca6c5c6fe0349018e6d8ea7550030b8136224f525e21f365c5ed",
-      "ingested_at": "2026-05-28T13:20:52.370825+00:00",
+      "ingested_at": "2026-06-08T09:33:06.060322+00:00",
       "chunk_count": 225
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Agents_youtube_video_frame_analysis.ipynb": {
       "hash": "cab453904ad432b5860a700f8dbc1ee88eafe6a051d9fcf9b23d4a3c68a10f4e",
-      "ingested_at": "2026-05-28T13:20:52.880423+00:00",
+      "ingested_at": "2026-06-08T09:33:06.767673+00:00",
       "chunk_count": 199
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\AI_Agents.ipynb": {
       "hash": "817ea4732fe4db962245efea49176eb289cde5e56fbe82f03735c11b4a2d72dc",
-      "ingested_at": "2026-05-28T13:20:53.565694+00:00",
+      "ingested_at": "2026-06-08T09:33:07.765016+00:00",
       "chunk_count": 294
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\crewai_and_rag.ipynb": {
       "hash": "a948db3ff40f637dbbcccbe3941089327c52c75a74a70368179e7c284840ef47",
-      "ingested_at": "2026-05-28T13:20:53.786969+00:00",
+      "ingested_at": "2026-06-08T09:33:08.175742+00:00",
       "chunk_count": 50
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\CrewAI_Flow.ipynb": {
       "hash": "c480e972805d7a8550ab5ebf8a0f6520707bbad9aeda7e46f18acf4fe9ba1e4b",
-      "ingested_at": "2026-05-28T13:20:54.713160+00:00",
+      "ingested_at": "2026-06-08T09:33:09.744937+00:00",
       "chunk_count": 425
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Trip_agent\\trip_agent_example_notebook.ipynb": {
       "hash": "4244d8cc9548ba80b5e97758ef7d0aa05525c36fc44129667708e80177b089d2",
-      "ingested_at": "2026-05-28T13:20:55.185236+00:00",
+      "ingested_at": "2026-06-08T09:33:10.780429+00:00",
       "chunk_count": 179
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Trip_agent\\trip_agent_example_notebook_langchain.ipynb": {
       "hash": "df51eb506e0c26498c59f4266eba728625c42a8e08e54a0cf7d9261410c98c1e",
-      "ingested_at": "2026-05-28T13:20:55.391514+00:00",
+      "ingested_at": "2026-06-08T09:33:11.304281+00:00",
       "chunk_count": 33
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 5\\Exercise\\CrewAI Exercise.pdf": {
       "hash": "07bde8a47ad935d8cc30905c7b924c2ec6eee5bd5dad1d63a38e64a402a26eb6",
-      "ingested_at": "2026-05-28T13:20:55.634613+00:00",
+      "ingested_at": "2026-06-08T09:33:11.774619+00:00",
       "chunk_count": 4
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 6\\6. MCP Servers.pdf": {
       "hash": "ed3d4aa33368e8e6dc91f40802b676127bcaa23ee2d964855069c615bee18afb",
-      "ingested_at": "2026-05-28T13:20:58.089735+00:00",
+      "ingested_at": "2026-06-08T09:33:14.764529+00:00",
       "chunk_count": 38
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 6\\9. Anthropic Skills.pdf": {
       "hash": "aa3d36517fc65ea81a9ab4016db71a402f1b30145290c6df7f78f0935903cf35",
-      "ingested_at": "2026-05-28T13:20:59.144934+00:00",
+      "ingested_at": "2026-06-08T09:33:15.998243+00:00",
       "chunk_count": 16
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 6\\MCP_Demo.ipynb": {
       "hash": "8ac5208f9ef46b30596b51a6e58938871cd10a2bd3c3afe7590679074db81b4e",
-      "ingested_at": "2026-05-28T13:20:59.297425+00:00",
+      "ingested_at": "2026-06-08T09:33:16.330775+00:00",
       "chunk_count": 27
     },
     "data\\docs\\RAG, Agents, MCP\\lecture 8\\Claude Agent SDK.pdf": {
       "hash": "6a77b15bd55b399b60c5106f2a8a2035d93310c9ec5e464252be6c78e9a8bfe7",
-      "ingested_at": "2026-05-28T13:21:00.774829+00:00",
+      "ingested_at": "2026-06-08T09:33:17.982872+00:00",
       "chunk_count": 24
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of chicago_crime_dbscan_hotspots_professional_colab.ipynb": {
       "hash": "b3297f76605a4235880759b15cba44a4a5b861bfa5238ed23187a6ed9356d550",
-      "ingested_at": "2026-05-28T13:21:01.085996+00:00",
+      "ingested_at": "2026-06-08T09:33:18.462414+00:00",
       "chunk_count": 41
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of Clustering_Movies_colab_ready.ipynb": {
       "hash": "d4d6804f235f005a37195325f654ba76a3e27ff5f1a63542b66d86ea19c8ea38",
-      "ingested_at": "2026-05-28T13:21:01.460250+00:00",
+      "ingested_at": "2026-06-08T09:33:19.066634+00:00",
       "chunk_count": 117
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of ComputerQuestionnaire_ColabReady.ipynb": {
       "hash": "fa31fbd1bfc9fb10ab37c10c46b0bad694c6dff7d901d3fd7371dfc783dc365d",
-      "ingested_at": "2026-05-28T13:21:01.604723+00:00",
+      "ingested_at": "2026-06-08T09:33:19.421120+00:00",
       "chunk_count": 18
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of curse_of_dimensionality_colab_v2.ipynb": {
       "hash": "f9cc6cbd914cc5da51b755910866804b4ecc40cf388bcb40cf2e12c6d6f444ce",
-      "ingested_at": "2026-05-28T13:21:01.733872+00:00",
+      "ingested_at": "2026-06-08T09:33:19.739882+00:00",
       "chunk_count": 21
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of density_based_clustering_dbscan_meanshift_optics_colab.ipynb": {
       "hash": "d62a17910abce17cea9e876e0721e76ccc78d9d8dd80a572531b099cf9eabd37",
-      "ingested_at": "2026-05-28T13:21:01.886855+00:00",
+      "ingested_at": "2026-06-08T09:33:20.204498+00:00",
       "chunk_count": 21
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of Enron_LabelPropagation_ColabReady_v2.ipynb": {
       "hash": "cbea0e198b3371bac69acf416f4c6c1207ced6e6dda5ad581bf3d0605abc607c",
-      "ingested_at": "2026-05-28T13:21:02.051603+00:00",
+      "ingested_at": "2026-06-08T09:33:20.558838+00:00",
       "chunk_count": 25
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of feature_space.ipynb": {
       "hash": "cae5911d193f9bf0ecf1dd77f70fd09b2089cfc5a371294cd325f9ca57427376",
-      "ingested_at": "2026-05-28T13:21:02.244969+00:00",
+      "ingested_at": "2026-06-08T09:33:21.103062+00:00",
       "chunk_count": 29
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of kmeans_clustering_colab.ipynb": {
       "hash": "917c30498d94952c5370376c7ba3e018e570b971b04dcf259994025306b61a1a",
-      "ingested_at": "2026-05-28T13:21:02.418786+00:00",
+      "ingested_at": "2026-06-08T09:33:21.468158+00:00",
       "chunk_count": 25
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of kmeans_step_by_step_widgets.ipynb": {
       "hash": "4ed63d4594461808b71c16ff7e19b99f9eae0ee9b460f7b7d4694139f8f5f854",
-      "ingested_at": "2026-05-28T13:21:02.517738+00:00",
+      "ingested_at": "2026-06-08T09:33:21.768261+00:00",
       "chunk_count": 13
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of LastFM_Asia_ColabReady.ipynb": {
       "hash": "cefc09e42c2b1cd65e71125e456d8fb268658e49ba42101a7acdd46524182f05",
-      "ingested_at": "2026-05-28T13:21:02.591210+00:00",
+      "ingested_at": "2026-06-08T09:33:22.033179+00:00",
       "chunk_count": 9
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of model_based_clustering_em_1d_2d_widgets_colab.ipynb": {
       "hash": "a7a7ed12a4ea206b42baf0ce1457c9808b536548c278309d109b27477e51a937",
-      "ingested_at": "2026-05-28T13:21:02.805136+00:00",
+      "ingested_at": "2026-06-08T09:33:22.622722+00:00",
       "chunk_count": 32
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of nyc_pedestrian_safety_dbscan_hotspots_professional_colab_clean.ipynb": {
       "hash": "d66173b0ac343e8a6f8144d5f94d0bd10df7c29b9015169aad6cad520aba3e0b",
-      "ingested_at": "2026-05-28T13:21:03.080341+00:00",
+      "ingested_at": "2026-06-08T09:33:23.091144+00:00",
       "chunk_count": 46
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of online_retail_rfm_kmeans_professional_colab.ipynb": {
       "hash": "5e48e8c6742f3eb0f4f76fd603e9b8d3177de8746d5fd9179c13053263af8fa1",
-      "ingested_at": "2026-05-28T13:21:03.318504+00:00",
+      "ingested_at": "2026-06-08T09:33:23.547150+00:00",
       "chunk_count": 43
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of paradigm_shift_traditional_vs_ml.ipynb": {
       "hash": "93d9e40fa4c06c95b4ab6060c2a230a72436dc303707082c485402fcb9197d8e",
-      "ingested_at": "2026-05-28T13:21:03.592544+00:00",
+      "ingested_at": "2026-06-08T09:33:24.011371+00:00",
       "chunk_count": 34
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of sklearn_clustering_comparison_colab.ipynb": {
       "hash": "a344ee28def9b8877985e0d937aa3f6679b0bec7390a13db547836e08fbd8e97",
-      "ingested_at": "2026-05-28T13:21:03.896907+00:00",
+      "ingested_at": "2026-06-08T09:33:24.532989+00:00",
       "chunk_count": 51
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised Learning Parts 1 and 2.pdf": {
       "hash": "ae7fddee17525cd96dd01fcafd26f4e846c27e166bf6a3c66a3724d1c0aea679",
-      "ingested_at": "2026-05-28T13:21:38.299234+00:00",
+      "ingested_at": "2026-06-08T09:34:01.631628+00:00",
       "chunk_count": 18
     },
     "data\\docs\\Topic 1 - Unsupervised Learning\\Week 1 summary Unsupervised Learning Moshik.pdf": {
       "hash": "96b9a51ca21fae70e679d5b42d92962b150b75f4f870419a23ce53e3295d43e6",
-      "ingested_at": "2026-05-28T13:21:41.009448+00:00",
+      "ingested_at": "2026-06-08T09:34:05.036806+00:00",
       "chunk_count": 59
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Bag_of_Words_Corpus_Colab_v2.ipynb": {
       "hash": "5cf0ccc77d0b117d9863753f5472772ff20fdfa835022a950555479cf69a4880",
-      "ingested_at": "2026-05-28T13:21:41.618349+00:00",
+      "ingested_at": "2026-06-08T09:34:05.833906+00:00",
       "chunk_count": 136
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of colab_friendly_fuzzy_string_matching.ipynb": {
       "hash": "a5b82fdbaaf61765234db53ba04b8f380c7edeccff182888d0d5015fa1e9e5c0",
-      "ingested_at": "2026-05-28T13:21:41.755059+00:00",
+      "ingested_at": "2026-06-08T09:34:06.202891+00:00",
       "chunk_count": 13
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Extract_Text_and_WordCloud_Colab.ipynb": {
       "hash": "ab22db4cc5e33f0563c63fbeb051b4f8799b024f7577d3f4d0dfac93746e60cf",
-      "ingested_at": "2026-05-28T13:21:41.983226+00:00",
+      "ingested_at": "2026-06-08T09:34:06.621647+00:00",
       "chunk_count": 22
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Gutenberg_Notebook_Colab_Filtered.ipynb": {
       "hash": "817688cf65cfa0c5abd657015153028d2535d6eb28d7cc8440404b4018096615",
-      "ingested_at": "2026-05-28T13:21:48.762264+00:00",
+      "ingested_at": "2026-06-08T09:34:13.664484+00:00",
       "chunk_count": 1271
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of IR_Boolean_Search_Jaccard_Colab_v2_FIXED.ipynb": {
       "hash": "5793b1e2aee859ab73cce527a2d88dcf25506449a69b19e79476c7f2e64d7e98",
-      "ingested_at": "2026-05-28T13:21:52.711006+00:00",
+      "ingested_at": "2026-06-08T09:34:18.077505+00:00",
       "chunk_count": 725
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of LDAHowStuffWorks-gensim_COLAB.ipynb": {
       "hash": "15bb07cc6edac6ed1ebd8c740592d69228b19b4c291818fc814afd8f4f3ec078",
-      "ingested_at": "2026-05-28T13:21:53.206754+00:00",
+      "ingested_at": "2026-06-08T09:34:18.870886+00:00",
       "chunk_count": 101
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of NLP 1 Followup.ipynb": {
       "hash": "b6b9d4baec8cbb06948f3a0e19a225d022eb13e04a1c9cf98b0ac25307271520",
-      "ingested_at": "2026-05-28T13:22:09.467285+00:00",
+      "ingested_at": "2026-06-08T09:34:36.349496+00:00",
       "chunk_count": 3047
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of PLDA_Reuters_COLAB.ipynb": {
       "hash": "3ce268747455f52662791ac27ecb27db195d184c1b262db24265c0481a5a232e",
-      "ingested_at": "2026-05-28T13:22:09.879219+00:00",
+      "ingested_at": "2026-06-08T09:34:37.180986+00:00",
       "chunk_count": 65
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of record_linkage_colab.ipynb": {
       "hash": "8d155de30c17c9ba6d9487c2dec49ee21f9cd8a597ec7f666e82fd87953cb02a",
-      "ingested_at": "2026-05-28T13:22:10.212557+00:00",
+      "ingested_at": "2026-06-08T09:34:37.968841+00:00",
       "chunk_count": 71
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of session1_nlp_vectors_ir_bm25.ipynb": {
       "hash": "4643a98fd4df2a4a00d4e886cb418d2fc1973ee88c535f4ccdc870b4b814e10b",
-      "ingested_at": "2026-05-28T13:22:10.680849+00:00",
+      "ingested_at": "2026-06-08T09:34:38.917862+00:00",
       "chunk_count": 110
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Session_2_NLP_Topic_Modeling_SVD_LDA.ipynb": {
       "hash": "e41c2036ac26ebd40e483cc7f476e7477547ac84de3d5964cb377f85e075617a",
-      "ingested_at": "2026-05-28T13:22:11.027677+00:00",
+      "ingested_at": "2026-06-08T09:34:39.735145+00:00",
       "chunk_count": 90
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Simple_Movie_Recommender_COLAB.ipynb": {
       "hash": "480b69134bb807942bc636901d20c828dc167ad5d34954095bdd02952752602b",
-      "ingested_at": "2026-05-28T13:22:11.259336+00:00",
+      "ingested_at": "2026-06-08T09:34:40.483407+00:00",
       "chunk_count": 49
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Topic_Modeling_Colab_v2 (1).ipynb": {
       "hash": "e7f552235da26cc521beea3261d04f2da1b3be639f2e18f79063b61320a076aa",
-      "ingested_at": "2026-05-28T13:22:12.152744+00:00",
+      "ingested_at": "2026-06-08T09:34:41.899937+00:00",
       "chunk_count": 300
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP Session 1.pdf": {
       "hash": "841be3564fd5818c7bb774e2b467b38314fd6ed5c17c949ef5e4aa6aa432a21b",
-      "ingested_at": "2026-05-28T13:25:09.472901+00:00",
+      "ingested_at": "2026-06-08T09:37:48.804747+00:00",
       "chunk_count": 78
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP Session 2.pdf": {
       "hash": "7932a70b2d256a43657c20e70d562848914cecaa8b4cca106f1f229bc8602288",
-      "ingested_at": "2026-05-28T13:27:38.842147+00:00",
+      "ingested_at": "2026-06-08T09:40:28.214756+00:00",
       "chunk_count": 66
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP Session 3.pdf": {
       "hash": "fc6542f93d69b904e0fb69c64a82ba66d9e4a6d55c73773c136934e4fb072569",
-      "ingested_at": "2026-05-28T13:30:27.565913+00:00",
+      "ingested_at": "2026-06-08T09:43:28.387642+00:00",
       "chunk_count": 58
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP Session 4.pdf": {
       "hash": "adfe66fafbdfb88b1754a3849853aad08032a1707956318b838c34ade5e0ac63",
-      "ingested_at": "2026-05-28T13:32:12.222684+00:00",
+      "ingested_at": "2026-06-08T09:45:19.457328+00:00",
       "chunk_count": 59
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\NLP.pdf": {
       "hash": "841be3564fd5818c7bb774e2b467b38314fd6ed5c17c949ef5e4aa6aa432a21b",
-      "ingested_at": "2026-05-28T13:35:04.875660+00:00",
+      "ingested_at": "2026-06-08T09:48:20.072233+00:00",
       "chunk_count": 78
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\Week 2 summary NLP Moshik.pdf": {
       "hash": "6bff688a59ac358a3982e0bdda5c642f902c49fa70082ea2cec914df23b51a24",
-      "ingested_at": "2026-05-28T13:35:06.889766+00:00",
+      "ingested_at": "2026-06-08T09:48:22.900444+00:00",
       "chunk_count": 52
     },
     "data\\docs\\Topic 2 - Natural Language Processing\\Week 3 summary NLP Moshik.pdf": {
       "hash": "0de50428b4c8abef15144cddbd9de2b9f3d3a3748ba7474353bd73a94672c010",
-      "ingested_at": "2026-05-28T13:35:08.918973+00:00",
+      "ingested_at": "2026-06-08T09:48:25.735923+00:00",
       "chunk_count": 53
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning 1.pdf": {
       "hash": "f8cb3ccedb40d54a918b720d8cd0eb1c2883c8a17240464ca224dab5a6432c6d",
-      "ingested_at": "2026-05-28T13:37:00.859614+00:00",
+      "ingested_at": "2026-06-08T09:50:24.436939+00:00",
       "chunk_count": 67
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning 2.pdf": {
       "hash": "efe1eec07363a7a89a6b1f4c6555c4c74ba3fa33c5310aab4c947309db4d4001",
-      "ingested_at": "2026-05-28T13:37:19.184662+00:00",
+      "ingested_at": "2026-06-08T09:50:44.419613+00:00",
       "chunk_count": 5
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning 3.pdf": {
       "hash": "57b3b66f679a4085f8dce8e682cc2f2672ebf7f2e30ef0c0c09f0c391decf134",
-      "ingested_at": "2026-05-28T13:37:41.651323+00:00",
+      "ingested_at": "2026-06-08T09:51:09.639918+00:00",
       "chunk_count": 17
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning 4.pdf": {
       "hash": "c9bcf575b6266d2e8f470fe2f2e0007b86f83ad11f2872660fe9392924ba0598",
-      "ingested_at": "2026-05-28T13:40:05.023968+00:00",
+      "ingested_at": "2026-06-08T09:53:36.049402+00:00",
       "chunk_count": 79
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning 5.pdf": {
       "hash": "81bdbf4e2325778771120ea94ea4b12e32fa5b29386c1dd820c305c57e638383",
-      "ingested_at": "2026-05-28T13:42:08.423350+00:00",
+      "ingested_at": "2026-06-08T09:55:46.081624+00:00",
       "chunk_count": 76
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning 6.pdf": {
       "hash": "51297ea8c58b043a047c7022b585155f0398ea1d1cde5720c4b21c6c5b32a280",
-      "ingested_at": "2026-05-28T13:42:44.711935+00:00",
+      "ingested_at": "2026-06-08T09:56:26.639050+00:00",
       "chunk_count": 17
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning 7.pdf": {
       "hash": "f017c70fbb69555a8ed5dfc31f1a34d4ae163492344f2f00b37c79cdb94e64a6",
-      "ingested_at": "2026-05-28T13:43:10.022223+00:00",
+      "ingested_at": "2026-06-08T09:56:55.488811+00:00",
       "chunk_count": 17
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning 8 Summary.pdf": {
       "hash": "d80c58aa7cf6127f9329c54d589defa63fb0d9a91ea79e3bcc63ac04cba208b4",
-      "ingested_at": "2026-05-28T13:43:12.173172+00:00",
+      "ingested_at": "2026-06-08T09:56:58.476339+00:00",
       "chunk_count": 57
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning 8.pdf": {
       "hash": "2203fc8a47796dfc434c9505fd1cde831df71d7ad49c58e9f5b7b71155b05569",
-      "ingested_at": "2026-05-28T13:43:39.863629+00:00",
+      "ingested_at": "2026-06-08T09:57:29.755552+00:00",
       "chunk_count": 16
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning Lessions 1 to 3 Summary.pdf": {
       "hash": "c12899a07383c3ce937c58a213ca739e4bab66f7308fcba6126db243421a36a8",
-      "ingested_at": "2026-05-28T13:43:42.234615+00:00",
+      "ingested_at": "2026-06-08T09:57:32.953107+00:00",
       "chunk_count": 58
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning Lesson 4 and 5 Summary.pdf": {
       "hash": "2138976dc8e70f98f2c508a97614c9c75dd0c8763410ff1e951a88fb21aebd03",
-      "ingested_at": "2026-05-28T13:43:44.788624+00:00",
+      "ingested_at": "2026-06-08T09:57:36.506672+00:00",
       "chunk_count": 63
     },
     "data\\docs\\Topic 3 - Deep Learning\\Deep Learning Lesson 6 and 7 Summary.pdf": {
       "hash": "89e25725f42452ee8024c7c78b50ba40155c591218983edf1d6e82c6cbe79ee9",
-      "ingested_at": "2026-05-28T13:43:46.970778+00:00",
+      "ingested_at": "2026-06-08T09:57:39.696308+00:00",
       "chunk_count": 62
     }
   }

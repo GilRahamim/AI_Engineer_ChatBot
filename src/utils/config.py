@@ -30,10 +30,23 @@ class EmbeddingConfig(BaseModel):
     normalize: bool = True
 
 
+class FusionConfig(BaseModel):
+    k: int = 60
+    top_n: int = 20
+
+
+class RerankerConfig(BaseModel):
+    enabled: bool = True
+    model: str = "BAAI/bge-reranker-v2-m3"
+    top_n: int = 5
+
+
 class RetrievalConfig(BaseModel):
     dense_top_k: int = 20
-    final_top_k: int = 5
+    sparse_top_k: int = 20
     collection_name: str = "course_docs"
+    fusion: FusionConfig = FusionConfig()
+    reranker: RerankerConfig = RerankerConfig()
 
 
 class GenerationConfig(BaseModel):
