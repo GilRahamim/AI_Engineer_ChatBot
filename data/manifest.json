@@ -459,6 +459,841 @@
       "hash": "89e25725f42452ee8024c7c78b50ba40155c591218983edf1d6e82c6cbe79ee9",
       "ingested_at": "2026-06-08T09:57:39.696308+00:00",
       "chunk_count": 62
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\3. NLP.pdf": {
+      "hash": "86fdd66fe651c3f4769b0e9c15a23dec1193a5ac95bb5ce2777fdd96636ce86a",
+      "ingested_at": "2026-06-09T09:17:25.805214+00:00",
+      "chunk_count": 89
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\Assignment - NLP Retrieval.pdf": {
+      "hash": "0ac97457a884805cf6190bd0bb2b2b2189304028f6e2370821870cacdb60809c",
+      "ingested_at": "2026-06-09T09:17:27.459789+00:00",
+      "chunk_count": 5
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Bag of Words - Corpus-gensim.ipynb": {
+      "hash": "3cb6f43cb41cc8feb66b572559519da878800e1f8cd4ea035cce9a8e3f42878d",
+      "ingested_at": "2026-06-09T09:17:29.435606+00:00",
+      "chunk_count": 103
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Bag of Words - Corpus.ipynb": {
+      "hash": "a686c4b7929053565ba3b37657fc93c459ecec395b42c6d79afc8137e076ae96",
+      "ingested_at": "2026-06-09T09:17:31.550709+00:00",
+      "chunk_count": 149
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Bag of Words - Document.ipynb": {
+      "hash": "468a09c90b57bd052d2d517d923fb76859ccbb44b85f455401f99a07c9038096",
+      "ingested_at": "2026-06-09T09:17:33.211617+00:00",
+      "chunk_count": 12
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\bm25_demo.ipynb": {
+      "hash": "917761075b4abf52ab356bf57d14dca89363bddbcaccfe15558f8258eaf50d81",
+      "ingested_at": "2026-06-09T09:17:34.999686+00:00",
+      "chunk_count": 24
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\bm25s_demo.ipynb": {
+      "hash": "f06be119acfcef599882b7cceb695083e137a0113cb49f2ca89b746f337ba342",
+      "ingested_at": "2026-06-09T09:17:37.181527+00:00",
+      "chunk_count": 211
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Clickstream-Word2Vec-Doc2Vec.ipynb": {
+      "hash": "35a2828c8f54db2c02b8969f84057985cf2071a2e390a6a760d4ce7efab07257",
+      "ingested_at": "2026-06-09T09:17:39.046487+00:00",
+      "chunk_count": 56
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\demo.ipynb": {
+      "hash": "1826260081ee7e1bfe3e3b597a503159682433f0ee9e3052436f1d8f9b708a0c",
+      "ingested_at": "2026-06-09T09:17:40.521112+00:00",
+      "chunk_count": 4
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Disntances.ipynb": {
+      "hash": "e25240e26fb4f836b211db6a15832bb0d6d1ebe749305c6c9c91c57a248174f1",
+      "ingested_at": "2026-06-09T09:17:42.259710+00:00",
+      "chunk_count": 6
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Doc2Vec - Britannica.ipynb": {
+      "hash": "9e3e267821b0b47d58b950acfea42ddf95a38b09ff9bbb092e74e8ccb623120a",
+      "ingested_at": "2026-06-09T09:17:44.242617+00:00",
+      "chunk_count": 103
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Fasttext Animals-Copy1.ipynb": {
+      "hash": "94622693dbb218faae668f3d421e61624dc83ce017b14f1dacc93476757d8df5",
+      "ingested_at": "2026-06-09T09:17:46.200139+00:00",
+      "chunk_count": 77
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Fasttext Animals.ipynb": {
+      "hash": "7cbe3050092fc2f71918d99d65e11dc658c8ee74315aa921f18d92ca51cb5b1e",
+      "ingested_at": "2026-06-09T09:17:48.082422+00:00",
+      "chunk_count": 77
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\FuzzyWuzzy.ipynb": {
+      "hash": "67940da6546f1294563a6fca381fc6673b4b96c53ad6e53ed768ba610ac410b9",
+      "ingested_at": "2026-06-09T09:17:49.873094+00:00",
+      "chunk_count": 12
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Gutenberg - TFIDF and Information Retrieval-gensim.ipynb": {
+      "hash": "677c78a7df8c149d40000854ebadae443fc143afda7a063267126b2cb3f5be7d",
+      "ingested_at": "2026-06-09T09:17:52.594734+00:00",
+      "chunk_count": 445
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\HowStuffWorks_prepare_data.ipynb": {
+      "hash": "d43784f18ce3d800f0490596cd7f04806cee0f067c4e9f508db62ec4f1c8c740",
+      "ingested_at": "2026-06-09T09:17:54.219018+00:00",
+      "chunk_count": 3
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\LanguageIdentification.ipynb": {
+      "hash": "50bb8e51f0bed71c1a4d5155e4838c060a2832cec0946c20835df602ce4a6025",
+      "ingested_at": "2026-06-09T09:17:56.049324+00:00",
+      "chunk_count": 26
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\LDA_MovieRecommender-gensim.ipynb": {
+      "hash": "0757c46435fc095822653073a3da6d1ac9f3418dc0ccaf175633d5a5ddf09d1c",
+      "ingested_at": "2026-06-09T09:17:57.891939+00:00",
+      "chunk_count": 43
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\LDAHowStuffWorks-gensim.ipynb": {
+      "hash": "699741733740df035d1ce391b16f3d2e3feb3f415efa345001ff851adda2f9d1",
+      "ingested_at": "2026-06-09T09:17:59.837422+00:00",
+      "chunk_count": 49
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\MovieLense - Prepare Data.ipynb": {
+      "hash": "b197ae37c3830e3ac8a7be274ac8a472ff82dbdcd17436b608fd1248013bef77",
+      "ingested_at": "2026-06-09T09:18:01.661897+00:00",
+      "chunk_count": 11
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Partially Labeled LDA.ipynb": {
+      "hash": "f72541ea682f86260628c0683652052355e48a457cc165891141b45a18fd3e15",
+      "ingested_at": "2026-06-09T09:18:03.689813+00:00",
+      "chunk_count": 61
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\PointwiseMutualInformation.ipynb": {
+      "hash": "e36f6e009a5077c28c82374e6a1f7904b0337b0e181ae496afeebd9c4d04199d",
+      "ingested_at": "2026-06-09T09:18:06.783923+00:00",
+      "chunk_count": 333
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\PointwiseMutualInformation_gensim.ipynb": {
+      "hash": "176652b6d395b837124cc0fefbe3d11d1448e2930a3fa4fd2cc544b168afe774",
+      "ingested_at": "2026-06-09T09:18:08.776474+00:00",
+      "chunk_count": 137
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Pretrained GLoVe.ipynb": {
+      "hash": "c382849b818eb6e1e996e6493407d1dc93e41988a3e4d008209935a405ddd381",
+      "ingested_at": "2026-06-09T09:18:10.517520+00:00",
+      "chunk_count": 50
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Quora - Question Similarity.ipynb": {
+      "hash": "85afbef5a0e25d4e0ffcb0b96b4cf5b6ff81499d107bb7059e570bfe64f81396",
+      "ingested_at": "2026-06-09T09:18:12.481170+00:00",
+      "chunk_count": 37
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\record_linkage.ipynb": {
+      "hash": "111fa48d0a43bf180ba0290bab7c43d12f64e7c803addb0b78ce51b41edfb404",
+      "ingested_at": "2026-06-09T09:18:14.266722+00:00",
+      "chunk_count": 58
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Ted preprocess.ipynb": {
+      "hash": "4b00e7bdf61b2fcd66b1e2080facd7d61acae1b2ac8d2c531d4c0fae96500905",
+      "ingested_at": "2026-06-09T09:18:15.880356+00:00",
+      "chunk_count": 16
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\tfidf_bm25_gensim.ipynb": {
+      "hash": "b118d855f3e04b7cb25d0887278cc777c9ba20fad0ed04d5b14b68e98df1cd2b",
+      "ingested_at": "2026-06-09T09:18:17.935466+00:00",
+      "chunk_count": 38
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\train_word2vec-fasttext.ipynb": {
+      "hash": "1cb361774c4fb8b82ed62fcf0d0959aa26a05cc86b4304473579d60ca9379b0c",
+      "ingested_at": "2026-06-09T09:18:33.573700+00:00",
+      "chunk_count": 4827
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\train_word2vec.ipynb": {
+      "hash": "bb9552e1281b89ca2f05995602ad3699e724149efcc9d398f014131641e86341",
+      "ingested_at": "2026-06-09T09:18:35.713506+00:00",
+      "chunk_count": 19
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Word Embeddings - Loading pretrained and Validating.ipynb": {
+      "hash": "1095c941db1436aac2f8c308d5470807ed8c81182f882df5133a9ef4f3b3d7ed",
+      "ingested_at": "2026-06-09T09:18:37.760670+00:00",
+      "chunk_count": 35
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\WordCloud-gensim.ipynb": {
+      "hash": "1b663b17b3a3f56c92511048d4ec5186fef89a66f9f3a3f351c6ca5b3c508afc",
+      "ingested_at": "2026-06-09T09:18:40.587041+00:00",
+      "chunk_count": 164
+    },
+    "data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\WordCloud.ipynb": {
+      "hash": "9dec5729d9bc828195f51a6baee6a9927ee9e74c402ecba37541188902accf04",
+      "ingested_at": "2026-06-09T09:18:43.734955+00:00",
+      "chunk_count": 311
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\4. Deep Learning.pdf": {
+      "hash": "83474f16227f58f0a5ae5efe4e1f73ac6b8bac649b22460abda57b49fc6f534f",
+      "ingested_at": "2026-06-09T09:19:13.267140+00:00",
+      "chunk_count": 167
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\5. Transformers.pdf": {
+      "hash": "6505d358fc3932cc580e2ed2933ab424eeda3be3cf28523187dfdaadb24f478b",
+      "ingested_at": "2026-06-09T09:19:19.158250+00:00",
+      "chunk_count": 18
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\activation_functions.ipynb": {
+      "hash": "086ac678b27aecf475781e46404fe71b98ac39a4ead010cd8a8ed09cf32ff38a",
+      "ingested_at": "2026-06-09T09:19:21.159235+00:00",
+      "chunk_count": 2
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\activation_loss_functions_colab.ipynb": {
+      "hash": "f52e7054dac716dfbb16d19655d8222d6435f2a5214445cec3497470656035ed",
+      "ingested_at": "2026-06-09T09:19:23.618476+00:00",
+      "chunk_count": 32
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ai_engineering_tabular_data_updated.ipynb": {
+      "hash": "4567878b604685a80011658af7e7825bd7c004146e2d3d64db82121100237ae8",
+      "ingested_at": "2026-06-09T09:19:25.828641+00:00",
+      "chunk_count": 123
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Airline Passengers - LSTM-1.ipynb": {
+      "hash": "13149652fe16b4003cb12209ea55bda0952647e5ad9759904feff1c881df276d",
+      "ingested_at": "2026-06-09T09:19:27.995966+00:00",
+      "chunk_count": 15
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\AnalysisPhase02.ipynb": {
+      "hash": "f6cce9dab5211c7e9506d4893db94a4fe744c69609b4204a8ebeeed515d87464",
+      "ingested_at": "2026-06-09T09:19:30.201148+00:00",
+      "chunk_count": 70
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\attention_demo_colab.ipynb": {
+      "hash": "f7c690590240fbcddf5c10bdb6709e0beae3209b633cd46e2832978017788200",
+      "ingested_at": "2026-06-09T09:19:32.511482+00:00",
+      "chunk_count": 50
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\autoencoder_grayscale_to_color_colab.ipynb": {
+      "hash": "84a55ff48c69df2237db53adcd4252e613911432ac9d7705e105b70ba5efea95",
+      "ingested_at": "2026-06-09T09:19:34.793518+00:00",
+      "chunk_count": 38
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Autograd_vs_Analyticsl.ipynb": {
+      "hash": "682de4bbd59040a4de867bdac80160dfc072190638c0e20cf4496b6ce8955c6b",
+      "ingested_at": "2026-06-09T09:19:36.831892+00:00",
+      "chunk_count": 3
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\batch_size_update_frequency_pytorch_colab.ipynb": {
+      "hash": "b630e165d0ceb020c136f2dba540fa291ed5c0ac586076775614b00305c697c8",
+      "ingested_at": "2026-06-09T09:19:39.151463+00:00",
+      "chunk_count": 25
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\binary_bce_softmax_comparison_colab.ipynb": {
+      "hash": "138420b5716459ec9e975901cdb04e234af9d813dd0e393f2f6fe377437ca9a1",
+      "ingested_at": "2026-06-09T09:19:41.348246+00:00",
+      "chunk_count": 40
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\CNN_Convolution_Filters_Colab (1).ipynb": {
+      "hash": "5633e86253af872310acb64c1c2800c3b3b20782f40a86f4cea3708e0604adb4",
+      "ingested_at": "2026-06-09T09:19:43.831468+00:00",
+      "chunk_count": 36
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\CNN_Convolution_Filters_Colab.ipynb": {
+      "hash": "5633e86253af872310acb64c1c2800c3b3b20782f40a86f4cea3708e0604adb4",
+      "ingested_at": "2026-06-09T09:19:46.202036+00:00",
+      "chunk_count": 36
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\cnn_max_pooling_unified_colab.ipynb": {
+      "hash": "c1087935c52a2bed3f2e8889a673482bf30b48c8d741ea28e008dee9a8e7a652",
+      "ingested_at": "2026-06-09T09:19:48.733618+00:00",
+      "chunk_count": 55
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\cnn_transfer_learning_pretrained_finetune_colab.ipynb": {
+      "hash": "988e922e921b7617404fbfb1a3062f4cbf84a251bcf253daa72663cc937f4484",
+      "ingested_at": "2026-06-09T09:19:51.088907+00:00",
+      "chunk_count": 63
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Complete  Enumeration.ipynb": {
+      "hash": "a408ff61928b92e5250031f232adefa2083f65f0be07e5ddc8ddc4e607f0f22e",
+      "ingested_at": "2026-06-09T09:19:53.380188+00:00",
+      "chunk_count": 25
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\complete_enumeration_local_mac_windows.ipynb": {
+      "hash": "c226b5eabce959e0f9b9caac4b15ecf8f614e677966d0c02fc5238b39d43ec3c",
+      "ingested_at": "2026-06-09T09:19:55.671975+00:00",
+      "chunk_count": 32
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Convolution Example.ipynb": {
+      "hash": "86aa736aef2c76eb5517feb0f681bbc22b5b87eb360c554abbaa3bbc77fde59e",
+      "ingested_at": "2026-06-09T09:19:57.864136+00:00",
+      "chunk_count": 27
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Domains - Tabula Data.ipynb": {
+      "hash": "56aff9aa707c8d7646ea83a551ab3393bfe3c7a48759b1dcfbc470ba564201b2",
+      "ingested_at": "2026-06-09T09:20:00.319037+00:00",
+      "chunk_count": 50
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\embedding_layer_torch.ipynb": {
+      "hash": "c6d99533bfa2d3e795f01c99be72f08c84b95e53f23945729acecd1602ce5713",
+      "ingested_at": "2026-06-09T09:20:02.351526+00:00",
+      "chunk_count": 15
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\embeddings_transformers.ipynb": {
+      "hash": "c94de7ec9ce8fe2f21dfd6ef4cb7e90706ab03b0ed28be69585d2dca749733c2",
+      "ingested_at": "2026-06-09T09:20:04.539773+00:00",
+      "chunk_count": 15
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Emergency_Room_Admission_LSTM.ipynb": {
+      "hash": "4255942d5fd1cd206c542d082163721de6728e34f8fdd0bb5b5c1fe066d9322b",
+      "ingested_at": "2026-06-09T09:20:12.186270+00:00",
+      "chunk_count": 1185
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ER Admission - CNN and LSTM.ipynb": {
+      "hash": "d8f1662e116c49e1f4177e55c121a92b3fbe71c757b62d4309c41f03c63cf562",
+      "ingested_at": "2026-06-09T09:20:14.732521+00:00",
+      "chunk_count": 64
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ER Admission - LSTM-1.ipynb": {
+      "hash": "1c70a5a14a7030e6d14a38c4dc1bff5c9f58c9d2b000e0465a21c6bd05d2c772",
+      "ingested_at": "2026-06-09T09:20:17.056338+00:00",
+      "chunk_count": 52
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ER Admission - LSTM-2-Channels.ipynb": {
+      "hash": "e0983df5db48c846e8466f869ad70f1c5da7ef7dbc99bb5e1d0f0b1b9d60cb66",
+      "ingested_at": "2026-06-09T09:20:19.481694+00:00",
+      "chunk_count": 73
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\finetune_embeddings_MNRL.ipynb": {
+      "hash": "ab4b747edf08b0de1704e5e61b98cd3df60786717cc51104a6409d94bfefe7dc",
+      "ingested_at": "2026-06-09T09:20:21.674461+00:00",
+      "chunk_count": 21
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\finetune_pretrained_model_pytorch.ipynb": {
+      "hash": "c281dc3c2dc813f39e50d4b80364f195300d975d0f3c25e67ccf635379caece9",
+      "ingested_at": "2026-06-09T09:20:24.116613+00:00",
+      "chunk_count": 81
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\flickr8k_data_preprocess.ipynb": {
+      "hash": "5baf8ff4938ec3b8530ba9b9509e0a3a40d6eb5908465fb86bcc20836b293bfe",
+      "ingested_at": "2026-06-09T09:20:27.270451+00:00",
+      "chunk_count": 192
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\From_lagged_regression_to_vanilla_RNN.ipynb": {
+      "hash": "868fc9370400401c7b1addce01d00b9d347e0901277aba50b8842fdbfa92445d",
+      "ingested_at": "2026-06-09T09:20:29.644916+00:00",
+      "chunk_count": 76
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\generate_steam_data.ipynb": {
+      "hash": "f4494436222dcb197aa3c368b7b49c6f9441f94c4d174b86002257388bd06dd2",
+      "ingested_at": "2026-06-09T09:20:31.858029+00:00",
+      "chunk_count": 8
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Gradient Descent - Analytical.ipynb": {
+      "hash": "7efc7978f22f78bc27d0763932221639245a4018291aaa92ebbd88efae3be9bc",
+      "ingested_at": "2026-06-09T09:20:33.975749+00:00",
+      "chunk_count": 13
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Gradient Descent - Autograd.ipynb": {
+      "hash": "cf70b7f7629dce58790a713879f42061bc9219131d2fab103be05885f943ef88",
+      "ingested_at": "2026-06-09T09:20:36.322811+00:00",
+      "chunk_count": 13
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Gradient Descent - Demonstration.ipynb": {
+      "hash": "e457491109f6c0b24edcc643d404dfa04f4f9b5e498b57cfa967eb6a1094d794",
+      "ingested_at": "2026-06-09T09:20:38.641690+00:00",
+      "chunk_count": 5
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Gradient Descent.ipynb": {
+      "hash": "29f5b6b7593a4db7c74a2035a4d80da44df1ea5cc3329cd7e7ca74b217054c85",
+      "ingested_at": "2026-06-09T09:20:41.236000+00:00",
+      "chunk_count": 9
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Image Augmentation.ipynb": {
+      "hash": "3bfc0c5b4fc342abf694177dbbad557c48d7f38f59718adceaf3e283957855b1",
+      "ingested_at": "2026-06-09T09:20:43.460684+00:00",
+      "chunk_count": 11
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\image_augmentation_colab_with_training_comparison.ipynb": {
+      "hash": "e7ff1195c367166d9dc97c0aac14548bdcefad241245f584173d879dbd93f558",
+      "ingested_at": "2026-06-09T09:20:46.503326+00:00",
+      "chunk_count": 130
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\lagged_regression_before_rnn.ipynb": {
+      "hash": "53812542077caa06bd0477f72736205212973d88ee3d752d4d0c3ae88fbb909b",
+      "ingested_at": "2026-06-09T09:20:48.885723+00:00",
+      "chunk_count": 37
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\LSTM-2.ipynb": {
+      "hash": "a3c8a69bf2d19b52a039506c230d4a9e3d1dad0a52741923cf4faf0b2f17ca66",
+      "ingested_at": "2026-06-09T09:20:51.110833+00:00",
+      "chunk_count": 9
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\lstm_colab_friendly_airline_passengers.ipynb": {
+      "hash": "69d18901b79e4818caec00bcf5821258cbd276f46ac01cb35772c8a2a6f76c7f",
+      "ingested_at": "2026-06-09T09:20:53.542581+00:00",
+      "chunk_count": 18
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\LSTM_Next_Word_Prediction.ipynb": {
+      "hash": "d9e6e372d5006a775e402bffbcaf5b7bf547c541972a11e8f072b91fc02c2385",
+      "ingested_at": "2026-06-09T09:20:55.910679+00:00",
+      "chunk_count": 52
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\lstm_sequence_representation_demo.ipynb": {
+      "hash": "ef9f262af04c19fd0c69791d2bef72c249bcd9833b0f4f89788e11e1bcc9babc",
+      "ingested_at": "2026-06-09T09:20:58.444415+00:00",
+      "chunk_count": 56
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\manual_gradient_descent_normalization_local_mac_windows.ipynb": {
+      "hash": "84a2c1cdd286dabe289fc8cb0a419db0e1c807dd8f0b012ad3c05978afb6bf98",
+      "ingested_at": "2026-06-09T09:21:00.656972+00:00",
+      "chunk_count": 20
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MLM-Finetuning.ipynb": {
+      "hash": "63b61886be4210444cbe38904fb483507aab7c58d524a527dc6ee9d91e660172",
+      "ingested_at": "2026-06-09T09:21:03.178578+00:00",
+      "chunk_count": 52
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MLP_Batch_Normalization_Colab.ipynb": {
+      "hash": "df1ab743208a6f8e4c14ee3f742935cdfce8df8b26d10675c3b4633e874c7663",
+      "ingested_at": "2026-06-09T09:21:05.433559+00:00",
+      "chunk_count": 35
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MLP_Dropout_Colab.ipynb": {
+      "hash": "75f8fcf820a0ee73e9c266e0cdfb5954d870869d527539dc9fafcc8529f1f663",
+      "ingested_at": "2026-06-09T09:21:08.033964+00:00",
+      "chunk_count": 30
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-8-Autoencoder-pytorch.ipynb": {
+      "hash": "7b1837591ee6bec9bd96a4129e87918d5871e6bd51d284c3eafbab3afb15a8e7",
+      "ingested_at": "2026-06-09T09:21:10.355633+00:00",
+      "chunk_count": 46
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-8-Autoencoder.ipynb": {
+      "hash": "5c5081c023055d3fb6313a2d4cfd0ca468965e83ec5a83f9b5149c1c47c2d44d",
+      "ingested_at": "2026-06-09T09:21:12.962089+00:00",
+      "chunk_count": 44
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-9-Denoising Autoencoder Pytorch.ipynb": {
+      "hash": "6ade0370846f5acde9b8470c2eeb1a828b90bb2d065ba3c071f8aa6de0abcaf5",
+      "ingested_at": "2026-06-09T09:21:15.320090+00:00",
+      "chunk_count": 29
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-9-Denoising Autoencoder.ipynb": {
+      "hash": "16a7cd685122add8823853318cbd0293956ecd07400ff5019753ead51967d665",
+      "ingested_at": "2026-06-09T09:21:17.665955+00:00",
+      "chunk_count": 29
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-1 - Intro.ipynb": {
+      "hash": "3236ec6484ae4b55afc95104add0c5dbc1633de496dc233e921c061a63affc17",
+      "ingested_at": "2026-06-09T09:21:20.357281+00:00",
+      "chunk_count": 71
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-2 Validation Set.ipynb": {
+      "hash": "8655c95673eccec23f0ffa15cccbaa10c5a4bf2b8810d0942e10a99b7934a452",
+      "ingested_at": "2026-06-09T09:21:22.606214+00:00",
+      "chunk_count": 17
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-3 DataLoader.ipynb": {
+      "hash": "76c3fff3d9f8416b305620114e71677b7b272e51a28ee4cfcd267204a199d11c",
+      "ingested_at": "2026-06-09T09:21:25.061166+00:00",
+      "chunk_count": 46
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-4-Save Checkpoints.ipynb": {
+      "hash": "a8e521ac8d148a830035349d288ad7000876f47f2ff9c3e5b9f2e20fb38ea8fc",
+      "ingested_at": "2026-06-09T09:21:27.301758+00:00",
+      "chunk_count": 21
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-5-Dropout.ipynb": {
+      "hash": "51a5c1f8e3244e56265f6c56be05d25a88117f877b010c00298be1c01959ceeb",
+      "ingested_at": "2026-06-09T09:21:29.777190+00:00",
+      "chunk_count": 22
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-6 Batch Normalization.ipynb": {
+      "hash": "adcf1b175b77ddd35e27f74ba0fdb549a6163b468b2376bf8d8e268cfe0e636e",
+      "ingested_at": "2026-06-09T09:21:32.244252+00:00",
+      "chunk_count": 42
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-7 CNN-MaxPooling.ipynb": {
+      "hash": "5e85e823a7e0132b4d7ab245470f9749f9dc4fbcb7c505dc674ab4b444a2fe55",
+      "ingested_at": "2026-06-09T09:21:34.741649+00:00",
+      "chunk_count": 24
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-7 CNN.ipynb": {
+      "hash": "30457efd956a92658cd9c35054148da80c72d68ddf209bcb0c593a4ce3de5dbd",
+      "ingested_at": "2026-06-09T09:21:37.172383+00:00",
+      "chunk_count": 33
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-7b CNN-MaxPooling.ipynb": {
+      "hash": "7d9190538e91324b42fc0ebeaafeca5336ec9d9f0f739fbb249366b4ded1b91d",
+      "ingested_at": "2026-06-09T09:21:39.694000+00:00",
+      "chunk_count": 23
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-7а CNN-MaxPooling.ipynb": {
+      "hash": "47dc30200c6343f4c9867aa2f41f3264b7153f2ad8ddf0a3423b3584bb1b43cb",
+      "ingested_at": "2026-06-09T09:21:41.991381+00:00",
+      "chunk_count": 24
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST.ipynb": {
+      "hash": "8e00da005d21e596526b706893c6463b1e0dadaf641ed0bb2b4d36edd58bbbd7",
+      "ingested_at": "2026-06-09T09:21:44.241365+00:00",
+      "chunk_count": 7
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST_Autoencoders_Combined_Colab (1).ipynb": {
+      "hash": "523f0fddb8df5acf965c525199e66e0e5f70edaace513a5e4a75489e9f4fe968",
+      "ingested_at": "2026-06-09T09:21:57.398337+00:00",
+      "chunk_count": 2159
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST_Autoencoders_Combined_Colab.ipynb": {
+      "hash": "523f0fddb8df5acf965c525199e66e0e5f70edaace513a5e4a75489e9f4fe968",
+      "ingested_at": "2026-06-09T09:22:10.671563+00:00",
+      "chunk_count": 2159
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\mnist_export_checked_cpu_only_mac_windows_note.ipynb": {
+      "hash": "1e410a322c2f603f9f52ff4d5ff56f861ce594c383ba24d47b98b1719585041f",
+      "ingested_at": "2026-06-09T09:22:12.889755+00:00",
+      "chunk_count": 4
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST_MLP_Unified_Colab (1).ipynb": {
+      "hash": "9e635005a3b5a8c8636a5a137245a15c406df39cd145ca9df2c6931d763a4869",
+      "ingested_at": "2026-06-09T09:22:15.508333+00:00",
+      "chunk_count": 38
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST_MLP_Unified_Colab.ipynb": {
+      "hash": "9e635005a3b5a8c8636a5a137245a15c406df39cd145ca9df2c6931d763a4869",
+      "ingested_at": "2026-06-09T09:22:17.983293+00:00",
+      "chunk_count": 38
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\model_test_demonstration.ipynb": {
+      "hash": "ef76a749801aebfd0988f09de7c33a00aa9fdfa6249de1db055669c31d544408",
+      "ingested_at": "2026-06-09T09:22:20.846464+00:00",
+      "chunk_count": 61
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\model_train_demonstration.ipynb": {
+      "hash": "6e4c545c2eaca35cf22c47ea62683031508d58493cd3f27d97c5948e12a08586",
+      "ingested_at": "2026-06-09T09:22:23.648735+00:00",
+      "chunk_count": 43
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\movielense_dataprep.ipynb": {
+      "hash": "7808240d4b94464dd9976eedbaf27f8ab0d2f0179b6f34553f70395948a81471",
+      "ingested_at": "2026-06-09T09:22:26.185416+00:00",
+      "chunk_count": 9
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\movielense_models_evaluation.ipynb": {
+      "hash": "56ae0c5ebeae0d6228c55fb9c29bdbed44b1b774a0b3c334fb8045775cb2d393",
+      "ingested_at": "2026-06-09T09:22:31.941946+00:00",
+      "chunk_count": 1404
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\movielense_recommender_matrix_factorization.ipynb": {
+      "hash": "14b0f0bf085cd23ef24ab18622299c4038b425388f195ee4b656dde72aaff6c5",
+      "ingested_at": "2026-06-09T09:22:34.655723+00:00",
+      "chunk_count": 26
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\movielense_recommender_neural_matrix_factorization.ipynb": {
+      "hash": "e06d83eb4ecb0e40f4a716cb788a37c739bf5c37f07f958eef6a8b1077e41c7a",
+      "ingested_at": "2026-06-09T09:22:37.165174+00:00",
+      "chunk_count": 29
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\multiple_inputs_petfinder.ipynb": {
+      "hash": "b738a5a18c2a1206f7ef28673c0947df5ae795ec2ee9f411bbd273fbd2052c23",
+      "ingested_at": "2026-06-09T09:22:40.020111+00:00",
+      "chunk_count": 74
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Neural Network Cancer.ipynb": {
+      "hash": "fa19136e30414fab30989375b99f9f911d2b82c8cd6e6e66b8d80aba9e46d1dc",
+      "ingested_at": "2026-06-09T09:22:42.493206+00:00",
+      "chunk_count": 19
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ObjectOrientedProgramming.ipynb": {
+      "hash": "6957c431573dbfa6e023bd48b73efa642f9890638c13705fe1d5e852aa1a92a4",
+      "ingested_at": "2026-06-09T09:22:45.020451+00:00",
+      "chunk_count": 13
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Optimizer - Intro.ipynb": {
+      "hash": "54e7d9712a2506c9c7ac95143407c596c3d81888c924fa3f88bbb025969941d3",
+      "ingested_at": "2026-06-09T09:22:47.718365+00:00",
+      "chunk_count": 12
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\optimizer_comparison_colab.ipynb": {
+      "hash": "7b459ee6ac0e98721c3335fd6aed201f3c2dc90162eabdd0d92967d654585f7a",
+      "ingested_at": "2026-06-09T09:22:50.572448+00:00",
+      "chunk_count": 40
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Optimizers.ipynb": {
+      "hash": "6a1228f67b83003356189b724cf144b7f09149887d7fbd32fe03d19cf717b125",
+      "ingested_at": "2026-06-09T09:22:53.342489+00:00",
+      "chunk_count": 15
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Perceptron.ipynb": {
+      "hash": "92a0a91a6f46fc89a17de65ed0fc2d44d195656c9e56cb7a4958409d2f51821f",
+      "ingested_at": "2026-06-09T09:22:56.682279+00:00",
+      "chunk_count": 277
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\perceptron_classification_google_colab.ipynb": {
+      "hash": "b6d1d6194477448ee23290989a079b26f870e3ff3de853ee60498975dc757d70",
+      "ingested_at": "2026-06-09T09:24:54.494837+00:00",
+      "chunk_count": 19542
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\plain_rnn_five_examples_colab.ipynb": {
+      "hash": "fc4971110139b774ceb1b2b310d649308543d140d31eee81df0ad00cacf17155",
+      "ingested_at": "2026-06-09T09:24:58.479808+00:00",
+      "chunk_count": 38
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Preparing data.ipynb": {
+      "hash": "af03d125c886ca4ebcfb5fc306fa7ca95f3d2329c9257e8578727dc7f2058ad8",
+      "ingested_at": "2026-06-09T09:25:02.005284+00:00",
+      "chunk_count": 1
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\preprocess_mnist.ipynb": {
+      "hash": "fd1795373489371ee698292e8fe368156ba44a912fcb0fb97e7e080ae6eb4543",
+      "ingested_at": "2026-06-09T09:25:05.565438+00:00",
+      "chunk_count": 2
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_autograd_local_mac_windows.ipynb": {
+      "hash": "a8515a929adee979d8625570f85f39bc4fe8993e7e3da0dd29b35afe1760a187",
+      "ingested_at": "2026-06-09T09:25:09.046863+00:00",
+      "chunk_count": 17
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_datasets_colab.ipynb": {
+      "hash": "ff7370950c3a8d8a6e3b186212f4b64740187d4cb6c995bfabf74cbee3149343",
+      "ingested_at": "2026-06-09T09:25:12.845724+00:00",
+      "chunk_count": 26
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_embedding_lstm_colab_v2 (1).ipynb": {
+      "hash": "5ae048fd6993c907b95e40185869ad3bde717fde46b956fec1f7f4596782c4a4",
+      "ingested_at": "2026-06-09T09:25:16.621761+00:00",
+      "chunk_count": 26
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_embedding_lstm_colab_v2.ipynb": {
+      "hash": "5ae048fd6993c907b95e40185869ad3bde717fde46b956fec1f7f4596782c4a4",
+      "ingested_at": "2026-06-09T09:25:20.353129+00:00",
+      "chunk_count": 26
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_gpu_benchmark_colab.ipynb": {
+      "hash": "3ef0c12c45295110b7ea2e05e500a6f297fa296583f9e96d45eaab0adade1bd2",
+      "ingested_at": "2026-06-09T09:25:23.910169+00:00",
+      "chunk_count": 20
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_gpu_benchmark_local_vscode_original_style.ipynb": {
+      "hash": "3b07d7118513af6f089af0252b3410b45e6739e5a10a8fd8146309ca53bad69f",
+      "ingested_at": "2026-06-09T09:25:27.728284+00:00",
+      "chunk_count": 23
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_optimizer_local_mac_windows.ipynb": {
+      "hash": "b66b0ff805497a6684da86706e00766ed5222da43b3f696283577f31e45de957",
+      "ingested_at": "2026-06-09T09:25:31.369111+00:00",
+      "chunk_count": 16
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\quadratic_gradient_descent_local_mac_windows.ipynb": {
+      "hash": "29082c340cf943f6dc9540327b5690dca52e1f001a8d0ac6040bb37a824b50e1",
+      "ingested_at": "2026-06-09T09:25:35.033027+00:00",
+      "chunk_count": 7
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Regression Regularization.ipynb": {
+      "hash": "564be5af850683ced134a5669abb96b3667054c694e113f8d85ddc7ff0246bda",
+      "ingested_at": "2026-06-09T09:25:38.934340+00:00",
+      "chunk_count": 69
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ridge_lasso_regularization_ai_engineering_colab_(1).ipynb": {
+      "hash": "74355e24ea38f050b0dbf15866f3b5a12f44161f1055a53ca4196117a0347b0e",
+      "ingested_at": "2026-06-09T09:25:42.772698+00:00",
+      "chunk_count": 55
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Schelling_Model.ipynb": {
+      "hash": "135f6afd10ebc71eeb83e7d8c90cde2eb8e76d433983911941bc42e93b9a4e91",
+      "ingested_at": "2026-06-09T09:25:46.474497+00:00",
+      "chunk_count": 13
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\SentenceEmbeddings - Quora.ipynb": {
+      "hash": "d7172631b090b23b35447586753f46bd245ba49d01ad8e5b4e19cb055e04d7c9",
+      "ingested_at": "2026-06-09T09:25:50.287858+00:00",
+      "chunk_count": 25
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\seq2seq_image_captioning_colab_teaching.ipynb": {
+      "hash": "d898875fc21eab8b8fb6d874b335102e6185c22a1caa69d867d0e7aa634eee44",
+      "ingested_at": "2026-06-09T09:25:54.224857+00:00",
+      "chunk_count": 42
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\simple_rnn_next_character_prediction (1).ipynb": {
+      "hash": "032935a72e83e44ebf0eb5fa576bd3c56738bc0ca970233ac9442fa8676c2f4a",
+      "ingested_at": "2026-06-09T09:25:58.134195+00:00",
+      "chunk_count": 39
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\simple_rnn_next_character_prediction.ipynb": {
+      "hash": "032935a72e83e44ebf0eb5fa576bd3c56738bc0ca970233ac9442fa8676c2f4a",
+      "ingested_at": "2026-06-09T09:26:02.075512+00:00",
+      "chunk_count": 39
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\SQLite.ipynb": {
+      "hash": "e88af1009c0b02d03f00fde6af5fee5bcf5e8e4e547047f0c76560fe2c4cdf79",
+      "ingested_at": "2026-06-09T09:26:05.721748+00:00",
+      "chunk_count": 17
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification - Embedding-Copy1.ipynb": {
+      "hash": "b0ffa3993ade2e94ff3d1d0c43a544222a0fac7a0c1471bf61602806dd15e75a",
+      "ingested_at": "2026-06-09T09:26:09.740076+00:00",
+      "chunk_count": 84
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification - Embedding.ipynb": {
+      "hash": "73e375a28e2db9216f574dcc8f61cc70ac73536523f908c87212b7b9789dd829",
+      "ingested_at": "2026-06-09T09:26:13.739834+00:00",
+      "chunk_count": 75
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification-All_data.ipynb": {
+      "hash": "ac4ab02b768c25a6a4c04377519cb9e7e9d75b2b9af89f5998ac4c2b204866a7",
+      "ingested_at": "2026-06-09T09:26:17.472492+00:00",
+      "chunk_count": 10
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification.ipynb": {
+      "hash": "78cde8e452e106976ac829a9a2dc817550e0cb3a32f76d8687091808bb48532b",
+      "ingested_at": "2026-06-09T09:26:21.530616+00:00",
+      "chunk_count": 137
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification_basic_elements.ipynb": {
+      "hash": "f55fefe28bfaa0987c7aabbd4c5a43b0bd24a87ca40cc1c562c0ec7afa0a074d",
+      "ingested_at": "2026-06-09T09:26:25.450637+00:00",
+      "chunk_count": 45
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_review_sentiment_colab (1).ipynb": {
+      "hash": "c792c914d7d84bb977bbf41a8d95d11dd245704089d8037e2db80c4f6a09acb7",
+      "ingested_at": "2026-06-09T09:26:29.658244+00:00",
+      "chunk_count": 29
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_review_sentiment_colab.ipynb": {
+      "hash": "c792c914d7d84bb977bbf41a8d95d11dd245704089d8037e2db80c4f6a09acb7",
+      "ingested_at": "2026-06-09T09:26:33.710625+00:00",
+      "chunk_count": 29
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_embeddings-2-Word2Vec.ipynb": {
+      "hash": "020ca651dbac311b36eef3e0d5b22d38bdb827c524519caa458c033780071a37",
+      "ingested_at": "2026-06-09T09:26:37.591723+00:00",
+      "chunk_count": 50
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_embeddings-3-LSTM.ipynb": {
+      "hash": "a73fc528c8a9d61df0f0f7b2bf91ec38509656ad49051a1203e010fe59f8080e",
+      "ingested_at": "2026-06-09T09:26:41.368276+00:00",
+      "chunk_count": 28
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_embeddings.ipynb": {
+      "hash": "9c62564e7de31e52d609d521cbe7e4100f7e7cf9c3a403eaf6d561c65d4d1cc5",
+      "ingested_at": "2026-06-09T09:26:45.321510+00:00",
+      "chunk_count": 19
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_w2v_lstm_colab_with_w2v_sidecars (1).ipynb": {
+      "hash": "20e3863b5a970e58d582134f44e3dec89392bbe09fa6742750896e5c8473484d",
+      "ingested_at": "2026-06-09T09:26:49.240125+00:00",
+      "chunk_count": 46
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_w2v_lstm_colab_with_w2v_sidecars.ipynb": {
+      "hash": "6975638bdf8b1e387d6bc113bf2ee54269ae5def3c6dfb6269a4f5e6ee7d7189",
+      "ingested_at": "2026-06-09T09:26:52.996318+00:00",
+      "chunk_count": 46
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\SteamDataPreparation.ipynb": {
+      "hash": "1cd58978dc6568554ff195a0a45e54ea1964d73f0c3aea86e848b746736dcdcd",
+      "ingested_at": "2026-06-09T09:26:56.765522+00:00",
+      "chunk_count": 7
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\temperature_gradient_descent_local_mac_windows.ipynb": {
+      "hash": "0a425ace754844720fe1bb230278464f6e1224d0b602612e0d6a7b72fdc7a589",
+      "ingested_at": "2026-06-09T09:27:00.594986+00:00",
+      "chunk_count": 14
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor - Images.ipynb": {
+      "hash": "e75019d17bf95312a72e082f5515ed8eba11317c024e28a0c324b850cf7a1148",
+      "ingested_at": "2026-06-09T09:27:04.587128+00:00",
+      "chunk_count": 34
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor - Tabular.ipynb": {
+      "hash": "71772f43b0ab706297e632ba5b96f6544bd9d14c201aaa385eb0050893b37eed",
+      "ingested_at": "2026-06-09T09:27:08.428151+00:00",
+      "chunk_count": 90
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor - Time Series.ipynb": {
+      "hash": "ca29544d9c3e9de02dd4a561cd83684d3dc33cca23b2779dfdcb3a2006e8d8f6",
+      "ingested_at": "2026-06-09T09:27:12.203854+00:00",
+      "chunk_count": 16
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor_Images_mac_windows_gpu_ready.ipynb": {
+      "hash": "5919283972e5bda07954c88e9d8a31bcc088018a65a679f1597fccb23a2db990",
+      "ingested_at": "2026-06-09T09:27:16.355784+00:00",
+      "chunk_count": 39
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor_Time_Series_mac_windows_adapted.ipynb": {
+      "hash": "6394cf62ac61120331da394459e8312b8cffc8f58a336537ecdb664e0b59149f",
+      "ingested_at": "2026-06-09T09:27:20.248504+00:00",
+      "chunk_count": 26
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors - Advanced.ipynb": {
+      "hash": "13cacf23cb113a19e64851936e09a55025b355977d187197fac69afe46ab6605",
+      "ingested_at": "2026-06-09T09:27:23.945380+00:00",
+      "chunk_count": 42
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors - Basics.ipynb": {
+      "hash": "c3c88614b58d0a3f0b65df0e73c32e8be9751ba92bdf94d9f9e32bbe993dc2ec",
+      "ingested_at": "2026-06-09T09:27:27.888347+00:00",
+      "chunk_count": 37
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors - Serialization.ipynb": {
+      "hash": "9ef537e3fb5ddf9f47b76c5db489ffb04d0ca5d7799dcc9cc53ed257ea0cd52e",
+      "ingested_at": "2026-06-09T09:27:31.784901+00:00",
+      "chunk_count": 28
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors_Advanced_local_windows_mac_cuda_mps_param_notebook.ipynb": {
+      "hash": "23a01e7caf4d6595033849d429f32514adddbf0ace51c3f3037ecc8f31cad8f7",
+      "ingested_at": "2026-06-09T09:27:35.577824+00:00",
+      "chunk_count": 56
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors_Basics_local_windows_mac_cuda_mps_ready.ipynb": {
+      "hash": "e7e09f25771b7f5aa6227c78179a3ec3c1022192879d98405fb25da040042115",
+      "ingested_at": "2026-06-09T09:27:39.527414+00:00",
+      "chunk_count": 59
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors_Serialization_local_windows_mac_cuda_mps_param_notebook_v3.ipynb": {
+      "hash": "7f33f1b9fc8797819fa052593e2754d3ef4c915f930783762d789b82e4325d91",
+      "ingested_at": "2026-06-09T09:27:43.560402+00:00",
+      "chunk_count": 33
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\test_pytorch_setup_colab.ipynb": {
+      "hash": "5b71d7a2a75f13db41a3c125d8b1acf2e3d8536ffbbc18a876cf72ae6586286f",
+      "ingested_at": "2026-06-09T09:27:47.218005+00:00",
+      "chunk_count": 11
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\test_pytorch_setup_local_vscode_mac_windows_with_env.ipynb": {
+      "hash": "668bfef1de6a59e774685d0f3f1a1f2f0f638a31e6de4f639d469c62f116b41e",
+      "ingested_at": "2026-06-09T09:27:51.305294+00:00",
+      "chunk_count": 17
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\text_to_text_seq2seq_summarization_colab.ipynb": {
+      "hash": "0ae61533a8a2d060c530f50ce8f9c1c3c2ec05bff11a831d83d67cfcbff467f7",
+      "ingested_at": "2026-06-09T09:27:54.943308+00:00",
+      "chunk_count": 29
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Transformers - Animals - Embeddings.ipynb": {
+      "hash": "563fa363440eaffc955ec7c42d384ef47ef79ccd7079c53ebc70dce40d008388",
+      "ingested_at": "2026-06-09T09:27:58.749070+00:00",
+      "chunk_count": 20
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Transformers-Classifier-FineTunning.ipynb": {
+      "hash": "490125d31bb0a39180d223c140e9cf90cf60d002a7a8a87330fa9f24974ecc9c",
+      "ingested_at": "2026-06-09T09:28:02.701325+00:00",
+      "chunk_count": 49
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Transformers-Demonstration.ipynb": {
+      "hash": "59fbf3cacf4d3cceb06ff7b584f4ab6d79ab338bda95344568313367cdf18a99",
+      "ingested_at": "2026-06-09T09:28:06.694655+00:00",
+      "chunk_count": 78
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Twitter Airline Sentiment.ipynb": {
+      "hash": "b08bea3353248e12ca37631ea75976d81528640e83954f0966282647098dd726",
+      "ingested_at": "2026-06-09T09:28:10.695728+00:00",
+      "chunk_count": 115
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\using_pretrained_models_torch.ipynb": {
+      "hash": "84bc9f5cb87562a14ea83368832bb399f3389f7355b41026ecfa2afb9e2d140b",
+      "ingested_at": "2026-06-09T09:28:14.803900+00:00",
+      "chunk_count": 23
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\vocab_demo.ipynb": {
+      "hash": "a52ee50c75f442178ef5b016260ee4d9e6cc73646f5379a1a639bfd32d3246fb",
+      "ingested_at": "2026-06-09T09:28:18.735772+00:00",
+      "chunk_count": 30
+    },
+    "data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Zero-shot classification.ipynb": {
+      "hash": "d1ad36bfc79ba022d24d78c701f349c5aa2bb62b2e92cd848293334f5fd81041",
+      "ingested_at": "2026-06-09T09:28:23.146147+00:00",
+      "chunk_count": 62
     }
   }
 }

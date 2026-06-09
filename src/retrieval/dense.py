@@ -37,15 +37,19 @@ class DenseRetriever:
 
     def add(self, chunks: list[Chunk], embeddings: list[list[float]]) -> None:
         ids = [f"{c.source}::{c.chunk_index}" for c in chunks]
-        self._collection.add(
-            ids=ids,
-            embeddings=embeddings,
-            documents=[c.text for c in chunks],
-            metadatas=[
-                {"source": c.source, "file_type": c.file_type, "chunk_index": c.chunk_index, **c.metadata}
-                for c in chunks
-            ],
-        )
+        metadatas = [
+            {"source": c.source, "file_type": c.file_type, "chunk_index": c.chunk_index, **c.metadata}
+            for c in chunks
+        ]
+        documents = [c.text for c in chunks]
+        batch_size = 5000
+        for i in range(0, len(chunks), batch_size):
+            self._collection.add(
+                ids=ids[i : i + batch_size],
+                embeddings=embeddings[i : i + batch_size],
+                documents=documents[i : i + batch_size],
+                metadatas=metadatas[i : i + batch_size],
+            )
 
     def query(self, embedding: list[float], top_k: Optional[int] = None) -> list[RetrievalResult]:
         k = top_k or self._top_k
