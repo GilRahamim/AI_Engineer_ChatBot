@@ -31,6 +31,8 @@ retrieval:
     enabled: true
     model: "BAAI/bge-reranker-v2-m3"
     top_n: 5
+  hyde:
+    enabled: true
 
 generation:
   base_url: "http://localhost:1234/v1"

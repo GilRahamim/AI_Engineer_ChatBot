@@ -41,12 +41,17 @@ class RerankerConfig(BaseModel):
     top_n: int = 5
 
 
+class HyDEConfig(BaseModel):
+    enabled: bool = False
+
+
 class RetrievalConfig(BaseModel):
     dense_top_k: int = 20
     sparse_top_k: int = 20
     collection_name: str = "course_docs"
     fusion: FusionConfig = FusionConfig()
     reranker: RerankerConfig = RerankerConfig()
+    hyde: HyDEConfig = HyDEConfig()
 
 
 class GenerationConfig(BaseModel):

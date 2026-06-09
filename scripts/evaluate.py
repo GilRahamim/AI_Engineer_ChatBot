@@ -3,8 +3,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 # Must be imported before pymupdf4llm/chromadb
 from langchain_text_splitters import RecursiveCharacterTextSplitter  # noqa: F401
@@ -21,8 +24,11 @@ def print_results(results: dict) -> None:
     print(f"{'Metric':<22} {'Score':>7}")
     print("-" * 31)
     for name, value in metrics.items():
-        bar = "█" * int(value * 20)
-        print(f"{name:<22} {value:>6.3f}  {bar}")
+        if math.isnan(value):
+            print(f"{name:<22}    N/A")
+        else:
+            bar = "█" * int(value * 20)
+            print(f"{name:<22} {value:>6.3f}  {bar}")
     print()
 
 

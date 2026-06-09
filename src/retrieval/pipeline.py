@@ -5,6 +5,7 @@ from src.retrieval.dense import DenseRetriever, RetrievalResult
 from src.retrieval.fusion import fuse
 from src.retrieval.reranker import rerank
 from src.retrieval.sparse import SparseRetriever
+from src.retrieval.transforms import hyde_transform
 from src.utils.config import get_config
 
 _dense: DenseRetriever | None = None
@@ -29,7 +30,8 @@ def retrieve(query: str) -> list[RetrievalResult]:
     cfg = get_config()
     embedder = get_embedder()
 
-    query_embedding = embedder.embed_query(query)
+    embed_text = hyde_transform(query) if cfg.retrieval.hyde.enabled else query
+    query_embedding = embedder.embed_query(embed_text)
     dense_results = _get_dense().query(query_embedding)
     sparse_results = _get_sparse().query(query)
 

@@ -100,7 +100,7 @@ def run_eval(
 
         results = retrieve(query)
         # Truncate contexts to keep RAGAS judge prompts within context window
-        contexts = [r.text[:500] for r in results]
+        contexts = [r.text[:400] for r in results]
         generated = answer(query, results)
 
         pq_entry: dict = {
@@ -118,8 +118,8 @@ def run_eval(
             ragas_indices.append(len(per_question))
             samples.append(SingleTurnSample(
                 user_input=query,
-                response=generated,
-                retrieved_contexts=contexts,
+                response=generated[:800],
+                retrieved_contexts=contexts[:3],
                 reference=ground_truth,
             ))
 
