@@ -32,3 +32,13 @@ Thumbs.db
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
+
+# Chainlit runtime
+.chainlit/
+.files/
+
+# Claude tooling
+.claude/worktrees/
+
+# Generated output
+summaries/
