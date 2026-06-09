@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -20,7 +21,7 @@ def _strip_citations(text: str) -> str:
 
 
 def _to_latin1(text: str) -> str:
-    """Strip unsupported characters for Helvetica (latin-1 range)."""
+    """Normalize and strip unsupported characters for Helvetica (latin-1 range)."""
     # Remove LaTeX math expressions
     text = re.sub(r"\$\$.*?\$\$", "", text, flags=re.DOTALL)
     text = re.sub(r"\$.*?\$", "", text)
@@ -28,6 +29,12 @@ def _to_latin1(text: str) -> str:
     text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
     text = re.sub(r"\*(.+?)\*", r"\1", text)
     text = re.sub(r"`(.+?)`", r"\1", text)
+    # Normalize Unicode dashes and hyphens to ASCII hyphen
+    for ch in "‐‑‒–—―−":
+        text = text.replace(ch, "-")
+    # Normalize Unicode quotes to ASCII
+    text = text.replace("‘", "'").replace("’", "'")
+    text = text.replace("“", '"').replace("”", '"')
     return text.encode("latin-1", errors="replace").decode("latin-1")
 
 
@@ -63,7 +70,7 @@ def _render_pdf(topic: str, content: str, output_path: Path) -> None:
     pdf.cell(TEXT_W, 10, _to_latin1(f"Study Summary: {topic}"), align="L")
     pdf.set_font("Helvetica", "", 10)
     pdf.set_xy(L, 24)
-    pdf.cell(TEXT_W, 6, "AI Engineer Course", align="L")
+    pdf.cell(TEXT_W, 6, f"AI Engineer Course  |  {date.today().strftime('%B %d, %Y')}", align="L")
     pdf.set_text_color(0, 0, 0)
     pdf.set_y(46)
 
@@ -76,13 +83,18 @@ def _render_pdf(topic: str, content: str, output_path: Path) -> None:
             pdf.ln(2)
 
         elif line.startswith("## "):
-            # Section header with colored background
+            # Section header: colored left accent bar + gray background
             pdf.ln(4)
             title = _to_latin1(line[3:])
-            pdf.set_fill_color(240, 240, 240)
-            pdf.set_font("Helvetica", "B", 13)
+            y = pdf.get_y()
+            pdf.set_fill_color(245, 245, 245)
             pdf.set_x(L)
-            pdf.multi_cell(TEXT_W, 8, f"  {title}", fill=True)
+            pdf.set_font("Helvetica", "B", 13)
+            pdf.multi_cell(TEXT_W, 9, f"   {title}", fill=True)
+            # Left accent bar (drawn after so it overlaps the fill)
+            bar_h = pdf.get_y() - y
+            pdf.set_fill_color(30, 30, 30)
+            pdf.rect(L, y, 3, bar_h, style="F")
             pdf.set_font("Helvetica", "", 11)
             pdf.ln(2)
 

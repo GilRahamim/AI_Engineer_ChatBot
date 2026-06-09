@@ -6,6 +6,9 @@ from typing import Optional
 import yaml
 from pydantic import BaseModel
 
+# Absolute project root — works regardless of working directory
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+
 
 class PathsConfig(BaseModel):
     docs: Path = Path("data/docs")
@@ -79,17 +82,33 @@ class Config(BaseModel):
 _config: Optional[Config] = None
 
 
+def _resolve_paths(cfg: Config) -> Config:
+    """Resolve all PathsConfig fields to absolute paths using PROJECT_ROOT."""
+    p = cfg.paths
+    cfg.paths = PathsConfig(
+        docs=PROJECT_ROOT / p.docs,
+        chroma_db=PROJECT_ROOT / p.chroma_db,
+        bm25_index=PROJECT_ROOT / p.bm25_index,
+        manifest=PROJECT_ROOT / p.manifest,
+        prompts=PROJECT_ROOT / p.prompts,
+        eval_results=PROJECT_ROOT / p.eval_results,
+    )
+    return cfg
+
+
 def load_config(path: str = "config/config.yaml") -> Config:
     global _config
     if _config is not None:
         return _config
     config_path = Path(path)
+    if not config_path.is_absolute():
+        config_path = PROJECT_ROOT / config_path
     if config_path.exists():
         with open(config_path, encoding="utf-8") as f:
             data = yaml.safe_load(f) or {}
-        _config = Config(**data)
+        _config = _resolve_paths(Config(**data))
     else:
-        _config = Config()
+        _config = _resolve_paths(Config())
     return _config
 
 

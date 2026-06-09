@@ -48,8 +48,12 @@ class SparseRetriever:
 
         index_path = Path(self._index_dir)
         if index_path.exists() and any(index_path.iterdir()):
-            self._retriever = bm25s.BM25.load(self._index_dir, load_corpus=False)
-            logger.info("BM25 index loaded: %d docs", len(self._corpus))
+            try:
+                self._retriever = bm25s.BM25.load(self._index_dir, load_corpus=False)
+                logger.info("BM25 index loaded: %d docs", len(self._corpus))
+            except Exception as e:
+                logger.warning("BM25 index load failed (%s) — rebuilding from corpus", e)
+                self._rebuild()
 
     def add(self, chunks: list[Chunk]) -> None:
         with open(self._corpus_file, "a", encoding="utf-8") as f:
