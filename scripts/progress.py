@@ -31,16 +31,19 @@ def main() -> None:
     print(f"  STUDY PROGRESS  —  {len(sessions)} session(s)")
     print(f"{'='*60}\n")
 
-    # Overall stats
+    # Overall stats (only count questions that were actually scored)
     all_questions = [q for s in sessions for q in s.get("questions", [])]
-    if all_questions:
-        overall_avg = sum(q["score"] for q in all_questions) / len(all_questions)
-        print(f"Total questions answered : {len(all_questions)}")
+    scored = [q for q in all_questions if isinstance(q.get("score"), int)]
+    if scored:
+        overall_avg = sum(q["score"] for q in scored) / len(scored)
+        unscored = len(all_questions) - len(scored)
+        suffix = f"  ({unscored} unscored)" if unscored else ""
+        print(f"Total questions answered : {len(all_questions)}{suffix}")
         print(f"Overall average score    : {overall_avg:.2f}/5  {_stars(overall_avg)}\n")
 
     # Per-topic breakdown
     topic_scores: dict[str, list[float]] = defaultdict(list)
-    for q in all_questions:
+    for q in scored:
         topic = q.get("topic") or "Unknown"
         topic_scores[topic].append(q["score"])
 
@@ -59,8 +62,11 @@ def main() -> None:
     for s in sessions[-10:]:
         ts = s["timestamp"][:19].replace("T", " ")
         n = s.get("n_questions", len(s.get("questions", [])))
-        avg = s.get("avg_score", 0)
-        print(f"{ts:<30} {n:>9} {avg:>9.2f}  {_stars(avg)}")
+        avg = s.get("avg_score")
+        if isinstance(avg, (int, float)):
+            print(f"{ts:<30} {n:>9} {avg:>9.2f}  {_stars(avg)}")
+        else:
+            print(f"{ts:<30} {n:>9} {'n/a':>9}")
     print()
 
 

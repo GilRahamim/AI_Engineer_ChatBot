@@ -66,6 +66,23 @@ class GenerationConfig(BaseModel):
     reasoning_effort: str = "medium"
 
 
+class InterviewConfig(BaseModel):
+    selection: str = "adaptive"  # "adaptive" | "random"
+    # Spaced-repetition interval in days, indexed by score-1 (score 1..5).
+    # A question is "due" once this many days have passed since it was last seen.
+    interval_days: list[int] = [1, 1, 3, 7, 21]
+    unseen_weight: float = 8.0  # selection weight for never-seen questions
+    recency_half_life_days: float = 7.0  # how fast a stale question's weight grows
+    default_n: int = 5
+    review_threshold: int = 3  # scores <= this are eligible for flashcard review
+    history_turns: int = 3  # conversational turns kept as chat context
+
+
+class ChatConfig(BaseModel):
+    history_turns: int = 3  # prior (user, assistant) turns passed to the LLM
+    condense_followups: bool = True  # rewrite follow-ups into standalone queries
+
+
 class LoggingConfig(BaseModel):
     level: str = "INFO"
 
@@ -76,6 +93,8 @@ class Config(BaseModel):
     embedding: EmbeddingConfig = EmbeddingConfig()
     retrieval: RetrievalConfig = RetrievalConfig()
     generation: GenerationConfig = GenerationConfig()
+    interview: InterviewConfig = InterviewConfig()
+    chat: ChatConfig = ChatConfig()
     logging: LoggingConfig = LoggingConfig()
 
 

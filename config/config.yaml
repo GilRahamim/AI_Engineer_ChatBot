@@ -42,5 +42,17 @@ generation:
   max_tokens: 2048
   reasoning_effort: "medium"
 
+interview:
+  selection: "adaptive"        # "adaptive" (weak/overdue topics first) | "random"
+  interval_days: [1, 1, 3, 7, 21]   # spaced-repetition interval per score (1..5)
+  unseen_weight: 8.0
+  recency_half_life_days: 7.0
+  default_n: 5
+  review_threshold: 3          # scores <= this feed the flashcard review deck
+
+chat:
+  history_turns: 3             # prior turns kept as conversational context
+  condense_followups: true     # rewrite follow-ups into standalone retrieval queries
+
 logging:
   level: "INFO"

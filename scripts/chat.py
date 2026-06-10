@@ -8,8 +8,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.generation.pipeline import answer
+from src.generation.pipeline import answer_stream, format_sources
 from src.retrieval.pipeline import retrieve
+from src.retrieval.transforms import condense_query
 from src.utils.config import load_config
 from src.utils.logging import setup_logging
 
@@ -28,7 +29,8 @@ def main() -> None:
     args = parser.parse_args()
 
     setup_logging()
-    load_config()
+    cfg = load_config()
+    chat_cfg = cfg.chat
 
     header = f"Task: {args.task}" + (f"  |  Topic: {args.topic}" if args.topic else "")
     print("=" * 60)
@@ -37,6 +39,8 @@ def main() -> None:
     print("  Type 'quit' or Ctrl+C to exit")
     print("=" * 60)
     print()
+
+    history: list[dict] = []  # rolling [{"role", "content"}, ...]
 
     while True:
         try:
@@ -49,9 +53,14 @@ def main() -> None:
             print("Goodbye.")
             break
 
-        effective_query = f"{args.topic}: {query}" if args.topic else query
+        # Rewrite follow-ups ("explain that more") into standalone retrieval queries.
+        retrieval_query = query
+        if chat_cfg.condense_followups and history:
+            retrieval_query = condense_query(query, history)
+        if args.topic:
+            retrieval_query = f"{args.topic}: {retrieval_query}"
 
-        results = retrieve(effective_query)
+        results = retrieve(retrieval_query)
         if not results:
             print("Assistant: No relevant documents found in the index.\n")
             continue
@@ -59,8 +68,22 @@ def main() -> None:
         sources = ", ".join({Path(r.source).name for r in results})
         print(f"\n[{len(results)} chunks retrieved from: {sources}]\n")
 
-        response = answer(effective_query, results, task=args.task)
-        print(f"Assistant: {response}\n")
+        print("Assistant: ", end="", flush=True)
+        full = ""
+        for delta in answer_stream(retrieval_query, results, task=args.task, history=history):
+            print(delta, end="", flush=True)
+            full += delta
+        footer = format_sources(results, full)
+        if footer:
+            print(footer, end="")
+        print("\n")
+
+        # Store the clean answer (without footer) so condensing/context stay tidy.
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": full})
+        max_msgs = chat_cfg.history_turns * 2
+        if len(history) > max_msgs:
+            history[:] = history[-max_msgs:]
 
 
 if __name__ == "__main__":
