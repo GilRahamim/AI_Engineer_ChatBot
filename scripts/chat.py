@@ -13,6 +13,14 @@ from src.retrieval.pipeline import retrieve
 from src.retrieval.transforms import condense_query
 from src.utils.config import load_config
 from src.utils.logging import setup_logging
+from src.utils.mathtext import latex_to_unicode
+
+# Windows consoles default to cp1252, which raises on Unicode math (√, Σ, …).
+# Force UTF-8 so rendered formulas print instead of crashing.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except (AttributeError, ValueError):
+    pass
 
 TASK_CHOICES = ["default", "concept", "summary", "interview"]
 
@@ -68,12 +76,14 @@ def main() -> None:
         sources = ", ".join({Path(r.source).name for r in results})
         print(f"\n[{len(results)} chunks retrieved from: {sources}]\n")
 
+        # Buffer the full answer before rendering: LaTeX formulas span multiple
+        # stream tokens, so math can only be converted once the text is complete.
         print("Assistant: ", end="", flush=True)
         full = ""
         for delta in answer_stream(retrieval_query, results, task=args.task, history=history):
-            print(delta, end="", flush=True)
             full += delta
-        footer = format_sources(results, full)
+        print(latex_to_unicode(full), end="")
+        footer = format_sources(results, full)  # citations parse from raw [n]
         if footer:
             print(footer, end="")
         print("\n")

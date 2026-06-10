@@ -30,7 +30,7 @@ retrieval:
   reranker:
     enabled: true
     model: "BAAI/bge-reranker-v2-m3"
-    top_n: 5
+    top_n: 8
   hyde:
     enabled: true
 

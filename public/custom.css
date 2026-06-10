@@ -1,0 +1,5 @@
+/* Increase MathJax formula font size */
+.MathJax,
+mjx-container {
+    font-size: 130% !important;
+}
