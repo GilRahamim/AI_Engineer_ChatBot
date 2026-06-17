@@ -24,6 +24,7 @@ TASK_DESCRIPTIONS = {
     "concept": "Concept Explanation",
     "interview": "Interview Preparation",
     "summary": "Topic Summary",
+    "glossary": "Concept Glossary",
 }
 
 
