@@ -1294,6 +1294,1466 @@
       "hash": "d1ad36bfc79ba022d24d78c701f349c5aa2bb62b2e92cd848293334f5fd81041",
       "ingested_at": "2026-06-09T09:28:23.146147+00:00",
       "chunk_count": 62
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\matplotlib\\03-Matplotlib Exercises - Solutions.ipynb": {
+      "hash": "2a8375fc8aa69718ee846f923a54d3d5e1c49a2ff29f0e4725686d3f27486965",
+      "ingested_at": "2026-06-17T13:38:45.694419+00:00",
+      "chunk_count": 7
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\matplotlib\\03-Matplotlib Exercises.ipynb": {
+      "hash": "76d37bcd0ac3aae48d880c612d66da8619af38571f173cc275e2a5131e7a1724",
+      "ingested_at": "2026-06-17T13:38:48.962822+00:00",
+      "chunk_count": 4
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\matplotlib\\03-Matplotlib.ipynb": {
+      "hash": "3e4460c8e422390daf94faf4a477e20cc3bb3c0288122330e6536faae7d6514a",
+      "ingested_at": "2026-06-17T13:38:52.675134+00:00",
+      "chunk_count": 22
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\numpy\\01-Numpy Exercises - Solutions.ipynb": {
+      "hash": "54744fc57dc7f47fb099e2a7541054392208755eede443c2e04f9324142437c7",
+      "ingested_at": "2026-06-17T13:38:56.245123+00:00",
+      "chunk_count": 8
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\numpy\\01-Numpy Exercises.ipynb": {
+      "hash": "3a2a77b7a54efdb7a5c66d41c237d403c71f729e0e48296916833542cff839d0",
+      "ingested_at": "2026-06-17T13:38:59.500198+00:00",
+      "chunk_count": 8
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\numpy\\01-NumPy.ipynb": {
+      "hash": "88cc7e370b9acc2ad0d88c2357b1ef6a2c6178f3b809dcbeaf31050dfd1d6beb",
+      "ingested_at": "2026-06-17T13:39:03.201152+00:00",
+      "chunk_count": 27
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\pandas\\02-Pandas.ipynb": {
+      "hash": "a2f8ffeb9d3efe6e800636c65a3c24bba8487416eea66a5b3e2ed64f96465904",
+      "ingested_at": "2026-06-17T13:39:07.083045+00:00",
+      "chunk_count": 73
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\pandas\\021-SF Salaries Exercise - Solutions.ipynb": {
+      "hash": "54e3d62110dc5802f7c99ff3aa248199424a71251b545a69a0a294b163b84fb9",
+      "ingested_at": "2026-06-17T13:39:10.682800+00:00",
+      "chunk_count": 16
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\pandas\\021-SF Salaries Exercise.ipynb": {
+      "hash": "e9e9c80ee4b02e8d6084e39b3718222ad80132a904565579163235f3d08353c8",
+      "ingested_at": "2026-06-17T13:39:14.145869+00:00",
+      "chunk_count": 8
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\pandas\\022-Ecommerce Purchases Exercise - Solutions.ipynb": {
+      "hash": "a985b925749cb295b65dcd5e84ff7ef6f02aa74ce2d4b8924fabacd1c8db3595",
+      "ingested_at": "2026-06-17T13:39:17.489855+00:00",
+      "chunk_count": 13
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\pandas\\022-Ecommerce Purchases Exercise .ipynb": {
+      "hash": "189c7ecd9e52f419c2e712a4d66a4bbbde8b23218a8ebea602b34a32b96e77c0",
+      "ingested_at": "2026-06-17T13:39:21.026233+00:00",
+      "chunk_count": 10
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\seaborn\\04-Seaborn Exercises - Solutions.ipynb": {
+      "hash": "7bdcc6ccbabbaad330eeaae3a30235d0d8f97b4b549c7276739b0a2ab6cf59d2",
+      "ingested_at": "2026-06-17T13:39:24.545502+00:00",
+      "chunk_count": 9
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\seaborn\\04-Seaborn Exercises.ipynb": {
+      "hash": "eef386d21dd0e4b3723cce770d6a2679077278780bb4389ea339d66d612d9fd9",
+      "ingested_at": "2026-06-17T13:39:27.832450+00:00",
+      "chunk_count": 8
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 6-7\\seaborn\\04-Seaborn.ipynb": {
+      "hash": "2d9564139f9ca9037c56c7e88dfbc798ca3cb61e856615b630569f33adbb5543",
+      "ingested_at": "2026-06-17T13:39:31.572406+00:00",
+      "chunk_count": 26
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\knn\\01-K Nearest Neighbors with Python.ipynb": {
+      "hash": "7aae021cadae080319210f30a82481d27a3e8e4f65a0735de2bc2847b2af18f1",
+      "ingested_at": "2026-06-17T13:39:35.490346+00:00",
+      "chunk_count": 10
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\knn\\02-K Nearest Neighbors Project.ipynb": {
+      "hash": "b636c43b87c6146cb815ab6e29c687ee9ae970237326f1b82d4bbb95e1c338f5",
+      "ingested_at": "2026-06-17T13:39:39.270962+00:00",
+      "chunk_count": 8
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\knn\\03-K Nearest Neighbors Project - Solutions.ipynb": {
+      "hash": "8a1c31e533e0b7e6ddbc4cbc7661f5a770883b5daea6360456fdf20f82c56768",
+      "ingested_at": "2026-06-17T13:39:42.788371+00:00",
+      "chunk_count": 11
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\linear regression\\01-Linear Regression with Python.ipynb": {
+      "hash": "2db44d562e23788eafb1a363093a47789e57992b478e637ef210b260e1f76c00",
+      "ingested_at": "2026-06-17T13:39:46.459866+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\linear regression\\02-Linear Regression Project.ipynb": {
+      "hash": "8d7df7d2271a6ccbec4287f233a9f5f336f2944315ee9eeb8acc5eaa37a971e3",
+      "ingested_at": "2026-06-17T13:39:50.028822+00:00",
+      "chunk_count": 16
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\linear regression\\03-Linear Regression Project - Solutions.ipynb": {
+      "hash": "d45926c6184b9b9f82a23022e23c7053eebe7e2de59b4d961f06277806e158eb",
+      "ingested_at": "2026-06-17T13:39:53.597482+00:00",
+      "chunk_count": 19
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\logistic regression\\01-Logistic Regression with Python.ipynb": {
+      "hash": "589f128b7c1bacdd8ab8cbba70ea30e0a9734ed355ef2d692ce9cc0de1b2962c",
+      "ingested_at": "2026-06-17T13:39:57.203593+00:00",
+      "chunk_count": 15
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\logistic regression\\02-Logistic Regression Project.ipynb": {
+      "hash": "1c5844f8361c6e4e526480b24c337b74ffbf6726628d5172753e31d23e8f8c64",
+      "ingested_at": "2026-06-17T13:40:00.628677+00:00",
+      "chunk_count": 12
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\logistic regression\\03-Logistic Regression Project - Solutions.ipynb": {
+      "hash": "5c6a644084fe2f71fc21d87b5023b412bcede51cc4e08304f7561144254319d1",
+      "ingested_at": "2026-06-17T13:40:04.158483+00:00",
+      "chunk_count": 13
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\svm\\01-Support Vector Machines with Python.ipynb": {
+      "hash": "f685265bb1bb0e9d1945b1f9bbff4d8a3de63d594a6db95fbdee86a91004ca91",
+      "ingested_at": "2026-06-17T13:40:07.973780+00:00",
+      "chunk_count": 47
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\svm\\02-Support Vector Machines Project.ipynb": {
+      "hash": "1c175df1e3402d3d4c01667ec4a0ec7790092a9d6dee53d5ef9c9788a7be0f69",
+      "ingested_at": "2026-06-17T13:40:11.378627+00:00",
+      "chunk_count": 22
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\svm\\03-Support Vector Machines Project - Solutions.ipynb": {
+      "hash": "fbef3749f6aadf620ea7b519b2e5693a947e158ce0d4507a94ab2a30986e66cf",
+      "ingested_at": "2026-06-17T13:40:15.001372+00:00",
+      "chunk_count": 24
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\trees\\01-Decision Trees and Random Forests in Python.ipynb": {
+      "hash": "3360227bffc591126a764997934172eb608cfb1cdb77cf59ce57f2c643b444ae",
+      "ingested_at": "2026-06-17T13:40:18.493215+00:00",
+      "chunk_count": 7
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\trees\\02-Decision Trees and Random Forest Project.ipynb": {
+      "hash": "14acd125cc64b56656d3c4ce3c2a32b061c83f2beef0771eb1480d87a8e7f58d",
+      "ingested_at": "2026-06-17T13:40:22.165421+00:00",
+      "chunk_count": 21
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Lesson 8-10\\trees\\03-Decision Trees and Random Forest Project - Solutions.ipynb": {
+      "hash": "ab63f47add6a737168871c30b07c1414547c6f293448fe35e0540aa965d8e1e6",
+      "ingested_at": "2026-06-17T13:40:25.805110+00:00",
+      "chunk_count": 27
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Presentations\\01-Machine-Learning-Overview.pdf": {
+      "hash": "d4a9ad87cafabc054f30fa1c9f3e7ffc70b494c7309bd52deff0b5d54c29a388",
+      "ingested_at": "2026-06-17T13:40:33.561577+00:00",
+      "chunk_count": 32
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Presentations\\02-Intro to Linear Regression.pdf": {
+      "hash": "e17eb7fca4bc7319cbed4f82edd424bf26d740492392c0390d6227974f07aef5",
+      "ingested_at": "2026-06-17T13:40:37.578505+00:00",
+      "chunk_count": 4
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Presentations\\03-Bias Variance Trade-Off.pdf": {
+      "hash": "60387667ed9a8786efab1952cf750dd4f74bd0c3ba48cf6437e12341d29ba4c1",
+      "ingested_at": "2026-06-17T13:40:41.634011+00:00",
+      "chunk_count": 5
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Presentations\\04-Intro to Logistic Regression.pdf": {
+      "hash": "59fd01bd200f119fdd45ff1b06138cebc5985d4239d7600fb7e5cb2cb68313dc",
+      "ingested_at": "2026-06-17T13:40:46.157694+00:00",
+      "chunk_count": 10
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Presentations\\05-Intro to Tree Methods.pdf": {
+      "hash": "9a68df33a1bc9328ecf68321fe28568b924464ff054cf4974647d51ce3065769",
+      "ingested_at": "2026-06-17T13:40:50.849956+00:00",
+      "chunk_count": 11
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Presentations\\06-Intro to Support Vector Machines.pdf": {
+      "hash": "2b519c844d89897e455a0295532a4c4ee48140a2481df2e8846d8e97890a7139",
+      "ingested_at": "2026-06-17T13:40:54.866527+00:00",
+      "chunk_count": 3
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Presentations\\07-Intro to K Nearest Neighbors.pdf": {
+      "hash": "5a6c81799bebc62745c6c2dd81b1f2aed49264d516e681d6dbee4d9c525b64da",
+      "ingested_at": "2026-06-17T13:40:58.879777+00:00",
+      "chunk_count": 6
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Intro to Data Science\\Presentations\\08-Model Optimization & Validation.pdf": {
+      "hash": "9e3170f24f1571897be6969497961895bb009447c47bcc0c690fdd1f538d9c47",
+      "ingested_at": "2026-06-17T13:41:03.251678+00:00",
+      "chunk_count": 4
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\1.  LLM Methodology & Ecosystem\\1.  LLM Methodology & Ecosystem.pdf": {
+      "hash": "866166c65a224ede2a80d45192a922062ed085014a4180df00cd823a69590a10",
+      "ingested_at": "2026-06-17T13:41:11.658472+00:00",
+      "chunk_count": 83
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\1.  LLM Methodology & Ecosystem\\Code\\llm_methodology_ecosystem.ipynb": {
+      "hash": "4a62cc6a11dd82cd542418c25cd9b45e0a50af6e291cff80d1723839e52117c3",
+      "ingested_at": "2026-06-17T13:41:15.391634+00:00",
+      "chunk_count": 79
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\7. KG RAG\\7. KG RAG.pdf": {
+      "hash": "f0d4b0cfe771795e87daf33ab07d528de070901ac16111b3033d2aec349a2388",
+      "ingested_at": "2026-06-17T13:41:20.681749+00:00",
+      "chunk_count": 30
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\7. KG RAG\\Code\\knowledge_graph_rag_react_demo.ipynb": {
+      "hash": "fd6e7bc2cfc571430c51513f321435234c8b41a361cb1b2d5f3c50fe180ae0f0",
+      "ingested_at": "2026-06-17T13:41:24.763397+00:00",
+      "chunk_count": 117
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\8. LLM Model Fine-Tuning\\8. LLM Model Fine-Tuning.pdf": {
+      "hash": "ed34a8800f8258e36a1a05636853d92cf613bbb5d261a5e79fa7b18a7439337e",
+      "ingested_at": "2026-06-17T13:41:31.071210+00:00",
+      "chunk_count": 52
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\8. LLM Model Fine-Tuning\\Code\\fine_tune_embedding.ipynb": {
+      "hash": "697b060df4f30e738254bf0468cdc35813a4ca87b6feaab5089b1df6a6185945",
+      "ingested_at": "2026-06-17T13:41:35.264259+00:00",
+      "chunk_count": 104
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\8. LLM Model Fine-Tuning\\Code\\finetune_TinyLama_llm.ipynb": {
+      "hash": "fa16c28eecdbc473e3cddae6b87a0f6ede7721d86b77b021a08aa63af89ba5b6",
+      "ingested_at": "2026-06-17T13:41:38.797673+00:00",
+      "chunk_count": 70
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\8. LLM Model Fine-Tuning\\Code\\full_finetune_dolly_demo.ipynb": {
+      "hash": "7658d5af8576fd1c59d47a596cfa6fbb18efd96b09ac81ad86d1ac1fad2d1685",
+      "ingested_at": "2026-06-17T13:41:42.344880+00:00",
+      "chunk_count": 18
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\9. Yolo\\11. Yolo.pdf": {
+      "hash": "3c4c513ba58b77dbc41ba7e9713b2ae3010cbd42a2a3978f65faf034a2af18ed",
+      "ingested_at": "2026-06-17T13:41:47.250008+00:00",
+      "chunk_count": 21
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\AIIndustryLectureAI-Eng.pdf": {
+      "hash": "ce08d3f6224d62f5cf99f50bb605dbdd3d1cba6b63a3326c7865a54764aeabac",
+      "ingested_at": "2026-06-17T13:41:53.882593+00:00",
+      "chunk_count": 35
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\Intro\\1. Intro.pdf": {
+      "hash": "99a71e2819aeff28419eb0c3d3741323f45b369d5fd6a6e3f9c75c346f1829f4",
+      "ingested_at": "2026-06-17T13:42:00.231940+00:00",
+      "chunk_count": 36
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\Intro\\Code\\WebAPItoLLM.ipynb": {
+      "hash": "27fab7bd5cc5c927750c255eb66d4c360ac2432f511b167c695279576c267990",
+      "ingested_at": "2026-06-17T13:42:03.960202+00:00",
+      "chunk_count": 67
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\Lecture 2\\2. LLM as an instrument.pdf": {
+      "hash": "6088df9df0f00455444a0a36a6907fea59368ec928316410c5040380a3eb6cc9",
+      "ingested_at": "2026-06-17T13:42:11.506553+00:00",
+      "chunk_count": 91
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\Lecture 2\\llm_as_an_instument.ipynb": {
+      "hash": "065ef5c66ef2d2bbc33c9a3e92a014dcf58ad820d39958c634e9f9542200b99e",
+      "ingested_at": "2026-06-17T13:42:15.607313+00:00",
+      "chunk_count": 191
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\Lecture 3\\3. Embedding Strategies, Retrieval Pipelines, & Vector Stores - with HNSW.pdf": {
+      "hash": "28e9b3b74a5517bbfed8a9b4c35be4ac08a26a76d77c548ffe1efec874e886d0",
+      "ingested_at": "2026-06-17T13:42:22.384464+00:00",
+      "chunk_count": 81
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\Lecture 3\\ANN-Tutorial.ipynb": {
+      "hash": "076209c1fc8e2067f6c2f7c7ffa8f3e4e72ef5db22b3dfbbb88fa9a576b94712",
+      "ingested_at": "2026-06-17T13:42:26.155363+00:00",
+      "chunk_count": 14
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\Lecture 3\\embedding_strategies.ipynb": {
+      "hash": "69403cbfc18d5d2ed5335f314e7f6d6fab0b8942ecbadefc7bd3554a30d16b99",
+      "ingested_at": "2026-06-17T13:42:29.734329+00:00",
+      "chunk_count": 82
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\Lecture 3\\glove_pca.ipynb": {
+      "hash": "7f0fb29e46f8af192b2a41c457986bd8a28c96475d5a4086ff0d7b8d1d485cc9",
+      "ingested_at": "2026-06-17T13:42:33.438501+00:00",
+      "chunk_count": 35
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\Lecture 3\\RAG_Pipeline_Demo.ipynb": {
+      "hash": "7712a055d7de532932f3a65b111d531abd4bad8a5af6a72c991bebfae29890cf",
+      "ingested_at": "2026-06-17T13:42:37.204020+00:00",
+      "chunk_count": 41
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 4\\4. RAG Architecture & Variants.pdf": {
+      "hash": "d20a167fd7df2a456399b6fa3e6fef7bbcbe22b81fedf07fa66728b8efd59a16",
+      "ingested_at": "2026-06-17T13:42:44.044351+00:00",
+      "chunk_count": 93
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 4\\RAG Exercise\\RAG exercise.pdf": {
+      "hash": "4b43421a22c2b9b5599e36d2ff14d0e26ee102b17e4a45e2bea66aa53cc37f71",
+      "ingested_at": "2026-06-17T13:42:47.595452+00:00",
+      "chunk_count": 6
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 4\\rag_architecture_notebook.ipynb": {
+      "hash": "82d5eb477f0bd9a88cd5f933e0a5bc8ae0a25a42490874bd39d2d544ecb13989",
+      "ingested_at": "2026-06-17T13:42:51.359945+00:00",
+      "chunk_count": 83
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\1_query_rewrite.ipynb": {
+      "hash": "8d49b13c7c146dd533b1e779a9048038290314c196e2bde66e28ca9bdd82f302",
+      "ingested_at": "2026-06-17T13:42:55.044001+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\2_conversational_rag.ipynb": {
+      "hash": "d960f33c9431860042c64e2643d26039dae3706dfdb27d4009d2d5668c21ea8a",
+      "ingested_at": "2026-06-17T13:42:58.773664+00:00",
+      "chunk_count": 20
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\3_react_rag.ipynb": {
+      "hash": "d8e317e18a3fbc08e768b90ceb0599d626482f4a66548e998ce00f2c0ec049a8",
+      "ingested_at": "2026-06-17T13:43:02.194399+00:00",
+      "chunk_count": 16
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\4_multihop_retrieval.ipynb": {
+      "hash": "4a52562e3c4c378df336a13d9d7982e9e7675e4cb2326ba1f33384fdb61de64e",
+      "ingested_at": "2026-06-17T13:43:05.775129+00:00",
+      "chunk_count": 24
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\5_multivector_retrieval.ipynb": {
+      "hash": "4ed9797005cd5537f344b20379daffa22b45817648406588a7ccde494fc92d59",
+      "ingested_at": "2026-06-17T13:43:09.345521+00:00",
+      "chunk_count": 20
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 4\\variants\\6_streaming_rag.ipynb": {
+      "hash": "bdca816cc4b8f83bbdc21d6ee9bd7d51930df4074e0ff00db4c74017e57d4232",
+      "ingested_at": "2026-06-17T13:43:12.942794+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\5. AI Agents & Crews.pdf": {
+      "hash": "44f0e628ede5a78d6f54fd0240e2115ce17282a335ff6de1af998baa48055616",
+      "ingested_at": "2026-06-17T13:43:22.109357+00:00",
+      "chunk_count": 130
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Agents_audio_demo.ipynb": {
+      "hash": "39a9c2b2ddbdff53732560bfc82ab6a91eb14888a92d9f91542233d685ebd10d",
+      "ingested_at": "2026-06-17T13:43:25.930646+00:00",
+      "chunk_count": 81
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Agents_image_demo.ipynb": {
+      "hash": "5730cf32ca49aec54c6aabae418c6d68c2ec57ff40f4e20119b1ea66fcc52705",
+      "ingested_at": "2026-06-17T13:43:29.945868+00:00",
+      "chunk_count": 189
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Agents_youtube_video_demo.ipynb": {
+      "hash": "b95ada7ecb8bca6c5c6fe0349018e6d8ea7550030b8136224f525e21f365c5ed",
+      "ingested_at": "2026-06-17T13:43:34.135830+00:00",
+      "chunk_count": 225
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Agents_youtube_video_frame_analysis.ipynb": {
+      "hash": "cab453904ad432b5860a700f8dbc1ee88eafe6a051d9fcf9b23d4a3c68a10f4e",
+      "ingested_at": "2026-06-17T13:43:38.113574+00:00",
+      "chunk_count": 199
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\AI_Agents.ipynb": {
+      "hash": "817ea4732fe4db962245efea49176eb289cde5e56fbe82f03735c11b4a2d72dc",
+      "ingested_at": "2026-06-17T13:43:42.461276+00:00",
+      "chunk_count": 294
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\crewai_and_rag.ipynb": {
+      "hash": "a948db3ff40f637dbbcccbe3941089327c52c75a74a70368179e7c284840ef47",
+      "ingested_at": "2026-06-17T13:43:46.170782+00:00",
+      "chunk_count": 50
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\CrewAI_cost_tracking_demo.ipynb": {
+      "hash": "6f0ef5626a492939c65bfe8b7ba3ed5adcd57f616b0bfc9bcad220c2453802dd",
+      "ingested_at": "2026-06-17T13:43:49.979320+00:00",
+      "chunk_count": 67
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\CrewAI_Flow.ipynb": {
+      "hash": "c480e972805d7a8550ab5ebf8a0f6520707bbad9aeda7e46f18acf4fe9ba1e4b",
+      "ingested_at": "2026-06-17T13:43:54.599274+00:00",
+      "chunk_count": 425
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\CrewAI_memory_demo.ipynb": {
+      "hash": "31b952defbe6afe20f4357ddd00974ceafd80366501112744ae2dfe143848881",
+      "ingested_at": "2026-06-17T13:43:58.533916+00:00",
+      "chunk_count": 89
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Trip_agent\\trip_agent_example_notebook.ipynb": {
+      "hash": "4244d8cc9548ba80b5e97758ef7d0aa05525c36fc44129667708e80177b089d2",
+      "ingested_at": "2026-06-17T13:44:02.619346+00:00",
+      "chunk_count": 179
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\Trip_agent\\trip_agent_example_notebook_langchain.ipynb": {
+      "hash": "df51eb506e0c26498c59f4266eba728625c42a8e08e54a0cf7d9261410c98c1e",
+      "ingested_at": "2026-06-17T13:44:06.271605+00:00",
+      "chunk_count": 33
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\trip_agent_example_notebook.ipynb": {
+      "hash": "7ea0a197dc23e7258ebb4d9f0cce2d5844e2a84010e2e8e2906a9b5522de8d80",
+      "ingested_at": "2026-06-17T13:44:10.250081+00:00",
+      "chunk_count": 141
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Code\\trip_agent_example_notebook_langchain.ipynb": {
+      "hash": "242997dd5c28b44926044e049a1fd46207727ddaa7d5fd85ecd6f28150c0de15",
+      "ingested_at": "2026-06-17T13:44:14.165139+00:00",
+      "chunk_count": 32
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 5\\Exercise\\CrewAI Exercise.pdf": {
+      "hash": "07bde8a47ad935d8cc30905c7b924c2ec6eee5bd5dad1d63a38e64a402a26eb6",
+      "ingested_at": "2026-06-17T13:44:18.034114+00:00",
+      "chunk_count": 4
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 6\\6. MCP Servers.pdf": {
+      "hash": "ed3d4aa33368e8e6dc91f40802b676127bcaa23ee2d964855069c615bee18afb",
+      "ingested_at": "2026-06-17T13:44:24.349540+00:00",
+      "chunk_count": 38
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 6\\9. Anthropic Skills.pdf": {
+      "hash": "aa3d36517fc65ea81a9ab4016db71a402f1b30145290c6df7f78f0935903cf35",
+      "ingested_at": "2026-06-17T13:44:29.098693+00:00",
+      "chunk_count": 16
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 6\\MCP_Demo.ipynb": {
+      "hash": "8ac5208f9ef46b30596b51a6e58938871cd10a2bd3c3afe7590679074db81b4e",
+      "ingested_at": "2026-06-17T13:44:32.935137+00:00",
+      "chunk_count": 27
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\RAG, Agents, MCP\\lecture 8\\Claude Agent SDK.pdf": {
+      "hash": "6a77b15bd55b399b60c5106f2a8a2035d93310c9ec5e464252be6c78e9a8bfe7",
+      "ingested_at": "2026-06-17T13:44:38.059274+00:00",
+      "chunk_count": 24
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of chicago_crime_dbscan_hotspots_professional_colab.ipynb": {
+      "hash": "b3297f76605a4235880759b15cba44a4a5b861bfa5238ed23187a6ed9356d550",
+      "ingested_at": "2026-06-17T13:44:42.117796+00:00",
+      "chunk_count": 41
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of Clustering_Movies_colab_ready.ipynb": {
+      "hash": "d4d6804f235f005a37195325f654ba76a3e27ff5f1a63542b66d86ea19c8ea38",
+      "ingested_at": "2026-06-17T13:44:46.300410+00:00",
+      "chunk_count": 117
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of ComputerQuestionnaire_ColabReady.ipynb": {
+      "hash": "fa31fbd1bfc9fb10ab37c10c46b0bad694c6dff7d901d3fd7371dfc783dc365d",
+      "ingested_at": "2026-06-17T13:44:49.795520+00:00",
+      "chunk_count": 18
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of curse_of_dimensionality_colab_v2.ipynb": {
+      "hash": "f9cc6cbd914cc5da51b755910866804b4ecc40cf388bcb40cf2e12c6d6f444ce",
+      "ingested_at": "2026-06-17T13:44:53.481838+00:00",
+      "chunk_count": 21
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of density_based_clustering_dbscan_meanshift_optics_colab.ipynb": {
+      "hash": "d62a17910abce17cea9e876e0721e76ccc78d9d8dd80a572531b099cf9eabd37",
+      "ingested_at": "2026-06-17T13:44:57.147725+00:00",
+      "chunk_count": 21
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of Enron_LabelPropagation_ColabReady_v2.ipynb": {
+      "hash": "cbea0e198b3371bac69acf416f4c6c1207ced6e6dda5ad581bf3d0605abc607c",
+      "ingested_at": "2026-06-17T13:45:00.825900+00:00",
+      "chunk_count": 25
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of feature_space.ipynb": {
+      "hash": "cae5911d193f9bf0ecf1dd77f70fd09b2089cfc5a371294cd325f9ca57427376",
+      "ingested_at": "2026-06-17T13:45:04.394259+00:00",
+      "chunk_count": 29
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of kmeans_clustering_colab.ipynb": {
+      "hash": "917c30498d94952c5370376c7ba3e018e570b971b04dcf259994025306b61a1a",
+      "ingested_at": "2026-06-17T13:45:08.071952+00:00",
+      "chunk_count": 25
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of kmeans_step_by_step_widgets.ipynb": {
+      "hash": "4ed63d4594461808b71c16ff7e19b99f9eae0ee9b460f7b7d4694139f8f5f854",
+      "ingested_at": "2026-06-17T13:45:11.690795+00:00",
+      "chunk_count": 13
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of LastFM_Asia_ColabReady.ipynb": {
+      "hash": "cefc09e42c2b1cd65e71125e456d8fb268658e49ba42101a7acdd46524182f05",
+      "ingested_at": "2026-06-17T13:45:15.474201+00:00",
+      "chunk_count": 9
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of model_based_clustering_em_1d_2d_widgets_colab.ipynb": {
+      "hash": "a7a7ed12a4ea206b42baf0ce1457c9808b536548c278309d109b27477e51a937",
+      "ingested_at": "2026-06-17T13:45:19.465792+00:00",
+      "chunk_count": 32
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of nyc_pedestrian_safety_dbscan_hotspots_professional_colab_clean.ipynb": {
+      "hash": "d66173b0ac343e8a6f8144d5f94d0bd10df7c29b9015169aad6cad520aba3e0b",
+      "ingested_at": "2026-06-17T13:45:23.138998+00:00",
+      "chunk_count": 46
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of online_retail_rfm_kmeans_professional_colab.ipynb": {
+      "hash": "5e48e8c6742f3eb0f4f76fd603e9b8d3177de8746d5fd9179c13053263af8fa1",
+      "ingested_at": "2026-06-17T13:45:26.926852+00:00",
+      "chunk_count": 43
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of paradigm_shift_traditional_vs_ml.ipynb": {
+      "hash": "93d9e40fa4c06c95b4ab6060c2a230a72436dc303707082c485402fcb9197d8e",
+      "ingested_at": "2026-06-17T13:45:30.754824+00:00",
+      "chunk_count": 34
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised learning notebook\\Copy of sklearn_clustering_comparison_colab.ipynb": {
+      "hash": "a344ee28def9b8877985e0d937aa3f6679b0bec7390a13db547836e08fbd8e97",
+      "ingested_at": "2026-06-17T13:45:34.620805+00:00",
+      "chunk_count": 51
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Unsupervised Learning Parts 1 and 2.pdf": {
+      "hash": "ae7fddee17525cd96dd01fcafd26f4e846c27e166bf6a3c66a3724d1c0aea679",
+      "ingested_at": "2026-06-17T13:46:13.106411+00:00",
+      "chunk_count": 18
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 1 - Unsupervised Learning\\Week 1 summary Unsupervised Learning Moshik.pdf": {
+      "hash": "96b9a51ca21fae70e679d5b42d92962b150b75f4f870419a23ce53e3295d43e6",
+      "ingested_at": "2026-06-17T13:46:19.636974+00:00",
+      "chunk_count": 59
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\3. NLP.pdf": {
+      "hash": "86fdd66fe651c3f4769b0e9c15a23dec1193a5ac95bb5ce2777fdd96636ce86a",
+      "ingested_at": "2026-06-17T13:46:37.528575+00:00",
+      "chunk_count": 89
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\Assignment - NLP Retrieval.pdf": {
+      "hash": "0ac97457a884805cf6190bd0bb2b2b2189304028f6e2370821870cacdb60809c",
+      "ingested_at": "2026-06-17T13:46:41.367585+00:00",
+      "chunk_count": 5
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Bag of Words - Corpus-gensim.ipynb": {
+      "hash": "3cb6f43cb41cc8feb66b572559519da878800e1f8cd4ea035cce9a8e3f42878d",
+      "ingested_at": "2026-06-17T13:46:45.408526+00:00",
+      "chunk_count": 103
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Bag of Words - Corpus.ipynb": {
+      "hash": "a686c4b7929053565ba3b37657fc93c459ecec395b42c6d79afc8137e076ae96",
+      "ingested_at": "2026-06-17T13:46:49.632025+00:00",
+      "chunk_count": 149
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Bag of Words - Document.ipynb": {
+      "hash": "468a09c90b57bd052d2d517d923fb76859ccbb44b85f455401f99a07c9038096",
+      "ingested_at": "2026-06-17T13:46:53.268298+00:00",
+      "chunk_count": 12
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\bm25_demo.ipynb": {
+      "hash": "917761075b4abf52ab356bf57d14dca89363bddbcaccfe15558f8258eaf50d81",
+      "ingested_at": "2026-06-17T13:46:57.196976+00:00",
+      "chunk_count": 24
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\bm25s_demo.ipynb": {
+      "hash": "f06be119acfcef599882b7cceb695083e137a0113cb49f2ca89b746f337ba342",
+      "ingested_at": "2026-06-17T13:47:01.488960+00:00",
+      "chunk_count": 211
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Clickstream-Word2Vec-Doc2Vec.ipynb": {
+      "hash": "35a2828c8f54db2c02b8969f84057985cf2071a2e390a6a760d4ce7efab07257",
+      "ingested_at": "2026-06-17T13:47:05.579719+00:00",
+      "chunk_count": 56
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Bag_of_Words_Corpus_Colab_v2.ipynb": {
+      "hash": "5cf0ccc77d0b117d9863753f5472772ff20fdfa835022a950555479cf69a4880",
+      "ingested_at": "2026-06-17T13:47:09.719938+00:00",
+      "chunk_count": 136
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of colab_friendly_fuzzy_string_matching.ipynb": {
+      "hash": "a5b82fdbaaf61765234db53ba04b8f380c7edeccff182888d0d5015fa1e9e5c0",
+      "ingested_at": "2026-06-17T13:47:13.259594+00:00",
+      "chunk_count": 13
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Extract_Text_and_WordCloud_Colab.ipynb": {
+      "hash": "ab22db4cc5e33f0563c63fbeb051b4f8799b024f7577d3f4d0dfac93746e60cf",
+      "ingested_at": "2026-06-17T13:47:17.038156+00:00",
+      "chunk_count": 22
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Gutenberg_Notebook_Colab_Filtered.ipynb": {
+      "hash": "817688cf65cfa0c5abd657015153028d2535d6eb28d7cc8440404b4018096615",
+      "ingested_at": "2026-06-17T13:47:28.260797+00:00",
+      "chunk_count": 1271
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of IR_Boolean_Search_Jaccard_Colab_v2_FIXED.ipynb": {
+      "hash": "5793b1e2aee859ab73cce527a2d88dcf25506449a69b19e79476c7f2e64d7e98",
+      "ingested_at": "2026-06-17T13:47:36.266368+00:00",
+      "chunk_count": 725
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of LDAHowStuffWorks-gensim_COLAB.ipynb": {
+      "hash": "15bb07cc6edac6ed1ebd8c740592d69228b19b4c291818fc814afd8f4f3ec078",
+      "ingested_at": "2026-06-17T13:47:40.426564+00:00",
+      "chunk_count": 101
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of NLP 1 Followup.ipynb": {
+      "hash": "b6b9d4baec8cbb06948f3a0e19a225d022eb13e04a1c9cf98b0ac25307271520",
+      "ingested_at": "2026-06-17T13:48:01.633587+00:00",
+      "chunk_count": 3047
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of PLDA_Reuters_COLAB.ipynb": {
+      "hash": "3ce268747455f52662791ac27ecb27db195d184c1b262db24265c0481a5a232e",
+      "ingested_at": "2026-06-17T13:48:05.787262+00:00",
+      "chunk_count": 65
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of record_linkage_colab.ipynb": {
+      "hash": "8d155de30c17c9ba6d9487c2dec49ee21f9cd8a597ec7f666e82fd87953cb02a",
+      "ingested_at": "2026-06-17T13:48:10.073107+00:00",
+      "chunk_count": 71
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of session1_nlp_vectors_ir_bm25.ipynb": {
+      "hash": "4643a98fd4df2a4a00d4e886cb418d2fc1973ee88c535f4ccdc870b4b814e10b",
+      "ingested_at": "2026-06-17T13:48:14.390677+00:00",
+      "chunk_count": 110
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Session_2_NLP_Topic_Modeling_SVD_LDA.ipynb": {
+      "hash": "e41c2036ac26ebd40e483cc7f476e7477547ac84de3d5964cb377f85e075617a",
+      "ingested_at": "2026-06-17T13:48:18.547095+00:00",
+      "chunk_count": 90
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Simple_Movie_Recommender_COLAB.ipynb": {
+      "hash": "480b69134bb807942bc636901d20c828dc167ad5d34954095bdd02952752602b",
+      "ingested_at": "2026-06-17T13:48:22.669017+00:00",
+      "chunk_count": 49
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Copy of Topic_Modeling_Colab_v2 (1).ipynb": {
+      "hash": "e7f552235da26cc521beea3261d04f2da1b3be639f2e18f79063b61320a076aa",
+      "ingested_at": "2026-06-17T13:48:27.378254+00:00",
+      "chunk_count": 300
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\demo.ipynb": {
+      "hash": "1826260081ee7e1bfe3e3b597a503159682433f0ee9e3052436f1d8f9b708a0c",
+      "ingested_at": "2026-06-17T13:48:31.025576+00:00",
+      "chunk_count": 4
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Disntances.ipynb": {
+      "hash": "e25240e26fb4f836b211db6a15832bb0d6d1ebe749305c6c9c91c57a248174f1",
+      "ingested_at": "2026-06-17T13:48:35.560001+00:00",
+      "chunk_count": 6
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Doc2Vec - Britannica.ipynb": {
+      "hash": "9e3e267821b0b47d58b950acfea42ddf95a38b09ff9bbb092e74e8ccb623120a",
+      "ingested_at": "2026-06-17T13:48:39.846458+00:00",
+      "chunk_count": 103
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Fasttext Animals-Copy1.ipynb": {
+      "hash": "94622693dbb218faae668f3d421e61624dc83ce017b14f1dacc93476757d8df5",
+      "ingested_at": "2026-06-17T13:48:44.051318+00:00",
+      "chunk_count": 77
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Fasttext Animals.ipynb": {
+      "hash": "7cbe3050092fc2f71918d99d65e11dc658c8ee74315aa921f18d92ca51cb5b1e",
+      "ingested_at": "2026-06-17T13:48:48.186192+00:00",
+      "chunk_count": 77
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\FuzzyWuzzy.ipynb": {
+      "hash": "67940da6546f1294563a6fca381fc6673b4b96c53ad6e53ed768ba610ac410b9",
+      "ingested_at": "2026-06-17T13:48:52.081827+00:00",
+      "chunk_count": 12
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Gutenberg - TFIDF and Information Retrieval-gensim.ipynb": {
+      "hash": "677c78a7df8c149d40000854ebadae443fc143afda7a063267126b2cb3f5be7d",
+      "ingested_at": "2026-06-17T13:48:57.709245+00:00",
+      "chunk_count": 445
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\HowStuffWorks_prepare_data.ipynb": {
+      "hash": "d43784f18ce3d800f0490596cd7f04806cee0f067c4e9f508db62ec4f1c8c740",
+      "ingested_at": "2026-06-17T13:49:01.447349+00:00",
+      "chunk_count": 3
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\LanguageIdentification.ipynb": {
+      "hash": "50bb8e51f0bed71c1a4d5155e4838c060a2832cec0946c20835df602ce4a6025",
+      "ingested_at": "2026-06-17T13:49:05.496906+00:00",
+      "chunk_count": 26
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\LDA_MovieRecommender-gensim.ipynb": {
+      "hash": "0757c46435fc095822653073a3da6d1ac9f3418dc0ccaf175633d5a5ddf09d1c",
+      "ingested_at": "2026-06-17T13:49:09.705767+00:00",
+      "chunk_count": 43
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\LDAHowStuffWorks-gensim.ipynb": {
+      "hash": "699741733740df035d1ce391b16f3d2e3feb3f415efa345001ff851adda2f9d1",
+      "ingested_at": "2026-06-17T13:49:13.874860+00:00",
+      "chunk_count": 49
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\MovieLense - Prepare Data.ipynb": {
+      "hash": "b197ae37c3830e3ac8a7be274ac8a472ff82dbdcd17436b608fd1248013bef77",
+      "ingested_at": "2026-06-17T13:49:17.736729+00:00",
+      "chunk_count": 11
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Partially Labeled LDA.ipynb": {
+      "hash": "f72541ea682f86260628c0683652052355e48a457cc165891141b45a18fd3e15",
+      "ingested_at": "2026-06-17T13:49:22.039260+00:00",
+      "chunk_count": 61
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\PointwiseMutualInformation.ipynb": {
+      "hash": "e36f6e009a5077c28c82374e6a1f7904b0337b0e181ae496afeebd9c4d04199d",
+      "ingested_at": "2026-06-17T13:49:27.285626+00:00",
+      "chunk_count": 333
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\PointwiseMutualInformation_gensim.ipynb": {
+      "hash": "176652b6d395b837124cc0fefbe3d11d1448e2930a3fa4fd2cc544b168afe774",
+      "ingested_at": "2026-06-17T13:49:31.798497+00:00",
+      "chunk_count": 137
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Pretrained GLoVe.ipynb": {
+      "hash": "c382849b818eb6e1e996e6493407d1dc93e41988a3e4d008209935a405ddd381",
+      "ingested_at": "2026-06-17T13:49:35.767646+00:00",
+      "chunk_count": 50
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Quora - Question Similarity.ipynb": {
+      "hash": "85afbef5a0e25d4e0ffcb0b96b4cf5b6ff81499d107bb7059e570bfe64f81396",
+      "ingested_at": "2026-06-17T13:49:39.878888+00:00",
+      "chunk_count": 37
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\record_linkage.ipynb": {
+      "hash": "111fa48d0a43bf180ba0290bab7c43d12f64e7c803addb0b78ce51b41edfb404",
+      "ingested_at": "2026-06-17T13:49:44.244833+00:00",
+      "chunk_count": 58
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Ted preprocess.ipynb": {
+      "hash": "4b00e7bdf61b2fcd66b1e2080facd7d61acae1b2ac8d2c531d4c0fae96500905",
+      "ingested_at": "2026-06-17T13:49:48.241590+00:00",
+      "chunk_count": 16
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\tfidf_bm25_gensim.ipynb": {
+      "hash": "b118d855f3e04b7cb25d0887278cc777c9ba20fad0ed04d5b14b68e98df1cd2b",
+      "ingested_at": "2026-06-17T13:49:52.592648+00:00",
+      "chunk_count": 38
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\train_word2vec-fasttext.ipynb": {
+      "hash": "1cb361774c4fb8b82ed62fcf0d0959aa26a05cc86b4304473579d60ca9379b0c",
+      "ingested_at": "2026-06-17T13:50:12.912981+00:00",
+      "chunk_count": 4827
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\train_word2vec.ipynb": {
+      "hash": "bb9552e1281b89ca2f05995602ad3699e724149efcc9d398f014131641e86341",
+      "ingested_at": "2026-06-17T13:50:17.352814+00:00",
+      "chunk_count": 19
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\Word Embeddings - Loading pretrained and Validating.ipynb": {
+      "hash": "1095c941db1436aac2f8c308d5470807ed8c81182f882df5133a9ef4f3b3d7ed",
+      "ingested_at": "2026-06-17T13:50:21.663690+00:00",
+      "chunk_count": 35
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\WordCloud-gensim.ipynb": {
+      "hash": "1b663b17b3a3f56c92511048d4ec5186fef89a66f9f3a3f351c6ca5b3c508afc",
+      "ingested_at": "2026-06-17T13:50:26.459541+00:00",
+      "chunk_count": 164
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\NLP notebook\\WordCloud.ipynb": {
+      "hash": "9dec5729d9bc828195f51a6baee6a9927ee9e74c402ecba37541188902accf04",
+      "ingested_at": "2026-06-17T13:50:31.644829+00:00",
+      "chunk_count": 311
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\Week 2 summary NLP Moshik.pdf": {
+      "hash": "6bff688a59ac358a3982e0bdda5c642f902c49fa70082ea2cec914df23b51a24",
+      "ingested_at": "2026-06-17T13:52:23.762694+00:00",
+      "chunk_count": 52
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 2 - Natural Language Processing\\Week 3 summary NLP Moshik.pdf": {
+      "hash": "0de50428b4c8abef15144cddbd9de2b9f3d3a3748ba7474353bd73a94672c010",
+      "ingested_at": "2026-06-17T13:52:30.666979+00:00",
+      "chunk_count": 53
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\4. Deep Learning.pdf": {
+      "hash": "83474f16227f58f0a5ae5efe4e1f73ac6b8bac649b22460abda57b49fc6f534f",
+      "ingested_at": "2026-06-17T13:53:01.680793+00:00",
+      "chunk_count": 167
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\5. Transformers.pdf": {
+      "hash": "6505d358fc3932cc580e2ed2933ab424eeda3be3cf28523187dfdaadb24f478b",
+      "ingested_at": "2026-06-17T13:53:10.706055+00:00",
+      "chunk_count": 18
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\activation_functions.ipynb": {
+      "hash": "086ac678b27aecf475781e46404fe71b98ac39a4ead010cd8a8ed09cf32ff38a",
+      "ingested_at": "2026-06-17T13:53:15.380603+00:00",
+      "chunk_count": 2
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\activation_loss_functions_colab.ipynb": {
+      "hash": "f52e7054dac716dfbb16d19655d8222d6435f2a5214445cec3497470656035ed",
+      "ingested_at": "2026-06-17T13:53:20.482065+00:00",
+      "chunk_count": 32
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ai_engineering_tabular_data_updated.ipynb": {
+      "hash": "4567878b604685a80011658af7e7825bd7c004146e2d3d64db82121100237ae8",
+      "ingested_at": "2026-06-17T13:53:25.156372+00:00",
+      "chunk_count": 123
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Airline Passengers - LSTM-1.ipynb": {
+      "hash": "13149652fe16b4003cb12209ea55bda0952647e5ad9759904feff1c881df276d",
+      "ingested_at": "2026-06-17T13:53:29.850310+00:00",
+      "chunk_count": 15
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\AnalysisPhase02.ipynb": {
+      "hash": "f6cce9dab5211c7e9506d4893db94a4fe744c69609b4204a8ebeeed515d87464",
+      "ingested_at": "2026-06-17T13:53:34.924035+00:00",
+      "chunk_count": 70
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\attention_demo_colab.ipynb": {
+      "hash": "f7c690590240fbcddf5c10bdb6709e0beae3209b633cd46e2832978017788200",
+      "ingested_at": "2026-06-17T13:53:39.554611+00:00",
+      "chunk_count": 50
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\autoencoder_grayscale_to_color_colab.ipynb": {
+      "hash": "84a55ff48c69df2237db53adcd4252e613911432ac9d7705e105b70ba5efea95",
+      "ingested_at": "2026-06-17T13:53:44.369973+00:00",
+      "chunk_count": 38
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Autograd_vs_Analyticsl.ipynb": {
+      "hash": "682de4bbd59040a4de867bdac80160dfc072190638c0e20cf4496b6ce8955c6b",
+      "ingested_at": "2026-06-17T13:53:48.662763+00:00",
+      "chunk_count": 3
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\batch_size_update_frequency_pytorch_colab.ipynb": {
+      "hash": "b630e165d0ceb020c136f2dba540fa291ed5c0ac586076775614b00305c697c8",
+      "ingested_at": "2026-06-17T13:53:53.370178+00:00",
+      "chunk_count": 25
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\binary_bce_softmax_comparison_colab.ipynb": {
+      "hash": "138420b5716459ec9e975901cdb04e234af9d813dd0e393f2f6fe377437ca9a1",
+      "ingested_at": "2026-06-17T13:53:58.307787+00:00",
+      "chunk_count": 40
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\CNN_Convolution_Filters_Colab (1).ipynb": {
+      "hash": "5633e86253af872310acb64c1c2800c3b3b20782f40a86f4cea3708e0604adb4",
+      "ingested_at": "2026-06-17T13:54:03.009369+00:00",
+      "chunk_count": 36
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\CNN_Convolution_Filters_Colab.ipynb": {
+      "hash": "5633e86253af872310acb64c1c2800c3b3b20782f40a86f4cea3708e0604adb4",
+      "ingested_at": "2026-06-17T13:54:07.760065+00:00",
+      "chunk_count": 36
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\cnn_max_pooling_unified_colab.ipynb": {
+      "hash": "c1087935c52a2bed3f2e8889a673482bf30b48c8d741ea28e008dee9a8e7a652",
+      "ingested_at": "2026-06-17T13:54:12.691789+00:00",
+      "chunk_count": 55
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\cnn_transfer_learning_pretrained_finetune_colab.ipynb": {
+      "hash": "988e922e921b7617404fbfb1a3062f4cbf84a251bcf253daa72663cc937f4484",
+      "ingested_at": "2026-06-17T13:54:17.687747+00:00",
+      "chunk_count": 63
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Complete  Enumeration.ipynb": {
+      "hash": "a408ff61928b92e5250031f232adefa2083f65f0be07e5ddc8ddc4e607f0f22e",
+      "ingested_at": "2026-06-17T13:54:22.562735+00:00",
+      "chunk_count": 25
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\complete_enumeration_local_mac_windows.ipynb": {
+      "hash": "c226b5eabce959e0f9b9caac4b15ecf8f614e677966d0c02fc5238b39d43ec3c",
+      "ingested_at": "2026-06-17T13:54:27.548161+00:00",
+      "chunk_count": 32
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Convolution Example.ipynb": {
+      "hash": "86aa736aef2c76eb5517feb0f681bbc22b5b87eb360c554abbaa3bbc77fde59e",
+      "ingested_at": "2026-06-17T13:54:32.142501+00:00",
+      "chunk_count": 27
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Domains - Tabula Data.ipynb": {
+      "hash": "56aff9aa707c8d7646ea83a551ab3393bfe3c7a48759b1dcfbc470ba564201b2",
+      "ingested_at": "2026-06-17T13:54:36.731152+00:00",
+      "chunk_count": 50
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\embedding_layer_torch.ipynb": {
+      "hash": "c6d99533bfa2d3e795f01c99be72f08c84b95e53f23945729acecd1602ce5713",
+      "ingested_at": "2026-06-17T13:54:41.289521+00:00",
+      "chunk_count": 15
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\embeddings_transformers.ipynb": {
+      "hash": "c94de7ec9ce8fe2f21dfd6ef4cb7e90706ab03b0ed28be69585d2dca749733c2",
+      "ingested_at": "2026-06-17T13:54:45.913281+00:00",
+      "chunk_count": 15
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Emergency_Room_Admission_LSTM.ipynb": {
+      "hash": "4255942d5fd1cd206c542d082163721de6728e34f8fdd0bb5b5c1fe066d9322b",
+      "ingested_at": "2026-06-17T13:54:57.606399+00:00",
+      "chunk_count": 1185
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ER Admission - CNN and LSTM.ipynb": {
+      "hash": "d8f1662e116c49e1f4177e55c121a92b3fbe71c757b62d4309c41f03c63cf562",
+      "ingested_at": "2026-06-17T13:55:02.236049+00:00",
+      "chunk_count": 64
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ER Admission - LSTM-1.ipynb": {
+      "hash": "1c70a5a14a7030e6d14a38c4dc1bff5c9f58c9d2b000e0465a21c6bd05d2c772",
+      "ingested_at": "2026-06-17T13:55:06.558852+00:00",
+      "chunk_count": 52
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ER Admission - LSTM-2-Channels.ipynb": {
+      "hash": "e0983df5db48c846e8466f869ad70f1c5da7ef7dbc99bb5e1d0f0b1b9d60cb66",
+      "ingested_at": "2026-06-17T13:55:11.256887+00:00",
+      "chunk_count": 73
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\finetune_embeddings_MNRL.ipynb": {
+      "hash": "ab4b747edf08b0de1704e5e61b98cd3df60786717cc51104a6409d94bfefe7dc",
+      "ingested_at": "2026-06-17T13:55:15.670262+00:00",
+      "chunk_count": 21
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\finetune_pretrained_model_pytorch.ipynb": {
+      "hash": "c281dc3c2dc813f39e50d4b80364f195300d975d0f3c25e67ccf635379caece9",
+      "ingested_at": "2026-06-17T13:55:20.300060+00:00",
+      "chunk_count": 81
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\flickr8k_data_preprocess.ipynb": {
+      "hash": "5baf8ff4938ec3b8530ba9b9509e0a3a40d6eb5908465fb86bcc20836b293bfe",
+      "ingested_at": "2026-06-17T13:55:25.408722+00:00",
+      "chunk_count": 192
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\From_lagged_regression_to_vanilla_RNN.ipynb": {
+      "hash": "868fc9370400401c7b1addce01d00b9d347e0901277aba50b8842fdbfa92445d",
+      "ingested_at": "2026-06-17T13:55:30.520740+00:00",
+      "chunk_count": 76
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\generate_steam_data.ipynb": {
+      "hash": "f4494436222dcb197aa3c368b7b49c6f9441f94c4d174b86002257388bd06dd2",
+      "ingested_at": "2026-06-17T13:55:35.553064+00:00",
+      "chunk_count": 8
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Gradient Descent - Analytical.ipynb": {
+      "hash": "7efc7978f22f78bc27d0763932221639245a4018291aaa92ebbd88efae3be9bc",
+      "ingested_at": "2026-06-17T13:55:40.157762+00:00",
+      "chunk_count": 13
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Gradient Descent - Autograd.ipynb": {
+      "hash": "cf70b7f7629dce58790a713879f42061bc9219131d2fab103be05885f943ef88",
+      "ingested_at": "2026-06-17T13:55:44.896732+00:00",
+      "chunk_count": 13
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Gradient Descent - Demonstration.ipynb": {
+      "hash": "e457491109f6c0b24edcc643d404dfa04f4f9b5e498b57cfa967eb6a1094d794",
+      "ingested_at": "2026-06-17T13:55:49.685887+00:00",
+      "chunk_count": 5
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Gradient Descent.ipynb": {
+      "hash": "29f5b6b7593a4db7c74a2035a4d80da44df1ea5cc3329cd7e7ca74b217054c85",
+      "ingested_at": "2026-06-17T13:55:54.943324+00:00",
+      "chunk_count": 9
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Image Augmentation.ipynb": {
+      "hash": "3bfc0c5b4fc342abf694177dbbad557c48d7f38f59718adceaf3e283957855b1",
+      "ingested_at": "2026-06-17T13:55:59.816762+00:00",
+      "chunk_count": 11
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\image_augmentation_colab_with_training_comparison.ipynb": {
+      "hash": "e7ff1195c367166d9dc97c0aac14548bdcefad241245f584173d879dbd93f558",
+      "ingested_at": "2026-06-17T13:56:05.153002+00:00",
+      "chunk_count": 130
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\lagged_regression_before_rnn.ipynb": {
+      "hash": "53812542077caa06bd0477f72736205212973d88ee3d752d4d0c3ae88fbb909b",
+      "ingested_at": "2026-06-17T13:56:09.711062+00:00",
+      "chunk_count": 37
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\LSTM-2.ipynb": {
+      "hash": "a3c8a69bf2d19b52a039506c230d4a9e3d1dad0a52741923cf4faf0b2f17ca66",
+      "ingested_at": "2026-06-17T13:56:14.395459+00:00",
+      "chunk_count": 9
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\lstm_colab_friendly_airline_passengers.ipynb": {
+      "hash": "69d18901b79e4818caec00bcf5821258cbd276f46ac01cb35772c8a2a6f76c7f",
+      "ingested_at": "2026-06-17T13:56:19.280612+00:00",
+      "chunk_count": 18
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\LSTM_Next_Word_Prediction.ipynb": {
+      "hash": "d9e6e372d5006a775e402bffbcaf5b7bf547c541972a11e8f072b91fc02c2385",
+      "ingested_at": "2026-06-17T13:56:23.947569+00:00",
+      "chunk_count": 52
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\lstm_sequence_representation_demo.ipynb": {
+      "hash": "ef9f262af04c19fd0c69791d2bef72c249bcd9833b0f4f89788e11e1bcc9babc",
+      "ingested_at": "2026-06-17T13:56:28.725219+00:00",
+      "chunk_count": 56
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\manual_gradient_descent_normalization_local_mac_windows.ipynb": {
+      "hash": "84a2c1cdd286dabe289fc8cb0a419db0e1c807dd8f0b012ad3c05978afb6bf98",
+      "ingested_at": "2026-06-17T13:56:33.242225+00:00",
+      "chunk_count": 20
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MLM-Finetuning.ipynb": {
+      "hash": "63b61886be4210444cbe38904fb483507aab7c58d524a527dc6ee9d91e660172",
+      "ingested_at": "2026-06-17T13:56:37.913265+00:00",
+      "chunk_count": 52
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MLP_Batch_Normalization_Colab.ipynb": {
+      "hash": "df1ab743208a6f8e4c14ee3f742935cdfce8df8b26d10675c3b4633e874c7663",
+      "ingested_at": "2026-06-17T13:56:42.680465+00:00",
+      "chunk_count": 35
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MLP_Dropout_Colab.ipynb": {
+      "hash": "75f8fcf820a0ee73e9c266e0cdfb5954d870869d527539dc9fafcc8529f1f663",
+      "ingested_at": "2026-06-17T13:56:47.152019+00:00",
+      "chunk_count": 30
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-8-Autoencoder-pytorch.ipynb": {
+      "hash": "7b1837591ee6bec9bd96a4129e87918d5871e6bd51d284c3eafbab3afb15a8e7",
+      "ingested_at": "2026-06-17T13:56:51.775712+00:00",
+      "chunk_count": 46
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-8-Autoencoder.ipynb": {
+      "hash": "5c5081c023055d3fb6313a2d4cfd0ca468965e83ec5a83f9b5149c1c47c2d44d",
+      "ingested_at": "2026-06-17T13:56:56.636664+00:00",
+      "chunk_count": 44
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-9-Denoising Autoencoder Pytorch.ipynb": {
+      "hash": "6ade0370846f5acde9b8470c2eeb1a828b90bb2d065ba3c071f8aa6de0abcaf5",
+      "ingested_at": "2026-06-17T13:57:01.126305+00:00",
+      "chunk_count": 29
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-9-Denoising Autoencoder.ipynb": {
+      "hash": "16a7cd685122add8823853318cbd0293956ecd07400ff5019753ead51967d665",
+      "ingested_at": "2026-06-17T13:57:05.640875+00:00",
+      "chunk_count": 29
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-1 - Intro.ipynb": {
+      "hash": "3236ec6484ae4b55afc95104add0c5dbc1633de496dc233e921c061a63affc17",
+      "ingested_at": "2026-06-17T13:57:10.439195+00:00",
+      "chunk_count": 71
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-2 Validation Set.ipynb": {
+      "hash": "8655c95673eccec23f0ffa15cccbaa10c5a4bf2b8810d0942e10a99b7934a452",
+      "ingested_at": "2026-06-17T13:57:14.934230+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-3 DataLoader.ipynb": {
+      "hash": "76c3fff3d9f8416b305620114e71677b7b272e51a28ee4cfcd267204a199d11c",
+      "ingested_at": "2026-06-17T13:57:19.596545+00:00",
+      "chunk_count": 46
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-4-Save Checkpoints.ipynb": {
+      "hash": "a8e521ac8d148a830035349d288ad7000876f47f2ff9c3e5b9f2e20fb38ea8fc",
+      "ingested_at": "2026-06-17T13:57:24.064199+00:00",
+      "chunk_count": 21
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-5-Dropout.ipynb": {
+      "hash": "51a5c1f8e3244e56265f6c56be05d25a88117f877b010c00298be1c01959ceeb",
+      "ingested_at": "2026-06-17T13:57:28.916487+00:00",
+      "chunk_count": 22
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-6 Batch Normalization.ipynb": {
+      "hash": "adcf1b175b77ddd35e27f74ba0fdb549a6163b468b2376bf8d8e268cfe0e636e",
+      "ingested_at": "2026-06-17T13:57:33.509437+00:00",
+      "chunk_count": 42
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-7 CNN-MaxPooling.ipynb": {
+      "hash": "5e85e823a7e0132b4d7ab245470f9749f9dc4fbcb7c505dc674ab4b444a2fe55",
+      "ingested_at": "2026-06-17T13:57:38.031386+00:00",
+      "chunk_count": 24
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-7 CNN.ipynb": {
+      "hash": "30457efd956a92658cd9c35054148da80c72d68ddf209bcb0c593a4ce3de5dbd",
+      "ingested_at": "2026-06-17T13:57:42.952921+00:00",
+      "chunk_count": 33
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-7b CNN-MaxPooling.ipynb": {
+      "hash": "7d9190538e91324b42fc0ebeaafeca5336ec9d9f0f739fbb249366b4ded1b91d",
+      "ingested_at": "2026-06-17T13:57:47.383499+00:00",
+      "chunk_count": 23
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST-MLP-7а CNN-MaxPooling.ipynb": {
+      "hash": "47dc30200c6343f4c9867aa2f41f3264b7153f2ad8ddf0a3423b3584bb1b43cb",
+      "ingested_at": "2026-06-17T13:57:52.001447+00:00",
+      "chunk_count": 24
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST.ipynb": {
+      "hash": "8e00da005d21e596526b706893c6463b1e0dadaf641ed0bb2b4d36edd58bbbd7",
+      "ingested_at": "2026-06-17T13:57:56.437653+00:00",
+      "chunk_count": 7
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST_Autoencoders_Combined_Colab (1).ipynb": {
+      "hash": "523f0fddb8df5acf965c525199e66e0e5f70edaace513a5e4a75489e9f4fe968",
+      "ingested_at": "2026-06-17T13:58:13.561826+00:00",
+      "chunk_count": 2159
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST_Autoencoders_Combined_Colab.ipynb": {
+      "hash": "523f0fddb8df5acf965c525199e66e0e5f70edaace513a5e4a75489e9f4fe968",
+      "ingested_at": "2026-06-17T13:58:30.490318+00:00",
+      "chunk_count": 2159
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\mnist_export_checked_cpu_only_mac_windows_note.ipynb": {
+      "hash": "1e410a322c2f603f9f52ff4d5ff56f861ce594c383ba24d47b98b1719585041f",
+      "ingested_at": "2026-06-17T13:58:35.410257+00:00",
+      "chunk_count": 4
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST_MLP_Unified_Colab (1).ipynb": {
+      "hash": "9e635005a3b5a8c8636a5a137245a15c406df39cd145ca9df2c6931d763a4869",
+      "ingested_at": "2026-06-17T13:58:40.177696+00:00",
+      "chunk_count": 38
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\MNIST_MLP_Unified_Colab.ipynb": {
+      "hash": "9e635005a3b5a8c8636a5a137245a15c406df39cd145ca9df2c6931d763a4869",
+      "ingested_at": "2026-06-17T13:58:44.786217+00:00",
+      "chunk_count": 38
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\model_test_demonstration.ipynb": {
+      "hash": "ef76a749801aebfd0988f09de7c33a00aa9fdfa6249de1db055669c31d544408",
+      "ingested_at": "2026-06-17T13:58:49.700466+00:00",
+      "chunk_count": 61
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\model_train_demonstration.ipynb": {
+      "hash": "6e4c545c2eaca35cf22c47ea62683031508d58493cd3f27d97c5948e12a08586",
+      "ingested_at": "2026-06-17T13:58:54.416589+00:00",
+      "chunk_count": 43
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\movielense_dataprep.ipynb": {
+      "hash": "7808240d4b94464dd9976eedbaf27f8ab0d2f0179b6f34553f70395948a81471",
+      "ingested_at": "2026-06-17T13:58:58.997404+00:00",
+      "chunk_count": 9
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\movielense_models_evaluation.ipynb": {
+      "hash": "56ae0c5ebeae0d6228c55fb9c29bdbed44b1b774a0b3c334fb8045775cb2d393",
+      "ingested_at": "2026-06-17T13:59:07.758124+00:00",
+      "chunk_count": 1404
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\movielense_recommender_matrix_factorization.ipynb": {
+      "hash": "14b0f0bf085cd23ef24ab18622299c4038b425388f195ee4b656dde72aaff6c5",
+      "ingested_at": "2026-06-17T13:59:12.578606+00:00",
+      "chunk_count": 26
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\movielense_recommender_neural_matrix_factorization.ipynb": {
+      "hash": "e06d83eb4ecb0e40f4a716cb788a37c739bf5c37f07f958eef6a8b1077e41c7a",
+      "ingested_at": "2026-06-17T13:59:17.287206+00:00",
+      "chunk_count": 29
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\multiple_inputs_petfinder.ipynb": {
+      "hash": "b738a5a18c2a1206f7ef28673c0947df5ae795ec2ee9f411bbd273fbd2052c23",
+      "ingested_at": "2026-06-17T13:59:22.253121+00:00",
+      "chunk_count": 74
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Neural Network Cancer.ipynb": {
+      "hash": "fa19136e30414fab30989375b99f9f911d2b82c8cd6e6e66b8d80aba9e46d1dc",
+      "ingested_at": "2026-06-17T13:59:27.016906+00:00",
+      "chunk_count": 19
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ObjectOrientedProgramming.ipynb": {
+      "hash": "6957c431573dbfa6e023bd48b73efa642f9890638c13705fe1d5e852aa1a92a4",
+      "ingested_at": "2026-06-17T13:59:32.181443+00:00",
+      "chunk_count": 13
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Optimizer - Intro.ipynb": {
+      "hash": "54e7d9712a2506c9c7ac95143407c596c3d81888c924fa3f88bbb025969941d3",
+      "ingested_at": "2026-06-17T13:59:36.812861+00:00",
+      "chunk_count": 12
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\optimizer_comparison_colab.ipynb": {
+      "hash": "7b459ee6ac0e98721c3335fd6aed201f3c2dc90162eabdd0d92967d654585f7a",
+      "ingested_at": "2026-06-17T13:59:41.705080+00:00",
+      "chunk_count": 40
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Optimizers.ipynb": {
+      "hash": "6a1228f67b83003356189b724cf144b7f09149887d7fbd32fe03d19cf717b125",
+      "ingested_at": "2026-06-17T13:59:46.516416+00:00",
+      "chunk_count": 15
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Perceptron.ipynb": {
+      "hash": "92a0a91a6f46fc89a17de65ed0fc2d44d195656c9e56cb7a4958409d2f51821f",
+      "ingested_at": "2026-06-17T13:59:52.153001+00:00",
+      "chunk_count": 277
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\perceptron_classification_google_colab.ipynb": {
+      "hash": "b6d1d6194477448ee23290989a079b26f870e3ff3de853ee60498975dc757d70",
+      "ingested_at": "2026-06-17T14:01:50.325442+00:00",
+      "chunk_count": 19542
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\plain_rnn_five_examples_colab.ipynb": {
+      "hash": "fc4971110139b774ceb1b2b310d649308543d140d31eee81df0ad00cacf17155",
+      "ingested_at": "2026-06-17T14:01:56.218245+00:00",
+      "chunk_count": 38
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Preparing data.ipynb": {
+      "hash": "af03d125c886ca4ebcfb5fc306fa7ca95f3d2329c9257e8578727dc7f2058ad8",
+      "ingested_at": "2026-06-17T14:02:01.575354+00:00",
+      "chunk_count": 1
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\preprocess_mnist.ipynb": {
+      "hash": "fd1795373489371ee698292e8fe368156ba44a912fcb0fb97e7e080ae6eb4543",
+      "ingested_at": "2026-06-17T14:02:07.059906+00:00",
+      "chunk_count": 2
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_autograd_local_mac_windows.ipynb": {
+      "hash": "a8515a929adee979d8625570f85f39bc4fe8993e7e3da0dd29b35afe1760a187",
+      "ingested_at": "2026-06-17T14:02:13.095798+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_datasets_colab.ipynb": {
+      "hash": "ff7370950c3a8d8a6e3b186212f4b64740187d4cb6c995bfabf74cbee3149343",
+      "ingested_at": "2026-06-17T14:02:18.542737+00:00",
+      "chunk_count": 26
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_embedding_lstm_colab_v2 (1).ipynb": {
+      "hash": "5ae048fd6993c907b95e40185869ad3bde717fde46b956fec1f7f4596782c4a4",
+      "ingested_at": "2026-06-17T14:02:24.091599+00:00",
+      "chunk_count": 26
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_embedding_lstm_colab_v2.ipynb": {
+      "hash": "5ae048fd6993c907b95e40185869ad3bde717fde46b956fec1f7f4596782c4a4",
+      "ingested_at": "2026-06-17T14:02:29.464045+00:00",
+      "chunk_count": 26
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_gpu_benchmark_colab.ipynb": {
+      "hash": "3ef0c12c45295110b7ea2e05e500a6f297fa296583f9e96d45eaab0adade1bd2",
+      "ingested_at": "2026-06-17T14:02:35.037176+00:00",
+      "chunk_count": 20
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_gpu_benchmark_local_vscode_original_style.ipynb": {
+      "hash": "3b07d7118513af6f089af0252b3410b45e6739e5a10a8fd8146309ca53bad69f",
+      "ingested_at": "2026-06-17T14:02:40.629107+00:00",
+      "chunk_count": 23
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\pytorch_optimizer_local_mac_windows.ipynb": {
+      "hash": "b66b0ff805497a6684da86706e00766ed5222da43b3f696283577f31e45de957",
+      "ingested_at": "2026-06-17T14:02:46.038302+00:00",
+      "chunk_count": 16
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\quadratic_gradient_descent_local_mac_windows.ipynb": {
+      "hash": "29082c340cf943f6dc9540327b5690dca52e1f001a8d0ac6040bb37a824b50e1",
+      "ingested_at": "2026-06-17T14:02:51.403520+00:00",
+      "chunk_count": 7
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Regression Regularization.ipynb": {
+      "hash": "564be5af850683ced134a5669abb96b3667054c694e113f8d85ddc7ff0246bda",
+      "ingested_at": "2026-06-17T14:02:56.993901+00:00",
+      "chunk_count": 69
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\ridge_lasso_regularization_ai_engineering_colab_(1).ipynb": {
+      "hash": "74355e24ea38f050b0dbf15866f3b5a12f44161f1055a53ca4196117a0347b0e",
+      "ingested_at": "2026-06-17T14:03:02.583673+00:00",
+      "chunk_count": 55
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Schelling_Model.ipynb": {
+      "hash": "135f6afd10ebc71eeb83e7d8c90cde2eb8e76d433983911941bc42e93b9a4e91",
+      "ingested_at": "2026-06-17T14:03:07.999894+00:00",
+      "chunk_count": 13
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\SentenceEmbeddings - Quora.ipynb": {
+      "hash": "d7172631b090b23b35447586753f46bd245ba49d01ad8e5b4e19cb055e04d7c9",
+      "ingested_at": "2026-06-17T14:03:13.773569+00:00",
+      "chunk_count": 25
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\seq2seq_image_captioning_colab_teaching.ipynb": {
+      "hash": "d898875fc21eab8b8fb6d874b335102e6185c22a1caa69d867d0e7aa634eee44",
+      "ingested_at": "2026-06-17T14:03:19.619039+00:00",
+      "chunk_count": 42
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\simple_rnn_next_character_prediction (1).ipynb": {
+      "hash": "032935a72e83e44ebf0eb5fa576bd3c56738bc0ca970233ac9442fa8676c2f4a",
+      "ingested_at": "2026-06-17T14:03:25.086570+00:00",
+      "chunk_count": 39
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\simple_rnn_next_character_prediction.ipynb": {
+      "hash": "032935a72e83e44ebf0eb5fa576bd3c56738bc0ca970233ac9442fa8676c2f4a",
+      "ingested_at": "2026-06-17T14:03:30.737098+00:00",
+      "chunk_count": 39
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\SQLite.ipynb": {
+      "hash": "e88af1009c0b02d03f00fde6af5fee5bcf5e8e4e547047f0c76560fe2c4cdf79",
+      "ingested_at": "2026-06-17T14:03:36.430016+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification - Embedding-Copy1.ipynb": {
+      "hash": "b0ffa3993ade2e94ff3d1d0c43a544222a0fac7a0c1471bf61602806dd15e75a",
+      "ingested_at": "2026-06-17T14:03:42.146040+00:00",
+      "chunk_count": 84
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification - Embedding.ipynb": {
+      "hash": "73e375a28e2db9216f574dcc8f61cc70ac73536523f908c87212b7b9789dd829",
+      "ingested_at": "2026-06-17T14:03:47.899414+00:00",
+      "chunk_count": 75
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification-All_data.ipynb": {
+      "hash": "ac4ab02b768c25a6a4c04377519cb9e7e9d75b2b9af89f5998ac4c2b204866a7",
+      "ingested_at": "2026-06-17T14:03:53.268215+00:00",
+      "chunk_count": 10
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification.ipynb": {
+      "hash": "78cde8e452e106976ac829a9a2dc817550e0cb3a32f76d8687091808bb48532b",
+      "ingested_at": "2026-06-17T14:03:59.328318+00:00",
+      "chunk_count": 137
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Steam Reviews Classification_basic_elements.ipynb": {
+      "hash": "f55fefe28bfaa0987c7aabbd4c5a43b0bd24a87ca40cc1c562c0ec7afa0a074d",
+      "ingested_at": "2026-06-17T14:04:04.994686+00:00",
+      "chunk_count": 45
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_review_sentiment_colab (1).ipynb": {
+      "hash": "c792c914d7d84bb977bbf41a8d95d11dd245704089d8037e2db80c4f6a09acb7",
+      "ingested_at": "2026-06-17T14:04:10.538989+00:00",
+      "chunk_count": 29
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_review_sentiment_colab.ipynb": {
+      "hash": "c792c914d7d84bb977bbf41a8d95d11dd245704089d8037e2db80c4f6a09acb7",
+      "ingested_at": "2026-06-17T14:04:16.341198+00:00",
+      "chunk_count": 29
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_embeddings-2-Word2Vec.ipynb": {
+      "hash": "020ca651dbac311b36eef3e0d5b22d38bdb827c524519caa458c033780071a37",
+      "ingested_at": "2026-06-17T14:04:22.074146+00:00",
+      "chunk_count": 50
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_embeddings-3-LSTM.ipynb": {
+      "hash": "a73fc528c8a9d61df0f0f7b2bf91ec38509656ad49051a1203e010fe59f8080e",
+      "ingested_at": "2026-06-17T14:04:27.606550+00:00",
+      "chunk_count": 28
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_embeddings.ipynb": {
+      "hash": "9c62564e7de31e52d609d521cbe7e4100f7e7cf9c3a403eaf6d561c65d4d1cc5",
+      "ingested_at": "2026-06-17T14:04:33.535327+00:00",
+      "chunk_count": 19
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_w2v_lstm_colab_with_w2v_sidecars (1).ipynb": {
+      "hash": "20e3863b5a970e58d582134f44e3dec89392bbe09fa6742750896e5c8473484d",
+      "ingested_at": "2026-06-17T14:04:39.147529+00:00",
+      "chunk_count": 46
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\steam_reviews_w2v_lstm_colab_with_w2v_sidecars.ipynb": {
+      "hash": "6975638bdf8b1e387d6bc113bf2ee54269ae5def3c6dfb6269a4f5e6ee7d7189",
+      "ingested_at": "2026-06-17T14:04:44.948342+00:00",
+      "chunk_count": 46
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\SteamDataPreparation.ipynb": {
+      "hash": "1cd58978dc6568554ff195a0a45e54ea1964d73f0c3aea86e848b746736dcdcd",
+      "ingested_at": "2026-06-17T14:04:50.437459+00:00",
+      "chunk_count": 7
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\temperature_gradient_descent_local_mac_windows.ipynb": {
+      "hash": "0a425ace754844720fe1bb230278464f6e1224d0b602612e0d6a7b72fdc7a589",
+      "ingested_at": "2026-06-17T14:04:55.874878+00:00",
+      "chunk_count": 14
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor - Images.ipynb": {
+      "hash": "e75019d17bf95312a72e082f5515ed8eba11317c024e28a0c324b850cf7a1148",
+      "ingested_at": "2026-06-17T14:05:01.663795+00:00",
+      "chunk_count": 34
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor - Tabular.ipynb": {
+      "hash": "71772f43b0ab706297e632ba5b96f6544bd9d14c201aaa385eb0050893b37eed",
+      "ingested_at": "2026-06-17T14:05:07.549012+00:00",
+      "chunk_count": 90
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor - Time Series.ipynb": {
+      "hash": "ca29544d9c3e9de02dd4a561cd83684d3dc33cca23b2779dfdcb3a2006e8d8f6",
+      "ingested_at": "2026-06-17T14:05:12.971900+00:00",
+      "chunk_count": 16
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor_Images_mac_windows_gpu_ready.ipynb": {
+      "hash": "5919283972e5bda07954c88e9d8a31bcc088018a65a679f1597fccb23a2db990",
+      "ingested_at": "2026-06-17T14:05:19.077739+00:00",
+      "chunk_count": 39
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensor_Time_Series_mac_windows_adapted.ipynb": {
+      "hash": "6394cf62ac61120331da394459e8312b8cffc8f58a336537ecdb664e0b59149f",
+      "ingested_at": "2026-06-17T14:05:24.688442+00:00",
+      "chunk_count": 26
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors - Advanced.ipynb": {
+      "hash": "13cacf23cb113a19e64851936e09a55025b355977d187197fac69afe46ab6605",
+      "ingested_at": "2026-06-17T14:05:30.450940+00:00",
+      "chunk_count": 42
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors - Basics.ipynb": {
+      "hash": "c3c88614b58d0a3f0b65df0e73c32e8be9751ba92bdf94d9f9e32bbe993dc2ec",
+      "ingested_at": "2026-06-17T14:05:36.383199+00:00",
+      "chunk_count": 37
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors - Serialization.ipynb": {
+      "hash": "9ef537e3fb5ddf9f47b76c5db489ffb04d0ca5d7799dcc9cc53ed257ea0cd52e",
+      "ingested_at": "2026-06-17T14:05:41.937769+00:00",
+      "chunk_count": 28
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors_Advanced_local_windows_mac_cuda_mps_param_notebook.ipynb": {
+      "hash": "23a01e7caf4d6595033849d429f32514adddbf0ace51c3f3037ecc8f31cad8f7",
+      "ingested_at": "2026-06-17T14:05:47.857899+00:00",
+      "chunk_count": 56
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors_Basics_local_windows_mac_cuda_mps_ready.ipynb": {
+      "hash": "e7e09f25771b7f5aa6227c78179a3ec3c1022192879d98405fb25da040042115",
+      "ingested_at": "2026-06-17T14:05:54.023252+00:00",
+      "chunk_count": 59
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Tensors_Serialization_local_windows_mac_cuda_mps_param_notebook_v3.ipynb": {
+      "hash": "7f33f1b9fc8797819fa052593e2754d3ef4c915f930783762d789b82e4325d91",
+      "ingested_at": "2026-06-17T14:05:59.714705+00:00",
+      "chunk_count": 33
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\test_pytorch_setup_colab.ipynb": {
+      "hash": "5b71d7a2a75f13db41a3c125d8b1acf2e3d8536ffbbc18a876cf72ae6586286f",
+      "ingested_at": "2026-06-17T14:06:05.377767+00:00",
+      "chunk_count": 11
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\test_pytorch_setup_local_vscode_mac_windows_with_env.ipynb": {
+      "hash": "668bfef1de6a59e774685d0f3f1a1f2f0f638a31e6de4f639d469c62f116b41e",
+      "ingested_at": "2026-06-17T14:06:10.906473+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\text_to_text_seq2seq_summarization_colab.ipynb": {
+      "hash": "0ae61533a8a2d060c530f50ce8f9c1c3c2ec05bff11a831d83d67cfcbff467f7",
+      "ingested_at": "2026-06-17T14:06:17.050098+00:00",
+      "chunk_count": 29
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Transformers - Animals - Embeddings.ipynb": {
+      "hash": "563fa363440eaffc955ec7c42d384ef47ef79ccd7079c53ebc70dce40d008388",
+      "ingested_at": "2026-06-17T14:06:22.726922+00:00",
+      "chunk_count": 20
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Transformers-Classifier-FineTunning.ipynb": {
+      "hash": "490125d31bb0a39180d223c140e9cf90cf60d002a7a8a87330fa9f24974ecc9c",
+      "ingested_at": "2026-06-17T14:06:28.614735+00:00",
+      "chunk_count": 49
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Transformers-Demonstration.ipynb": {
+      "hash": "59fbf3cacf4d3cceb06ff7b584f4ab6d79ab338bda95344568313367cdf18a99",
+      "ingested_at": "2026-06-17T14:06:34.340420+00:00",
+      "chunk_count": 78
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Twitter Airline Sentiment.ipynb": {
+      "hash": "b08bea3353248e12ca37631ea75976d81528640e83954f0966282647098dd726",
+      "ingested_at": "2026-06-17T14:06:40.282135+00:00",
+      "chunk_count": 115
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\using_pretrained_models_torch.ipynb": {
+      "hash": "84bc9f5cb87562a14ea83368832bb399f3389f7355b41026ecfa2afb9e2d140b",
+      "ingested_at": "2026-06-17T14:06:46.051457+00:00",
+      "chunk_count": 23
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\vocab_demo.ipynb": {
+      "hash": "a52ee50c75f442178ef5b016260ee4d9e6cc73646f5379a1a639bfd32d3246fb",
+      "ingested_at": "2026-06-17T14:06:51.718289+00:00",
+      "chunk_count": 30
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Code NoteBook\\Zero-shot classification.ipynb": {
+      "hash": "d1ad36bfc79ba022d24d78c701f349c5aa2bb62b2e92cd848293334f5fd81041",
+      "ingested_at": "2026-06-17T14:06:57.866789+00:00",
+      "chunk_count": 62
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Deep Learning 2.pdf": {
+      "hash": "efe1eec07363a7a89a6b1f4c6555c4c74ba3fa33c5310aab4c947309db4d4001",
+      "ingested_at": "2026-06-17T14:07:35.664764+00:00",
+      "chunk_count": 5
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Deep Learning 3.pdf": {
+      "hash": "57b3b66f679a4085f8dce8e682cc2f2672ebf7f2e30ef0c0c09f0c391decf134",
+      "ingested_at": "2026-06-17T14:08:04.775987+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Deep Learning 6.pdf": {
+      "hash": "51297ea8c58b043a047c7022b585155f0398ea1d1cde5720c4b21c6c5b32a280",
+      "ingested_at": "2026-06-17T14:09:32.355379+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Deep Learning 7.pdf": {
+      "hash": "f017c70fbb69555a8ed5dfc31f1a34d4ae163492344f2f00b37c79cdb94e64a6",
+      "ingested_at": "2026-06-17T14:10:05.264873+00:00",
+      "chunk_count": 17
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Deep Learning 8 Summary.pdf": {
+      "hash": "d80c58aa7cf6127f9329c54d589defa63fb0d9a91ea79e3bcc63ac04cba208b4",
+      "ingested_at": "2026-06-17T14:10:13.420537+00:00",
+      "chunk_count": 57
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Deep Learning 8.pdf": {
+      "hash": "2203fc8a47796dfc434c9505fd1cde831df71d7ad49c58e9f5b7b71155b05569",
+      "ingested_at": "2026-06-17T14:10:49.297257+00:00",
+      "chunk_count": 16
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Deep Learning Lessions 1 to 3 Summary.pdf": {
+      "hash": "c12899a07383c3ce937c58a213ca739e4bab66f7308fcba6126db243421a36a8",
+      "ingested_at": "2026-06-17T14:10:58.048513+00:00",
+      "chunk_count": 58
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Deep Learning Lesson 4 and 5 Summary.pdf": {
+      "hash": "2138976dc8e70f98f2c508a97614c9c75dd0c8763410ff1e951a88fb21aebd03",
+      "ingested_at": "2026-06-17T14:11:06.475994+00:00",
+      "chunk_count": 63
+    },
+    "C:\\Users\\gil\\.claude\\projects\\AI_Engineer_ChatBot\\data\\docs\\Topic 3 - Deep Learning\\Deep Learning Lesson 6 and 7 Summary.pdf": {
+      "hash": "89e25725f42452ee8024c7c78b50ba40155c591218983edf1d6e82c6cbe79ee9",
+      "ingested_at": "2026-06-17T14:11:15.034990+00:00",
+      "chunk_count": 62
     }
   }
 }
