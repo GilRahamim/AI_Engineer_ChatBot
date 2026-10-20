@@ -113,6 +113,8 @@ python scripts/ingest.py
 
 # Add new files only (manifest-based deduplication)
 python scripts/add_files.py
+# Files whose content is already ingested under another name ("Copy of ...") are skipped.
+# A file that changed after ingestion is skipped with a warning — rebuild to pick it up.
 
 # Force full rebuild (e.g. after swapping the embedding model)
 python scripts/ingest.py --rebuild
@@ -179,19 +181,39 @@ python scripts/flashcards.py
 
 ## Evaluation
 
-Run RAGAS evaluation before and after any retrieval change to catch regressions:
+Run evaluation before and after any retrieval change to catch regressions:
 
 ```bash
 # Capture baseline
 python scripts/evaluate.py --output data/eval/results/baseline.json
 
 # After your change
-python scripts/evaluate.py --output data/eval/results/after_change.json
+python scripts/evaluate.py --output data/eval/results/after_change.json \
+    --compare data/eval/results/baseline.json
 ```
 
-Metrics tracked: faithfulness, context precision, context recall.
+Two kinds of metrics:
+
+- **Retrieval** (deterministic, no LLM judge) — hit@k, recall@k, precision@k and MRR against
+  each question's `expected_sources`, reported per pipeline stage (dense, sparse, fused, final),
+  plus `dup_rate`, the share of duplicate chunks in a ranking. Add `--retrieval-only` to skip
+  generation and RAGAS; it runs in seconds per question, so use it for every retrieval tweak.
+- **RAGAS** — faithfulness, answer relevancy, context precision, context recall.
+
+Label which course files answer each question (needed for the retrieval metrics):
+
+```bash
+python scripts/label_sources.py          # walks unlabelled questions, saves as you go
+python scripts/label_sources.py --relabel --questions q013
+```
+
+Adding or changing labels starts a new retrieval baseline — re-run the baseline afterwards.
 
 The golden Q&A test set lives in `data/eval/golden_qa.jsonl` and is version-controlled.
+
+```bash
+pip install -e ".[dev]" && pytest   # unit tests
+```
 
 ---
 

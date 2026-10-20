@@ -86,6 +86,13 @@ class ChatConfig(BaseModel):
     condense_followups: bool = True  # rewrite follow-ups into standalone queries
 
 
+class EvaluationConfig(BaseModel):
+    golden_qa: Path = Path("data/eval/golden_qa.jsonl")
+    retrieval_ks: list[int] = [1, 3, 5, 8, 20]  # cutoffs for hit@k / recall@k / precision@k
+    label_pool: int = 50  # candidates per retriever shown by scripts/label_sources.py
+    label_max_files: int = 15  # candidate files listed per question when labelling
+
+
 class LoggingConfig(BaseModel):
     level: str = "INFO"
 
@@ -98,6 +105,7 @@ class Config(BaseModel):
     generation: GenerationConfig = GenerationConfig()
     interview: InterviewConfig = InterviewConfig()
     chat: ChatConfig = ChatConfig()
+    evaluation: EvaluationConfig = EvaluationConfig()
     logging: LoggingConfig = LoggingConfig()
 
 
@@ -115,6 +123,7 @@ def _resolve_paths(cfg: Config) -> Config:
         prompts=PROJECT_ROOT / p.prompts,
         eval_results=PROJECT_ROOT / p.eval_results,
     )
+    cfg.evaluation.golden_qa = PROJECT_ROOT / cfg.evaluation.golden_qa
     return cfg
 
 

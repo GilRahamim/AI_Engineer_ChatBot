@@ -107,6 +107,15 @@ Add new questions over time but **never delete or modify existing ones** — tha
 
 ## Eval workflow
 
+### Retrieval-only metrics (fast, deterministic)
+Golden questions carry `expected_sources` (file names that answer them, labelled with
+`python scripts/label_sources.py`). `python scripts/evaluate.py --retrieval-only --output ...`
+scores hit@k / recall@k / precision@k / MRR and `dup_rate` for each pipeline stage
+(dense, sparse, fused, final) without generation or an LLM judge. Use it for every
+retrieval change; run full RAGAS for generation or prompt changes. A stage breakdown
+tells you where a relevant file was lost: never retrieved (dense/sparse), dropped by
+fusion, or dropped by the reranker.
+
 ### Baseline first
 Before any architectural change, capture the current state:
 

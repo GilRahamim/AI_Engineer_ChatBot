@@ -57,5 +57,11 @@ chat:
   history_turns: 3             # prior turns kept as conversational context
   condense_followups: true     # rewrite follow-ups into standalone retrieval queries
 
+evaluation:
+  golden_qa: "data/eval/golden_qa.jsonl"
+  retrieval_ks: [1, 3, 5, 8, 20]  # cutoffs for hit@k / recall@k / precision@k
+  label_pool: 50                  # candidates per retriever shown when labelling sources
+  label_max_files: 15             # candidate files listed per question when labelling
+
 logging:
   level: "INFO"
