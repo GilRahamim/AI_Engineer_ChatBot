@@ -24,6 +24,9 @@ class IngestionConfig(BaseModel):
     chunk_overlap: int = 150
     min_chunk_size: int = 100
     supported_extensions: list[str] = [".pdf", ".ipynb"]
+    notebook_output_max_lines: int = 20  # longer cell outputs keep head + tail only
+    notebook_output_max_chars: int = 2000
+    warn_chunks_per_file: int = 500  # log a warning when one file yields more chunks
 
 
 class EmbeddingConfig(BaseModel):

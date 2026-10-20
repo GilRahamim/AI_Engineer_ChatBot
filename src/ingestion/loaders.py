@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import re
 from pathlib import Path
 from typing import Optional
 
@@ -9,10 +10,16 @@ import nbformat
 import pymupdf4llm
 from pydantic import BaseModel
 
+from src.utils.config import get_config
+from src.utils.paths import source_key
+
 logger = logging.getLogger(__name__)
 
 # Minimum average characters per page — below this we treat the PDF as scanned
 _MIN_CHARS_PER_PAGE = 50
+
+# Inline images pasted into notebook markdown as base64 data URIs
+_DATA_URI = re.compile(r"data:image/[\w.+-]+;base64,[A-Za-z0-9+/=]+")
 
 _ocr_reader = None
 
@@ -74,18 +81,37 @@ def load_pdf(path: Path) -> Document:
 
     return Document(
         content=md_text,
-        source=str(path),
+        source=source_key(path),
         file_type="pdf",
         metadata={"filename": path.name, "extraction_method": extraction_method},
     )
 
 
+def _truncate_output(text: str, max_lines: int, max_chars: int) -> str:
+    """Keep the head and tail of a long cell output.
+
+    Training loops print thousands of near-identical log lines; left whole they
+    flood the index with chunks that match every query about the topic.
+    """
+    lines = text.splitlines()
+    if len(lines) > max_lines:
+        head = (max_lines + 1) // 2
+        tail = max_lines - head
+        omitted = len(lines) - max_lines
+        lines = lines[:head] + [f"... [{omitted} lines omitted] ..."] + lines[len(lines) - tail:]
+    out = "\n".join(lines)
+    if len(out) > max_chars:
+        out = out[:max_chars].rstrip() + "\n... [output truncated]"
+    return out
+
+
 def load_notebook(path: Path) -> Document:
+    cfg = get_config().ingestion
     nb = nbformat.read(str(path), as_version=4)
     parts: list[str] = []
     for cell in nb.cells:
         if cell.cell_type == "markdown":
-            parts.append(cell.source)
+            parts.append(_DATA_URI.sub("[embedded image]", cell.source))
         elif cell.cell_type == "code":
             code = cell.source.strip()
             if code:
@@ -99,10 +125,15 @@ def load_notebook(path: Path) -> Document:
                     if isinstance(text, list):
                         text = "".join(text)
                     if text.strip():
-                        parts.append(f"Output:\n{text.strip()}")
+                        text = _truncate_output(
+                            text.strip(),
+                            cfg.notebook_output_max_lines,
+                            cfg.notebook_output_max_chars,
+                        )
+                        parts.append(f"Output:\n{text}")
     return Document(
         content="\n\n".join(parts),
-        source=str(path),
+        source=source_key(path),
         file_type="notebook",
         metadata={"filename": path.name},
     )

@@ -6,10 +6,11 @@ from pathlib import Path
 from src.embedding.embedder import get_embedder
 from src.ingestion.chunkers import chunk_document
 from src.ingestion.loaders import load_document
-from src.ingestion.manifest import Manifest, load_manifest, save_manifest
+from src.ingestion.manifest import Manifest, file_hash, load_manifest, save_manifest
 from src.retrieval.dense import DenseRetriever
 from src.retrieval.sparse import SparseRetriever
 from src.utils.config import get_config
+from src.utils.paths import source_key
 
 logger = logging.getLogger(__name__)
 
@@ -28,30 +29,58 @@ def ingest_files(paths: list[Path], rebuild: bool = False) -> int:
         logger.info("Rebuild mode: cleared existing index and manifest")
 
     total_chunks = 0
-    for path in paths:
-        if not rebuild and manifest.is_ingested(path):
-            logger.debug("Skipping (already ingested): %s", path.name)
-            continue
+    try:
+        for path in paths:
+            key = source_key(path)
+            content_hash = file_hash(path)
+            status = manifest.status(key, content_hash)
+            if status == "unchanged":
+                logger.debug("Skipping (already ingested): %s", key)
+                continue
+            if status == "changed":
+                # Hard rule: chunks in the DB are never modified in place.
+                logger.warning(
+                    "Skipping %s: it changed since it was ingested. Existing chunks are "
+                    "never modified — run `python scripts/ingest.py --rebuild` to pick it up.",
+                    key,
+                )
+                continue
 
-        logger.info("Processing: %s", path.name)
-        doc = load_document(path)
-        if doc is None:
-            continue
+            original = manifest.find_by_hash(content_hash)
+            if original is not None:
+                logger.info("Skipping %s: identical content already ingested as %s", key, original)
+                manifest.record(key, content_hash, chunk_count=0, duplicate_of=original)
+                save_manifest(manifest)
+                continue
 
-        chunks = chunk_document(doc)
-        if not chunks:
-            logger.warning("No chunks produced for %s", path.name)
-            continue
+            logger.info("Processing: %s", key)
+            doc = load_document(path)
+            if doc is None:
+                continue
 
-        texts = [c.text for c in chunks]
-        embeddings = embedder.embed(texts)
-        dense.add(chunks, embeddings)
-        sparse.add(chunks)
-        manifest.record(path, len(chunks))
-        total_chunks += len(chunks)
-        logger.info("  -> %d chunks from %s", len(chunks), path.name)
+            chunks = chunk_document(doc)
+            if not chunks:
+                logger.warning("No chunks produced for %s", key)
+                continue
+            if len(chunks) > cfg.ingestion.warn_chunks_per_file:
+                logger.warning(
+                    "%s produced %d chunks — check it for noise (logs, data dumps)",
+                    key, len(chunks),
+                )
 
-    save_manifest(manifest)
+            texts = [c.text for c in chunks]
+            embeddings = embedder.embed(texts)
+            dense.add(chunks, embeddings)
+            sparse.add(chunks)
+            # Saved per file so a crash never leaves indexed chunks the manifest doesn't know about.
+            manifest.record(key, content_hash, chunk_count=len(chunks))
+            save_manifest(manifest)
+            total_chunks += len(chunks)
+            logger.info("  -> %d chunks from %s", len(chunks), key)
+    finally:
+        sparse.build()
+        save_manifest(manifest)
+
     logger.info("Ingestion complete. Total new chunks: %d", total_chunks)
     return total_chunks
 

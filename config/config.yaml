@@ -13,6 +13,9 @@ ingestion:
   supported_extensions:
     - ".pdf"
     - ".ipynb"
+  notebook_output_max_lines: 20  # longer cell outputs (training logs) keep head + tail only
+  notebook_output_max_chars: 2000
+  warn_chunks_per_file: 500      # warn when one file yields more chunks than this
 
 embedding:
   model: "BAAI/bge-m3"
