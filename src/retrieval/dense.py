@@ -51,9 +51,14 @@ class DenseRetriever:
                 metadatas=metadatas[i : i + batch_size],
             )
 
-    def query(self, embedding: list[float], top_k: Optional[int] = None) -> list[RetrievalResult]:
+    def query(
+        self,
+        embedding: list[float],
+        top_k: Optional[int] = None,
+        where: Optional[dict] = None,
+    ) -> list[RetrievalResult]:
         k = top_k or self._top_k
-        results = self._collection.query(query_embeddings=[embedding], n_results=k)
+        results = self._collection.query(query_embeddings=[embedding], n_results=k, where=where)
         return [
             RetrievalResult(
                 text=doc,
