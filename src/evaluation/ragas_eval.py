@@ -1,13 +1,10 @@
 from __future__ import annotations
 
-import hashlib
-import json
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from datasets import Dataset
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import ChatOpenAI
 from ragas import EvaluationDataset, SingleTurnSample, evaluate
@@ -20,16 +17,20 @@ from ragas.metrics import (
     faithfulness,
 )
 
+from src.evaluation.retrieval_eval import (
+    SourceMatcher,
+    config_hash,
+    config_summary,
+    load_golden_qa,
+    score_question,
+    summarize,
+)
 from src.generation.pipeline import answer
-from src.retrieval.pipeline import retrieve
+from src.ingestion.manifest import load_manifest
+from src.retrieval.pipeline import retrieve_stages
 from src.utils.config import get_config
 
 logger = logging.getLogger(__name__)
-
-
-def load_golden_qa(path: Path) -> list[dict]:
-    with open(path, encoding="utf-8") as f:
-        return [json.loads(line) for line in f if line.strip()]
 
 
 def _build_ragas_llm() -> LangchainLLMWrapper:
@@ -53,26 +54,6 @@ def _build_ragas_embeddings() -> LangchainEmbeddingsWrapper:
     return LangchainEmbeddingsWrapper(hf)
 
 
-def _config_summary() -> dict:
-    cfg = get_config()
-    return {
-        "embedder": cfg.embedding.model,
-        "reranker_enabled": cfg.retrieval.reranker.enabled,
-        "reranker_model": cfg.retrieval.reranker.model,
-        "dense_top_k": cfg.retrieval.dense_top_k,
-        "sparse_top_k": cfg.retrieval.sparse_top_k,
-        "fusion_k": cfg.retrieval.fusion.k,
-        "reranker_top_n": cfg.retrieval.reranker.top_n,
-        "chunk_size": cfg.ingestion.chunk_size,
-        "chunk_overlap": cfg.ingestion.chunk_overlap,
-    }
-
-
-def _config_hash(summary: dict) -> str:
-    s = json.dumps(summary, sort_keys=True)
-    return hashlib.sha256(s.encode()).hexdigest()[:12]
-
-
 def run_eval(
     golden_path: Path,
     question_ids: list[str] | None = None,
@@ -85,6 +66,9 @@ def run_eval(
 
     ragas_llm = _build_ragas_llm()
     ragas_embeddings = _build_ragas_embeddings()
+    matcher = SourceMatcher(load_manifest())
+    ks = get_config().evaluation.retrieval_ks
+    retrieval_scores = []
 
     samples = []
     per_question = []
@@ -98,7 +82,10 @@ def run_eval(
         skip_ragas = item.get("skip_ragas", False)
         logger.info("Processing %s: %s", qid, query[:60])
 
-        results = retrieve(query)
+        stages = retrieve_stages(query)
+        results = stages["final"]
+        scored = score_question(item, stages, matcher, ks)
+        retrieval_scores.append(scored)
         # Truncate contexts to keep RAGAS judge prompts within context window
         contexts = [r.text[:400] for r in results]
         generated = answer(query, results)
@@ -109,6 +96,8 @@ def run_eval(
             "ground_truth": ground_truth,
             "generated_answer": generated,
             "retrieved_sources": [r.source for r in results],
+            "expected_sources": item.get("expected_sources", []),
+            "retrieval": scored,
             "topic": item.get("topic", ""),
             "difficulty": item.get("difficulty", ""),
             "skip_ragas": skip_ragas,
@@ -139,13 +128,15 @@ def run_eval(
     for df_i, pq_i in enumerate(ragas_indices):
         per_question[pq_i].update(df[metric_names].iloc[df_i].to_dict())
 
-    cfg_summary = _config_summary()
+    cfg_summary = config_summary()
     return {
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "config_hash": _config_hash(cfg_summary),
+        "config_hash": config_hash(cfg_summary),
         "config_summary": cfg_summary,
         "n_questions_total": len(per_question),
         "n_questions_scored": len(ragas_indices),
+        "n_questions_labelled": sum(1 for q in questions if q.get("expected_sources")),
         "metrics": {name: float(df[name].mean()) for name in metric_names},
+        "retrieval_metrics": summarize(retrieval_scores),
         "per_question": per_question,
     }

@@ -26,7 +26,12 @@ def _get_sparse() -> SparseRetriever:
     return _sparse
 
 
-def retrieve(query: str) -> list[RetrievalResult]:
+def retrieve_stages(query: str) -> dict[str, list[RetrievalResult]]:
+    """Run the pipeline and return every stage's ranking: dense, sparse, fused, final.
+
+    Eval uses the intermediate stages to tell whether a relevant chunk was never
+    retrieved or was retrieved and then dropped by fusion/reranking.
+    """
     cfg = get_config()
     embedder = get_embedder()
 
@@ -38,5 +43,11 @@ def retrieve(query: str) -> list[RetrievalResult]:
     fused = fuse(dense_results, sparse_results)
 
     if cfg.retrieval.reranker.enabled:
-        return rerank(query, fused)
-    return fused[: cfg.retrieval.reranker.top_n]
+        final = rerank(query, fused)
+    else:
+        final = fused[: cfg.retrieval.reranker.top_n]
+    return {"dense": dense_results, "sparse": sparse_results, "fused": fused, "final": final}
+
+
+def retrieve(query: str) -> list[RetrievalResult]:
+    return retrieve_stages(query)["final"]
