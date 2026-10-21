@@ -17,6 +17,7 @@ class PathsConfig(BaseModel):
     manifest: Path = Path("data/manifest.json")
     prompts: Path = Path("config/prompts")
     eval_results: Path = Path("data/eval/results")
+    cards: Path = Path("summaries/cards")
 
 
 class IngestionConfig(BaseModel):
@@ -93,6 +94,35 @@ class EvaluationConfig(BaseModel):
     label_max_files: int = 15  # candidate files listed per question when labelling
 
 
+class CardSectionQuery(BaseModel):
+    name: str  # shown to the LLM as "retrieved for: <name>"
+    query: str  # "{concept}" is replaced with the concept
+    file_type: Optional[str] = None  # restrict to one source type, e.g. "notebook"
+
+
+class CardConfig(BaseModel):
+    language: str = "hebrew"  # "hebrew" | "english" — prose language of the card
+    sections: list[CardSectionQuery] = [
+        CardSectionQuery(name="definition", query="what is {concept}"),
+        CardSectionQuery(name="mechanism", query="how does {concept} work step by step"),
+        CardSectionQuery(name="formula", query="{concept} formula equation"),
+        CardSectionQuery(name="code", query="{concept} python code example", file_type="notebook"),
+        CardSectionQuery(name="comparison", query="{concept} compared to alternatives difference"),
+        CardSectionQuery(name="tradeoffs", query="{concept} advantages disadvantages limitations"),
+        CardSectionQuery(name="applications", query="{concept} applications use cases"),
+    ]
+    chunks_per_section: int = 4
+    max_chunks: int = 24
+    use_hyde: bool = False  # templated section queries are already keyword-rich
+    translate_concept: bool = True  # Hebrew concept name -> English term for retrieval
+    max_tokens: int = 8192
+    structured_output: bool = True  # send a JSON schema as response_format
+    max_retries: int = 1  # re-ask once when the JSON fails validation
+    docx: bool = True
+    docx_font: str = "Arial"
+    reference_docx: Optional[Path] = None  # Word file whose styles override docx_font
+
+
 class LoggingConfig(BaseModel):
     level: str = "INFO"
 
@@ -106,6 +136,7 @@ class Config(BaseModel):
     interview: InterviewConfig = InterviewConfig()
     chat: ChatConfig = ChatConfig()
     evaluation: EvaluationConfig = EvaluationConfig()
+    card: CardConfig = CardConfig()
     logging: LoggingConfig = LoggingConfig()
 
 
@@ -122,8 +153,11 @@ def _resolve_paths(cfg: Config) -> Config:
         manifest=PROJECT_ROOT / p.manifest,
         prompts=PROJECT_ROOT / p.prompts,
         eval_results=PROJECT_ROOT / p.eval_results,
+        cards=PROJECT_ROOT / p.cards,
     )
     cfg.evaluation.golden_qa = PROJECT_ROOT / cfg.evaluation.golden_qa
+    if cfg.card.reference_docx is not None:
+        cfg.card.reference_docx = PROJECT_ROOT / cfg.card.reference_docx
     return cfg
 
 

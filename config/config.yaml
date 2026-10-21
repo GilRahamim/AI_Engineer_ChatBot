@@ -5,6 +5,7 @@ paths:
   manifest: "data/manifest.json"
   prompts: "config/prompts"
   eval_results: "data/eval/results"
+  cards: "summaries/cards"
 
 ingestion:
   chunk_size: 800
@@ -62,6 +63,28 @@ evaluation:
   retrieval_ks: [1, 3, 5, 8, 20]  # cutoffs for hit@k / recall@k / precision@k
   label_pool: 50                  # candidates per retriever shown when labelling sources
   label_max_files: 15             # candidate files listed per question when labelling
+
+card:
+  language: "hebrew"             # prose language of concept cards: "hebrew" | "english"
+  # One retrieval per section; {concept} is replaced. file_type restricts the source kind.
+  sections:
+    - {name: "definition",   query: "what is {concept}"}
+    - {name: "mechanism",    query: "how does {concept} work step by step"}
+    - {name: "formula",      query: "{concept} formula equation"}
+    - {name: "code",         query: "{concept} python code example", file_type: "notebook"}
+    - {name: "comparison",   query: "{concept} compared to alternatives difference"}
+    - {name: "tradeoffs",    query: "{concept} advantages disadvantages limitations"}
+    - {name: "applications", query: "{concept} applications use cases"}
+  chunks_per_section: 4          # reranked chunks kept per section query
+  max_chunks: 24                 # cap on the merged, deduplicated context
+  use_hyde: false                # section queries are already keyword-rich
+  translate_concept: true        # Hebrew concept name -> English term before retrieval
+  max_tokens: 8192
+  structured_output: true        # send the card JSON schema as response_format
+  max_retries: 1                 # re-ask when the JSON fails validation
+  docx: true
+  docx_font: "Arial"
+  reference_docx: null           # optional .docx whose styles the card uses (overrides docx_font)
 
 logging:
   level: "INFO"

@@ -94,6 +94,7 @@ course_rag/
 │   ├── ingest.py                 <- bulk ingestion
 │   ├── add_files.py              <- incremental ingestion
 │   ├── chat.py                   <- CLI interface
+│   ├── card.py                   <- concept study cards (.md/.json/.docx)
 │   ├── generate_pdf.py           <- formatted study PDFs
 │   └── evaluate.py               <- RAGAS run
 ├── notebooks/                    <- experiments only, not production code
@@ -165,6 +166,14 @@ python scripts/evaluate.py --output data/eval/results/baseline.json
 After the change — run again and compare.
 
 -> Details in `.claude/skills/hybrid-retrieval/SKILL.md` and `.claude/skills/rag-evaluation/SKILL.md`
+
+### Generating a concept card
+```bash
+python scripts/card.py "Convolution"     # or /card Convolution inside chat
+# creates summaries/cards/Convolution.{md,json,docx}
+```
+Per-section retrieval (`card.sections`), JSON schema output (`src/generation/card.py`),
+uncited items dropped in code, rendering in `src/generation/card_render.py`. Prompt: `config/prompts/card.txt`.
 
 ### Generating a study PDF
 ```bash

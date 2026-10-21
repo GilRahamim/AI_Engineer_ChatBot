@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import re
 
 from openai import OpenAI
 
@@ -23,6 +24,43 @@ _CONDENSE_SYSTEM = (
     "If the question is already self-contained, output it unchanged. "
     "Keep the original language (Hebrew or English)."
 )
+
+
+_TRANSLATE_SYSTEM = (
+    "Translate the AI/ML concept name below into the standard English technical "
+    "term used in courses and papers. Output only the term — no explanation."
+)
+
+_HEBREW = re.compile(r"[\u0590-\u05FF]")
+
+
+def english_term(concept: str) -> str:
+    """English technical term for a concept typed in Hebrew; other input is returned as is.
+
+    BM25 cannot match a Hebrew word against the English course material, so card
+    retrieval runs on the English term.
+    """
+    if not _HEBREW.search(concept):
+        return concept
+    cfg = get_config().generation
+    try:
+        client = OpenAI(base_url=cfg.base_url, api_key=cfg.api_key)
+        response = client.chat.completions.create(
+            model=cfg.model,
+            messages=[
+                {"role": "system", "content": _TRANSLATE_SYSTEM},
+                {"role": "user", "content": concept},
+            ],
+            temperature=0.0,
+            max_tokens=128,
+            extra_body={"reasoning_effort": "low"},
+        )
+        term = (response.choices[0].message.content or "").strip().strip('"')
+    except Exception as exc:  # noqa: BLE001 - fall back to the original wording
+        logger.warning("english_term failed, using original concept: %s", exc)
+        return concept
+    logger.debug("Translated concept: %s -> %s", concept, term)
+    return term or concept
 
 
 def condense_query(query: str, history: list[dict]) -> str:
