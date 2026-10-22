@@ -94,6 +94,10 @@ pip install -e .
 
 The generation layer uses the OpenAI SDK with `base_url="http://localhost:1234/v1"` — no API key needed.
 
+Using a different model? See **Switching the LLM** in `CLAUDE.md`: thinking control
+(`generation.thinking.style`), sampling, token budgets, a fixed RAGAS judge
+(`evaluation.judge_model`) and running the embedder/reranker on CPU to free VRAM.
+
 ### 3. Add course documents
 
 Place PDF and Jupyter notebook files under `data/docs/` (subdirectories per module are fine):
@@ -258,6 +262,8 @@ generation:
   model: "openai/gpt-oss-20b"
   temperature: 0.1
   reasoning_effort: "medium"   # set to "high" for complex interview questions
+  thinking:
+    style: "reasoning_effort"  # | chat_template_kwargs | soft_switch | none
 
 interview:
   selection: "adaptive"        # "adaptive" | "random"
