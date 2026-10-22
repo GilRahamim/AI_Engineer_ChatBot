@@ -93,14 +93,11 @@ class GenerationConfig(BaseModel):
     max_tokens: int = 2048  # includes reasoning tokens on reasoning models
     task_max_tokens: dict[str, int] = {}  # per-task override, e.g. {"summary": 6000}
     reasoning_effort: str = "medium"
-<<<<<<< HEAD
     timeout: float = 1200.0  # seconds per request; long cards on a local model need headroom
     max_retries: int = 0  # SDK retries restart generation from scratch, so keep them off
-=======
     thinking: ThinkingConfig = ThinkingConfig()
     helper_temperature: float = 0.0
     helper_max_tokens: HelperMaxTokens = HelperMaxTokens()
->>>>>>> 025436f995d34a8e26537aec2830c857ab7c2118
 
 
 class InterviewConfig(BaseModel):

@@ -16,25 +16,16 @@ class LLMClient:
     thinking control and <think> stripping behave the same for all calls."""
 
     def __init__(self) -> None:
-<<<<<<< HEAD
-        cfg = get_config().generation
-        self._client = OpenAI(
-            base_url=cfg.base_url,
-            api_key=cfg.api_key,
-            timeout=cfg.timeout,
-            max_retries=cfg.max_retries,
-        )
-        self._model = cfg.model
-        self._temperature = cfg.temperature
-        self._max_tokens = cfg.max_tokens
-        self._reasoning_effort = cfg.reasoning_effort
-=======
         self._cfg = get_config().generation
-        self._client = OpenAI(base_url=self._cfg.base_url, api_key=self._cfg.api_key)
+        self._client = OpenAI(
+            base_url=self._cfg.base_url,
+            api_key=self._cfg.api_key,
+            timeout=self._cfg.timeout,
+            max_retries=self._cfg.max_retries,
+        )
 
     def max_tokens_for(self, task: str) -> int:
         return self._cfg.task_max_tokens.get(task, self._cfg.max_tokens)
->>>>>>> 025436f995d34a8e26537aec2830c857ab7c2118
 
     def _build_messages(
         self, system: str, user: str, history: Optional[list[dict]]

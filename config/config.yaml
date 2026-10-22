@@ -53,10 +53,8 @@ generation:
   max_tokens: 2048               # includes reasoning tokens on reasoning models
   task_max_tokens: {}            # per-task override, e.g. {summary: 6000, glossary: 8000}
   reasoning_effort: "medium"
-<<<<<<< HEAD
   timeout: 1200                # seconds per LLM request (cards are long)
   max_retries: 0               # SDK retries restart generation; a timeout should fail fast
-=======
   thinking:
     # reasoning_effort (GPT-OSS) | chat_template_kwargs (enable_thinking flag)
     # | soft_switch (/think, /no_think in the prompt) | none
@@ -68,7 +66,6 @@ generation:
     strip_tags: true             # remove <think>...</think> leaked into answers
   helper_temperature: 0.0
   helper_max_tokens: {hyde: 256, condense: 128, translate: 128}
->>>>>>> 025436f995d34a8e26537aec2830c857ab7c2118
 
 interview:
   selection: "adaptive"        # "adaptive" (weak/overdue topics first) | "random"
