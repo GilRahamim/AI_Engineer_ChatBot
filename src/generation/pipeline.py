@@ -67,10 +67,24 @@ def answer_stream(
                              max_tokens=client.max_tokens_for(task))
 
 
+def _range(meta: dict, key: str, one: str, many: str) -> Optional[str]:
+    first = meta.get(key)
+    if first is None:
+        return None
+    last = meta.get(f"{key}_end", first)
+    return f"{one}{first}" if last == first else f"{many}{first}–{last}"
+
+
 def source_label(r: RetrievalResult) -> str:
-    """'file.pdf · p.3' — or the chunk index when no page is known."""
-    page = r.metadata.get("page") or r.metadata.get("page_number")
-    locator = f"p.{page}" if page else f"chunk {r.chunk_index}"
+    """'file.pdf · p.3', 'pp.3–4', 'cell 12' — or the chunk index for chunks
+    indexed before page metadata existed."""
+    m = r.metadata
+    locator = (
+        _range(m, "page", "p.", "pp.")
+        or _range(m, "cell", "cell ", "cells ")
+        or _range(m, "page_number", "p.", "pp.")
+        or f"chunk {r.chunk_index}"
+    )
     return f"{Path(r.source).name} · {locator}"
 
 

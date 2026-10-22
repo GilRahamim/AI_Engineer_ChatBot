@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 import re
 from pathlib import Path
-from typing import Optional
+from typing import Literal, Optional
 
 import fitz  # PyMuPDF
 import nbformat
@@ -43,19 +43,9 @@ def _is_scanned(text: str, page_count: int) -> bool:
     return len(text.strip()) / page_count < _MIN_CHARS_PER_PAGE
 
 
-def _ocr_pdf(path: Path) -> str:
-    reader = _get_ocr_reader()
-    doc = fitz.open(str(path))
-    pages: list[str] = []
-    for page_num, page in enumerate(doc):
-        pix = page.get_pixmap(dpi=200)
-        img_bytes = pix.tobytes("png")
-        results = reader.readtext(img_bytes, detail=0)
-        page_text = " ".join(results).strip()
-        if page_text:
-            pages.append(f"[Page {page_num + 1}]\n{page_text}")
-    doc.close()
-    return "\n\n".join(pages)
+class Segment(BaseModel):
+    start: int  # offset in Document.content where this page/cell begins
+    number: int  # 1-based page or cell number
 
 
 class Document(BaseModel):
@@ -63,10 +53,54 @@ class Document(BaseModel):
     source: str
     file_type: str
     metadata: dict = {}
+    # Where each page (PDF) or cell (notebook) starts in ``content``, so chunks
+    # can be mapped back to the pages they came from for citations.
+    segment_kind: Optional[Literal["page", "cell"]] = None
+    segments: list[Segment] = []
+
+
+def _join(parts: list[tuple[int, str]], sep: str) -> tuple[str, list[Segment]]:
+    """Join (number, text) parts with ``sep``, recording where each part starts."""
+    pieces: list[str] = []
+    segments: list[Segment] = []
+    offset = 0
+    for i, (number, text) in enumerate(parts):
+        if i:
+            pieces.append(sep)
+            offset += len(sep)
+        if not segments or segments[-1].number != number:
+            segments.append(Segment(start=offset, number=number))
+        pieces.append(text)
+        offset += len(text)
+    return "".join(pieces), segments
+
+
+def _ocr_pdf(path: Path) -> tuple[str, list[Segment]]:
+    reader = _get_ocr_reader()
+    doc = fitz.open(str(path))
+    pages: list[tuple[int, str]] = []
+    for page_num, page in enumerate(doc):
+        pix = page.get_pixmap(dpi=200)
+        img_bytes = pix.tobytes("png")
+        results = reader.readtext(img_bytes, detail=0)
+        page_text = " ".join(results).strip()
+        if page_text:
+            pages.append((page_num + 1, f"[Page {page_num + 1}]\n{page_text}"))
+    doc.close()
+    return _join(pages, "\n\n")
 
 
 def load_pdf(path: Path) -> Document:
-    md_text: str = pymupdf4llm.to_markdown(str(path))
+    # Per-page output joined with "" is exactly what to_markdown() returns for the
+    # whole document, so chunk text is unchanged — chunks only gain page numbers.
+    page_chunks = pymupdf4llm.to_markdown(str(path), page_chunks=True)
+    md_text, segments = _join(
+        [
+            (p["metadata"].get("page_number") or p["metadata"].get("page") or i, p["text"])
+            for i, p in enumerate(page_chunks, start=1)
+        ],
+        "",
+    )
 
     doc = fitz.open(str(path))
     page_count = doc.page_count
@@ -74,7 +108,7 @@ def load_pdf(path: Path) -> Document:
 
     if _is_scanned(md_text, page_count):
         logger.info("Scanned PDF detected, running OCR: %s", path.name)
-        md_text = _ocr_pdf(path)
+        md_text, segments = _ocr_pdf(path)
         extraction_method = "ocr"
     else:
         extraction_method = "text"
@@ -84,6 +118,8 @@ def load_pdf(path: Path) -> Document:
         source=source_key(path),
         file_type="pdf",
         metadata={"filename": path.name, "extraction_method": extraction_method},
+        segment_kind="page",
+        segments=segments,
     )
 
 
@@ -108,14 +144,14 @@ def _truncate_output(text: str, max_lines: int, max_chars: int) -> str:
 def load_notebook(path: Path) -> Document:
     cfg = get_config().ingestion
     nb = nbformat.read(str(path), as_version=4)
-    parts: list[str] = []
-    for cell in nb.cells:
+    parts: list[tuple[int, str]] = []  # (1-based cell number, text)
+    for cell_no, cell in enumerate(nb.cells, start=1):
         if cell.cell_type == "markdown":
-            parts.append(_DATA_URI.sub("[embedded image]", cell.source))
+            parts.append((cell_no, _DATA_URI.sub("[embedded image]", cell.source)))
         elif cell.cell_type == "code":
             code = cell.source.strip()
             if code:
-                parts.append(f"```python\n{code}\n```")
+                parts.append((cell_no, f"```python\n{code}\n```"))
             for output in cell.get("outputs", []):
                 otype = output.get("output_type", "")
                 if otype in ("stream", "display_data", "execute_result"):
@@ -130,12 +166,15 @@ def load_notebook(path: Path) -> Document:
                             cfg.notebook_output_max_lines,
                             cfg.notebook_output_max_chars,
                         )
-                        parts.append(f"Output:\n{text}")
+                        parts.append((cell_no, f"Output:\n{text}"))
+    content, segments = _join(parts, "\n\n")
     return Document(
-        content="\n\n".join(parts),
+        content=content,
         source=source_key(path),
         file_type="notebook",
         metadata={"filename": path.name},
+        segment_kind="cell",
+        segments=segments,
     )
 
 

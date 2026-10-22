@@ -325,7 +325,7 @@ def save_card(
         "card": result.card.model_dump(),
         "sources": [
             {"n": n, "source": r.source, "chunk_index": r.chunk_index,
-             "sections": r.metadata.get("card_sections", [])}
+             "label": source_label(r), "sections": r.metadata.get("card_sections", [])}
             for n, r in enumerate(result.context, 1)
         ],
     }

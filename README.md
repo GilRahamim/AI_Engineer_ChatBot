@@ -117,6 +117,8 @@ python scripts/ingest.py
 
 # Add new files only (manifest-based deduplication)
 python scripts/add_files.py
+# Chunks record the PDF pages (page, page_end) or notebook cells (cell, cell_end) they come from;
+# citations show them as "file.pdf · pp.3–4". Indexes built before this need a --rebuild.
 # Files whose content is already ingested under another name ("Copy of ...") are skipped.
 # A file that changed after ingestion is skipped with a warning — rebuild to pick it up.
 
