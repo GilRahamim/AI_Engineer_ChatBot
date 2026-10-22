@@ -141,9 +141,13 @@ def test_identical_files_are_ingested_once(fake_pipeline):
     pipeline.ingest_files(pipeline.scan_docs(docs, [".ipynb"]))
 
     manifest = load_manifest()
-    # scan_docs sorts paths, so "Copy of a" (uppercase C) is ingested first
-    dup = manifest.files[source_key(docs / "a.ipynb")]
-    assert dup.duplicate_of == source_key(docs / "Copy of a.ipynb")
+    # Which copy is ingested first depends on the platform's path sort order
+    # (WindowsPath sorts case-insensitively), so only the pairing is checked.
+    a, copy = source_key(docs / "a.ipynb"), source_key(docs / "Copy of a.ipynb")
+    dups = {k: r for k, r in manifest.files.items() if r.duplicate_of}
+    assert len(dups) == 1
+    (dup_key, dup), = dups.items()
+    assert {dup_key, dup.duplicate_of} == {a, copy}
     assert dup.chunk_count == 0
     # one store instance for dense + one for sparse, one file each
     assert len(_FakeStore.added) == 2
