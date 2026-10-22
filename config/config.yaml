@@ -42,7 +42,7 @@ retrieval:
 
 generation:
   base_url: "http://localhost:1234/v1"
-  model: "openai/gpt-oss-20b"
+  model: "qwen/qwen3.8-27b"
   api_key: "lm-studio"
   temperature: 0.1
   # Sampling: null = server default. Set these from the model card when switching models.
