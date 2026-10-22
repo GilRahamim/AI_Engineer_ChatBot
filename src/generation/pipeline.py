@@ -48,7 +48,9 @@ def answer(
     history: Optional[list[dict]] = None,
 ) -> str:
     system, user_message = _build_messages(query, results, task)
-    return _get_client().complete(system=system, user=user_message, history=history)
+    client = _get_client()
+    return client.complete(system=system, user=user_message, history=history,
+                           max_tokens=client.max_tokens_for(task))
 
 
 def answer_stream(
@@ -60,7 +62,9 @@ def answer_stream(
     """Stream the answer text in deltas. Does not include the sources footer —
     callers append ``format_sources`` once the full text is known."""
     system, user_message = _build_messages(query, results, task)
-    yield from _get_client().stream(system=system, user=user_message, history=history)
+    client = _get_client()
+    yield from client.stream(system=system, user=user_message, history=history,
+                             max_tokens=client.max_tokens_for(task))
 
 
 def source_label(r: RetrievalResult) -> str:
