@@ -68,6 +68,8 @@ class GenerationConfig(BaseModel):
     temperature: float = 0.1
     max_tokens: int = 2048
     reasoning_effort: str = "medium"
+    timeout: float = 1200.0  # seconds per request; long cards on a local model need headroom
+    max_retries: int = 0  # SDK retries restart generation from scratch, so keep them off
 
 
 class InterviewConfig(BaseModel):

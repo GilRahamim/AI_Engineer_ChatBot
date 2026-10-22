@@ -13,7 +13,12 @@ logger = logging.getLogger(__name__)
 class LLMClient:
     def __init__(self) -> None:
         cfg = get_config().generation
-        self._client = OpenAI(base_url=cfg.base_url, api_key=cfg.api_key)
+        self._client = OpenAI(
+            base_url=cfg.base_url,
+            api_key=cfg.api_key,
+            timeout=cfg.timeout,
+            max_retries=cfg.max_retries,
+        )
         self._model = cfg.model
         self._temperature = cfg.temperature
         self._max_tokens = cfg.max_tokens

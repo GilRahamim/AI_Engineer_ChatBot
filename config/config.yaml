@@ -45,6 +45,8 @@ generation:
   temperature: 0.1
   max_tokens: 2048
   reasoning_effort: "medium"
+  timeout: 1200                # seconds per LLM request (cards are long)
+  max_retries: 0               # SDK retries restart generation; a timeout should fail fast
 
 interview:
   selection: "adaptive"        # "adaptive" (weak/overdue topics first) | "random"
