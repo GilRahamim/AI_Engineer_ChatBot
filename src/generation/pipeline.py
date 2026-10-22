@@ -63,6 +63,13 @@ def answer_stream(
     yield from _get_client().stream(system=system, user=user_message, history=history)
 
 
+def source_label(r: RetrievalResult) -> str:
+    """'file.pdf · p.3' — or the chunk index when no page is known."""
+    page = r.metadata.get("page") or r.metadata.get("page_number")
+    locator = f"p.{page}" if page else f"chunk {r.chunk_index}"
+    return f"{Path(r.source).name} · {locator}"
+
+
 def format_sources(results: list[RetrievalResult], answer_text: str) -> str:
     """Resolve the inline [n] citations in ``answer_text`` to a Sources footer.
 
@@ -73,11 +80,7 @@ def format_sources(results: list[RetrievalResult], answer_text: str) -> str:
     lines = []
     for n in cited:
         if 1 <= n <= len(results):
-            r = results[n - 1]
-            name = Path(r.source).name
-            page = r.metadata.get("page") or r.metadata.get("page_number")
-            locator = f"p.{page}" if page else f"chunk {r.chunk_index}"
-            lines.append(f"  [{n}] {name} · {locator}")
+            lines.append(f"  [{n}] {source_label(results[n - 1])}")
     if not lines:
         return ""
     return "\nSources:\n" + "\n".join(lines)

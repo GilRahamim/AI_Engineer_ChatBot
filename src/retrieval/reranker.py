@@ -22,13 +22,17 @@ def get_reranker() -> CrossEncoder:
     return _reranker
 
 
-def rerank(query: str, candidates: list[RetrievalResult]) -> list[RetrievalResult]:
+def rerank(
+    query: str,
+    candidates: list[RetrievalResult],
+    top_n: Optional[int] = None,
+) -> list[RetrievalResult]:
     if not candidates:
         return []
     cfg = get_config()
     reranker = get_reranker()
     pairs = [(query, c.text) for c in candidates]
     scores = reranker.predict(pairs)
-    top_n = cfg.retrieval.reranker.top_n
+    top_n = top_n or cfg.retrieval.reranker.top_n
     ranked = sorted(zip(candidates, scores), key=lambda x: -x[1])[:top_n]
     return [r for r, _ in ranked]

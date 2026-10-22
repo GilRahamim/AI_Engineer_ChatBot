@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 from typing import Iterator, Optional
 
-from openai import OpenAI
+from openai import BadRequestError, OpenAI
 
 from src.utils.config import get_config
 
@@ -38,6 +38,41 @@ class LLMClient:
             max_tokens=self._max_tokens,
             extra_body={"reasoning_effort": self._reasoning_effort},
         )
+        return response.choices[0].message.content or ""
+
+    def complete_json(
+        self,
+        system: str,
+        user: str,
+        schema: dict,
+        max_tokens: int,
+        structured: bool = True,
+    ) -> str:
+        """Complete with the output constrained to ``schema`` when the server supports it.
+
+        Falls back to an unconstrained call if the server rejects ``response_format``;
+        the caller parses and validates the text either way.
+        """
+        kwargs = dict(
+            model=self._model,
+            messages=self._build_messages(system, user, None),
+            temperature=self._temperature,
+            max_tokens=max_tokens,
+            extra_body={"reasoning_effort": self._reasoning_effort},
+        )
+        if structured:
+            try:
+                response = self._client.chat.completions.create(
+                    **kwargs,
+                    response_format={
+                        "type": "json_schema",
+                        "json_schema": {"name": "output", "schema": schema, "strict": True},
+                    },
+                )
+                return response.choices[0].message.content or ""
+            except BadRequestError as exc:
+                logger.warning("Server rejected response_format (%s) — retrying unconstrained", exc)
+        response = self._client.chat.completions.create(**kwargs)
         return response.choices[0].message.content or ""
 
     def stream(

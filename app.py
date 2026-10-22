@@ -11,6 +11,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter  # noqa: F40
 
 import chainlit as cl
 
+from src.generation.card import make_card
+from src.generation.card_render import save_card, to_markdown
 from src.generation.pipeline import answer
 from src.retrieval.pipeline import retrieve
 from src.utils.config import load_config
@@ -36,6 +38,23 @@ def _fix_latex_delimiters(text: str) -> str:
     return text
 
 
+async def _send_card(concept: str) -> None:
+    async with cl.Step(name=f"Building study card: {concept}") as step:
+        try:
+            result = await cl.make_async(make_card)(concept)
+        except RuntimeError as exc:
+            step.output = str(exc)
+            await cl.Message(content=f"Could not build the card: {exc}").send()
+            return
+        paths = await cl.make_async(save_card)(result)
+        step.output = f"{len(result.context)} excerpts, {result.dropped_items} uncited items removed"
+    elements = []
+    if "docx" in paths:
+        elements.append(cl.File(name=paths["docx"].name, path=str(paths["docx"]), display="inline"))
+    content = _fix_latex_delimiters(to_markdown(result))
+    await cl.Message(content=content, elements=elements).send()
+
+
 @cl.on_chat_start
 async def on_chat_start() -> None:
     await cl.Message(
@@ -47,6 +66,8 @@ async def on_chat_start() -> None:
             "- `concept` — Deep concept explanation\n"
             "- `interview` — Interview-style answer\n"
             "- `summary` — Topic summary\n"
+            "- `glossary` — Concept glossary\n\n"
+            "**Study card:** `/card <concept>` builds a one-concept sheet you can download as .docx\n"
         )
     ).send()
     cl.user_session.set("task", "default")
@@ -56,6 +77,10 @@ async def on_chat_start() -> None:
 @cl.on_message
 async def on_message(message: cl.Message) -> None:
     query = message.content.strip()
+
+    if query.lower().startswith("/card "):
+        await _send_card(query[6:].strip())
+        return
 
     # Handle /task switch  e.g. /task concept
     if query.startswith("/task "):

@@ -8,6 +8,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from src.generation.card import make_card
+from src.generation.card_render import save_card, to_markdown
 from src.generation.pipeline import answer_stream, format_sources
 from src.retrieval.pipeline import retrieve
 from src.retrieval.transforms import condense_query
@@ -44,6 +46,7 @@ def main() -> None:
     print("=" * 60)
     print("  AI Engineer - Course  ")
     print(f"  {header}")
+    print("  /card <concept> builds a study card (.md + .docx)")
     print("  Type 'quit' or Ctrl+C to exit")
     print("=" * 60)
     print()
@@ -60,6 +63,19 @@ def main() -> None:
         if not query or query.lower() in ("quit", "exit", "q"):
             print("Goodbye.")
             break
+
+        if query.lower().startswith("/card "):
+            concept = query[6:].strip()
+            try:
+                result = make_card(concept)
+            except RuntimeError as exc:
+                print(f"Assistant: could not build the card — {exc}\n")
+                continue
+            print(f"\n{latex_to_unicode(to_markdown(result))}")
+            for kind, path in save_card(result).items():
+                print(f"Saved {kind}: {path}")
+            print()
+            continue
 
         # Rewrite follow-ups ("explain that more") into standalone retrieval queries.
         retrieval_query = query

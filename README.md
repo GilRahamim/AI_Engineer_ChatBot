@@ -158,6 +158,25 @@ python scripts/interview.py --mode random
 
 Questions are drawn from `data/eval/golden_qa.jsonl`. The adaptive mode uses spaced-repetition intervals — questions you scored low on come back sooner. Scores and gaps are saved to `data/progress.json`.
 
+### Study cards
+
+A one-concept study sheet with a fixed structure — definition, steps, formulas, applications,
+pros/cons, comparison table, code, interview Q&A, related concepts and sources — as Markdown
+and a right-to-left Hebrew `.docx` (native Word equations).
+
+```bash
+python scripts/card.py "Convolution"            # or "קונבולוציה"
+python scripts/card.py "Attention" --language english --no-docx
+# Output: summaries/cards/Convolution.{md,json,docx}
+```
+
+In the chat (CLI or Chainlit) type `/card <concept>`; Chainlit attaches the `.docx` for download.
+
+Each section gets its own retrieval (`card.sections` in `config.yaml`; code is searched in
+notebooks only), the LLM fills a JSON schema, and every item without a valid citation is
+removed before rendering. To use your own Word styles, set `card.reference_docx` to a `.docx`
+whose styles pandoc should copy.
+
 ### Generate a study PDF
 
 ```bash
