@@ -17,8 +17,9 @@ def get_reranker() -> CrossEncoder:
     global _reranker
     if _reranker is None:
         cfg = get_config()
-        logger.info("Loading reranker: %s", cfg.retrieval.reranker.model)
-        _reranker = CrossEncoder(cfg.retrieval.reranker.model, device="cuda")
+        rcfg = cfg.retrieval.reranker
+        logger.info("Loading reranker: %s on %s", rcfg.model, rcfg.device)
+        _reranker = CrossEncoder(rcfg.model, device=rcfg.device)
     return _reranker
 
 
