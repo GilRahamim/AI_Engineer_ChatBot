@@ -71,8 +71,8 @@ $$\text{RRF}(d) = \sum_{r \in \{\text{dense},\,\text{sparse}\}} \frac{1}{k + \te
 
 | Command | What it does | Flags and in-app commands |
 |---|---|---|
-| `python scripts/chat.py` | Terminal chat over the course material, with citations | `--task {default,concept,summary,interview}`: prompt profile, matching a file in `config/prompts/`. `--topic "Transformers"`: prepended to every retrieval query. **Inside the chat:** `/card <concept>` builds a card, and `quit` exits. |
-| `chainlit run app.py -w` | Browser UI at `http://localhost:8000` | `-w`: watch mode, reloads when code changes. **Inside the UI:** `/task <name>` switches profile (`default`, `concept`, `interview`, `summary`, `glossary`), `/<task> question` asks once in a given profile, `/card <concept>` builds a card with a `.docx` download. |
+| `python scripts/chat.py` | Terminal chat over the course material, with citations | `--task {default,concept,summary,interview,glossary}`: prompt profile, matching a file in `config/prompts/`. `--topic "Transformers"`: prepended to every retrieval query. **Inside the chat:** `/card <concept>` builds a card, and `quit` exits. |
+| `chainlit run app.py -w` | Browser UI at `http://localhost:8000`; answers stream in as they are generated | `-w`: watch mode, reloads when code changes. **Inside the UI:** `/task <name>` switches profile (`default`, `concept`, `interview`, `summary`, `glossary`), `/<task> question` asks once in a given profile, `/card <concept>` builds a card with a `.docx` download. |
 | `python scripts/card.py "Convolution"` | Builds a concept card and writes `summaries/cards/Convolution.{md,json,docx}` | Positional `concept`: in English or Hebrew (Hebrew is translated to the English term for retrieval). `--language hebrew\|english`: prose language (default `card.language`). `--output-dir DIR`: default `paths.cards`. `--no-docx`: skip the Word export. |
 
 ### Study tools (existing scripts)
@@ -212,9 +212,8 @@ sequenceDiagram
 
 ## 4. Known gaps and next steps
 
-- **Not yet run against your real index or LM Studio.** Everything is covered by unit tests (60 passing), but the steps in [Recommended order on your machine now](#recommended-order-on-your-machine-now) are still open.
+- **Not yet run against your real index or LM Studio.** Everything is covered by unit tests (65 passing), but the steps in [Recommended order on your machine now](#recommended-order-on-your-machine-now) are still open.
 - **Qwen settings:** `thinking.style` is still the GPT-OSS default. Pick `chat_template_kwargs` or `soft_switch` and check that HyDE and condensing return text (see "Switching the LLM" in `CLAUDE.md`).
-- **Chainlit doesn't stream.** The README says "streamed answers", but `app.py` calls `answer()` and waits for the full text. `chat.py` uses `answer_stream`.
-- **`chat.py --task` doesn't offer `glossary`.** The prompt exists and Chainlit supports it.
+- **Chainlit history ignores `chat.history_turns`.** `app.py` keeps the last 10 turns; `chat.py` uses the config value.
 - **The golden set has no Hebrew questions.** BM25 can't match Hebrew queries against English material, so this blind spot isn't measured yet.
 - **Planned next:** contextual chunk headers (changes chunk text, so it needs its own eval cycle), and using the course slide as the card's figure (now possible with page metadata).
