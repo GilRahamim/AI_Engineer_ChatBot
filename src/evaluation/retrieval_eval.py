@@ -31,9 +31,16 @@ def load_golden_qa(path: Path) -> list[dict]:
         return [json.loads(line) for line in f if line.strip()]
 
 
+def judge_model() -> str:
+    cfg = get_config()
+    return cfg.evaluation.judge_model or cfg.generation.model
+
+
 def config_summary() -> dict:
     cfg = get_config()
     return {
+        "generator_model": cfg.generation.model,
+        "judge_model": judge_model(),
         "embedder": cfg.embedding.model,
         "reranker_enabled": cfg.retrieval.reranker.enabled,
         "reranker_model": cfg.retrieval.reranker.model,

@@ -21,6 +21,7 @@ from src.evaluation.retrieval_eval import (
     SourceMatcher,
     config_hash,
     config_summary,
+    judge_model,
     load_golden_qa,
     score_question,
     summarize,
@@ -35,10 +36,16 @@ logger = logging.getLogger(__name__)
 
 def _build_ragas_llm() -> LangchainLLMWrapper:
     cfg = get_config()
+    if cfg.evaluation.judge_model is None:
+        logger.warning(
+            "RAGAS judge is the generation model (%s); set evaluation.judge_model to keep "
+            "scores comparable when the generator changes",
+            cfg.generation.model,
+        )
     lm = ChatOpenAI(
-        base_url=cfg.generation.base_url,
+        base_url=cfg.evaluation.judge_base_url or cfg.generation.base_url,
         api_key=cfg.generation.api_key,
-        model=cfg.generation.model,
+        model=judge_model(),
         temperature=0.0,
     )
     return LangchainLLMWrapper(lm)

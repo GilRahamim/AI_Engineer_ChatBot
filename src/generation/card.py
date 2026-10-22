@@ -15,6 +15,7 @@ from typing import Callable, Optional
 from pydantic import BaseModel, Field, ValidationError, field_validator
 
 from src.generation.llm_client import LLMClient
+from src.generation.thinking import strip_think
 from src.retrieval.dense import RetrievalResult
 from src.utils.config import get_config
 
@@ -152,7 +153,7 @@ def format_card_context(results: list[RetrievalResult]) -> str:
 
 def parse_card(raw: str) -> ConceptCard:
     """Parse model output into a card, tolerating think blocks and code fences."""
-    text = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL)
+    text = strip_think(raw)
     start, end = text.find("{"), text.rfind("}")
     if start == -1 or end <= start:
         raise ValueError("no JSON object in model output")

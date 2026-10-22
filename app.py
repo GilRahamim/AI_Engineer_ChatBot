@@ -13,7 +13,7 @@ import chainlit as cl
 
 from src.generation.card import make_card
 from src.generation.card_render import save_card, to_markdown
-from src.generation.pipeline import answer
+from src.generation.pipeline import answer, source_label
 from src.retrieval.pipeline import retrieve
 from src.utils.config import load_config
 from src.utils.logging import setup_logging
@@ -120,7 +120,7 @@ async def on_message(message: cl.Message) -> None:
         response = _fix_latex_delimiters(response)
 
     # Sources footer
-    source_lines = "\n".join(f"- {Path(r.source).name}" for r in results)
+    source_lines = "\n".join(f"- {source_label(r)}" for r in results)
     footer = f"\n\n---\n**Sources ({len(results)} chunks):**\n{source_lines}"
 
     await cl.Message(content=response + footer).send()

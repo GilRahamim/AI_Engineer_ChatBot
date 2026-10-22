@@ -21,8 +21,9 @@ ingestion:
 embedding:
   model: "BAAI/bge-m3"
   batch_size: 32
-  device: "cuda"
+  device: "cuda"                 # "cpu" frees ~1.5GB VRAM for a larger LLM
   normalize: true
+  max_length: 512
 
 retrieval:
   dense_top_k: 20
@@ -35,6 +36,7 @@ retrieval:
     enabled: true
     model: "BAAI/bge-reranker-v2-m3"
     top_n: 8
+    device: "cuda"               # "cpu" frees ~0.6GB VRAM; slower but fine for ~20 pairs
   hyde:
     enabled: true
 
@@ -43,10 +45,30 @@ generation:
   model: "qwen/qwen3.6-35b-a3b"
   api_key: "lm-studio"
   temperature: 0.1
-  max_tokens: 2048
+  # Sampling: null = server default. Set these from the model card when switching models.
+  top_p: null
+  top_k: null
+  min_p: null
+  presence_penalty: null
+  max_tokens: 2048               # includes reasoning tokens on reasoning models
+  task_max_tokens: {}            # per-task override, e.g. {summary: 6000, glossary: 8000}
   reasoning_effort: "medium"
+<<<<<<< HEAD
   timeout: 1200                # seconds per LLM request (cards are long)
   max_retries: 0               # SDK retries restart generation; a timeout should fail fast
+=======
+  thinking:
+    # reasoning_effort (GPT-OSS) | chat_template_kwargs (enable_thinking flag)
+    # | soft_switch (/think, /no_think in the prompt) | none
+    style: "reasoning_effort"
+    helper_thinking: false       # think in HyDE / follow-up condensing / term translation
+    helper_effort: "low"         # reasoning_effort for helper calls (reasoning_effort style)
+    soft_switch_on: "/think"
+    soft_switch_off: "/no_think"
+    strip_tags: true             # remove <think>...</think> leaked into answers
+  helper_temperature: 0.0
+  helper_max_tokens: {hyde: 256, condense: 128, translate: 128}
+>>>>>>> 025436f995d34a8e26537aec2830c857ab7c2118
 
 interview:
   selection: "adaptive"        # "adaptive" (weak/overdue topics first) | "random"
@@ -62,6 +84,8 @@ chat:
 
 evaluation:
   golden_qa: "data/eval/golden_qa.jsonl"
+  judge_model: null              # RAGAS judge; null = generation.model (scores then shift with it)
+  judge_base_url: null           # null = generation.base_url
   retrieval_ks: [1, 3, 5, 8, 20]  # cutoffs for hit@k / recall@k / precision@k
   label_pool: 50                  # candidates per retriever shown when labelling sources
   label_max_files: 15             # candidate files listed per question when labelling

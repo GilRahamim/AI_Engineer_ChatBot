@@ -94,6 +94,10 @@ pip install -e .
 
 The generation layer uses the OpenAI SDK with `base_url="http://localhost:1234/v1"` — no API key needed.
 
+Using a different model? See **Switching the LLM** in `CLAUDE.md`: thinking control
+(`generation.thinking.style`), sampling, token budgets, a fixed RAGAS judge
+(`evaluation.judge_model`) and running the embedder/reranker on CPU to free VRAM.
+
 ### 3. Add course documents
 
 Place PDF and Jupyter notebook files under `data/docs/` (subdirectories per module are fine):
@@ -113,6 +117,8 @@ python scripts/ingest.py
 
 # Add new files only (manifest-based deduplication)
 python scripts/add_files.py
+# Chunks record the PDF pages (page, page_end) or notebook cells (cell, cell_end) they come from;
+# citations show them as "file.pdf · pp.3–4". Indexes built before this need a --rebuild.
 # Files whose content is already ingested under another name ("Copy of ...") are skipped.
 # A file that changed after ingestion is skipped with a warning — rebuild to pick it up.
 
@@ -268,6 +274,8 @@ generation:
   model: "openai/gpt-oss-20b"
   temperature: 0.1
   reasoning_effort: "medium"   # set to "high" for complex interview questions
+  thinking:
+    style: "reasoning_effort"  # | chat_template_kwargs | soft_switch | none
 
 interview:
   selection: "adaptive"        # "adaptive" | "random"
