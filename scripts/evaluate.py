@@ -72,6 +72,10 @@ def print_comparison(baseline: dict, current: dict) -> None:
         print("WARNING: the two runs scored different question sets — deltas are not comparable.")
     if baseline.get("n_questions_labelled") != current.get("n_questions_labelled"):
         print("WARNING: the number of labelled questions differs — retrieval deltas are not comparable.")
+    b_cfg, c_cfg = baseline.get("config_summary", {}), current.get("config_summary", {})
+    for key, what in (("judge_model", "RAGAS judge"), ("generator_model", "generator (HyDE uses it too)")):
+        if key in b_cfg and key in c_cfg and b_cfg[key] != c_cfg[key]:
+            print(f"WARNING: {what} changed: {b_cfg[key]} -> {c_cfg[key]}.")
     print(f"\n{'Metric':<24} {'Baseline':>9} {'New':>7} {'Δ':>8}  Verdict")
     print("-" * 62)
     for name in (n for n in b if n in c):

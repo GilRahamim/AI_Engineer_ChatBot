@@ -2,12 +2,21 @@ from __future__ import annotations
 
 import logging
 import re
+from typing import Optional
 
-from openai import OpenAI
-
+from src.generation.llm_client import LLMClient
 from src.utils.config import get_config
 
 logger = logging.getLogger(__name__)
+
+_client: Optional[LLMClient] = None
+
+
+def _get_client() -> LLMClient:
+    global _client
+    if _client is None:
+        _client = LLMClient()
+    return _client
 
 _HYDE_SYSTEM = (
     "You are an AI/ML expert. Write a short, factual paragraph (3-5 sentences) "
@@ -42,20 +51,9 @@ def english_term(concept: str) -> str:
     """
     if not _HEBREW.search(concept):
         return concept
-    cfg = get_config().generation
+    max_tokens = get_config().generation.helper_max_tokens.translate
     try:
-        client = OpenAI(base_url=cfg.base_url, api_key=cfg.api_key)
-        response = client.chat.completions.create(
-            model=cfg.model,
-            messages=[
-                {"role": "system", "content": _TRANSLATE_SYSTEM},
-                {"role": "user", "content": concept},
-            ],
-            temperature=0.0,
-            max_tokens=128,
-            extra_body={"reasoning_effort": "low"},
-        )
-        term = (response.choices[0].message.content or "").strip().strip('"')
+        term = _get_client().helper(_TRANSLATE_SYSTEM, concept, max_tokens).strip().strip('"')
     except Exception as exc:  # noqa: BLE001 - fall back to the original wording
         logger.warning("english_term failed, using original concept: %s", exc)
         return concept
@@ -71,22 +69,11 @@ def condense_query(query: str, history: list[dict]) -> str:
     """
     if not history:
         return query
-    cfg = get_config().generation
+    max_tokens = get_config().generation.helper_max_tokens.condense
     convo = "\n".join(f"{m['role'].capitalize()}: {m['content']}" for m in history)
     user = f"Conversation:\n{convo}\n\nFollow-up question: {query}\n\nStandalone question:"
     try:
-        client = OpenAI(base_url=cfg.base_url, api_key=cfg.api_key)
-        response = client.chat.completions.create(
-            model=cfg.model,
-            messages=[
-                {"role": "system", "content": _CONDENSE_SYSTEM},
-                {"role": "user", "content": user},
-            ],
-            temperature=0.0,
-            max_tokens=128,
-            extra_body={"reasoning_effort": "low"},
-        )
-        rewritten = (response.choices[0].message.content or "").strip()
+        rewritten = _get_client().helper(_CONDENSE_SYSTEM, user, max_tokens).strip()
     except Exception as exc:  # noqa: BLE001 - never let condensing break a chat turn
         logger.warning("condense_query failed, using original query: %s", exc)
         return query
@@ -97,18 +84,7 @@ def condense_query(query: str, history: list[dict]) -> str:
 
 
 def hyde_transform(query: str) -> str:
-    cfg = get_config().generation
-    client = OpenAI(base_url=cfg.base_url, api_key=cfg.api_key)
-    response = client.chat.completions.create(
-        model=cfg.model,
-        messages=[
-            {"role": "system", "content": _HYDE_SYSTEM},
-            {"role": "user", "content": query},
-        ],
-        temperature=0.0,
-        max_tokens=256,
-        extra_body={"reasoning_effort": "low"},
-    )
-    hypothesis = response.choices[0].message.content or query
+    max_tokens = get_config().generation.helper_max_tokens.hyde
+    hypothesis = _get_client().helper(_HYDE_SYSTEM, query, max_tokens) or query
     logger.debug("HyDE hypothesis: %s", hypothesis[:120])
     return hypothesis

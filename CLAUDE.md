@@ -114,6 +114,35 @@ LM Studio config:
 - Flash Attention: enabled
 
 The client in `src/generation/llm_client.py` uses the OpenAI SDK with `base_url="http://localhost:1234/v1"`.
+All LLM calls (answers, HyDE, condensing, cards) go through `LLMClient`.
+
+### Switching the LLM
+
+Generation is model-agnostic; everything model-specific lives under `generation:` in `config.yaml`.
+To move to another reasoning model (e.g. a Qwen GGUF):
+
+1. **Freeze the eval judge first.** Set `evaluation.judge_model` (and `judge_base_url` if it runs
+   elsewhere) *before* switching, or RAGAS scores change with the generator. HyDE also uses the
+   generator, so record a fresh retrieval baseline after the switch as well.
+2. **`model`** — the model id LM Studio shows.
+3. **`thinking.style`** — how thinking is switched on/off per call. Check what the model's chat
+   template and your server support:
+   - `reasoning_effort` — GPT-OSS (`reasoning_effort` request field)
+   - `chat_template_kwargs` — sends `{"enable_thinking": true|false}` to the chat template
+   - `soft_switch` — appends `/think` or `/no_think` to the prompt (`soft_switch_on/off`)
+   - `none` — sends nothing; the model's default applies
+   Helper calls (HyDE, follow-up condensing, term translation) run with thinking **off** and
+   small `helper_max_tokens` budgets. If a helper returns empty, thinking is not actually off:
+   fix the style, or set `helper_thinking: true` and raise `helper_max_tokens`.
+4. **Sampling** — set `temperature`, `top_p`, `top_k`, `min_p`, `presence_penalty` from the model
+   card (some reasoning models degrade with near-greedy decoding). `null` = server default.
+5. **Token budgets** — `max_tokens` includes reasoning tokens; raise it and use
+   `task_max_tokens` for long tasks (summary, glossary). Cards use `card.max_tokens`.
+6. **VRAM** — for a larger model set `embedding.device` and `retrieval.reranker.device` to `"cpu"`
+   (~2GB freed; ingestion is much faster on GPU, so run it with the LLM unloaded).
+
+`thinking.strip_tags` removes `<think>...</think>` that leaks into answer text when the server
+does not separate reasoning.
 
 ---
 
