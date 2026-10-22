@@ -60,7 +60,7 @@ generation:
     # | soft_switch (/think, /no_think in the prompt) | none
     style: "reasoning_effort"
     helper_thinking: false       # think in HyDE / follow-up condensing / term translation
-    helper_effort: "low"         # reasoning_effort for helper calls (reasoning_effort style)
+    helper_effort: "none"        # reasoning_effort for helper calls; "none" is the only value that turns Qwen thinking off in LM Studio
     soft_switch_on: "/think"
     soft_switch_off: "/no_think"
     strip_tags: true             # remove <think>...</think> leaked into answers
