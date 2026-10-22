@@ -45,6 +45,11 @@ def config_summary() -> dict:
         "reranker_enabled": cfg.retrieval.reranker.enabled,
         "reranker_model": cfg.retrieval.reranker.model,
         "hyde_enabled": cfg.retrieval.hyde.enabled,
+        # HyDE runs through the helper call, so these change dense retrieval too
+        "thinking_style": cfg.generation.thinking.style,
+        "helper_thinking": cfg.generation.thinking.helper_thinking,
+        "helper_effort": cfg.generation.thinking.helper_effort,
+        "helper_max_tokens_hyde": cfg.generation.helper_max_tokens.hyde,
         "dense_top_k": cfg.retrieval.dense_top_k,
         "sparse_top_k": cfg.retrieval.sparse_top_k,
         "fusion_k": cfg.retrieval.fusion.k,
