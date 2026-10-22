@@ -1,5 +1,7 @@
 # AI Engineer — Local Learning System
 
+> **New here?** [`docs/GUIDE.md`](docs/GUIDE.md) has every command with its flags explained, a code map, and a reading order.
+
 A local RAG (Retrieval-Augmented Generation) system for studying AI/ML course material. Ask questions, get concept explanations with citations, simulate job interviews, and generate study PDFs — all running offline on your own GPU.
 
 **Design philosophy:** slow and accurate beats fast and noisy. Retrieval quality is the top priority.
