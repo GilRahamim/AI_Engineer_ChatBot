@@ -144,6 +144,16 @@ python scripts/chat.py --task summary --topic "Transformers"
 
 The chat keeps a rolling 3-turn history and rewrites follow-up questions into standalone retrieval queries automatically.
 
+### Browser UI (Chainlit)
+
+```bash
+chainlit run app.py -w
+# Opens http://localhost:8000 — -w reloads on code changes
+```
+
+Same retrieval and generation as the CLI chat, with streamed answers and source citations.
+LM Studio must be running first. Type `/card <concept>` to build a study card and download its `.docx`.
+
 ### Interview simulator
 
 ```bash
