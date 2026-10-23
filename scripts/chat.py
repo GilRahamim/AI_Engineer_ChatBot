@@ -24,7 +24,7 @@ try:
 except (AttributeError, ValueError):
     pass
 
-TASK_CHOICES = ["default", "concept", "summary", "interview"]
+TASK_CHOICES = ["default", "concept", "summary", "interview", "glossary"]
 
 
 def main() -> None:

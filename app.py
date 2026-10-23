@@ -13,8 +13,9 @@ import chainlit as cl
 
 from src.generation.card import make_card
 from src.generation.card_render import save_card, to_markdown
-from src.generation.pipeline import answer, source_label
+from src.generation.pipeline import answer_stream, source_label
 from src.retrieval.pipeline import retrieve
+from src.utils.aio import iterate_in_thread
 from src.utils.config import load_config
 from src.utils.logging import setup_logging
 
@@ -107,7 +108,7 @@ async def on_message(message: cl.Message) -> None:
 
     # Retrieve
     async with cl.Step(name="Retrieving course material") as step:
-        results = retrieve(query)
+        results = await cl.make_async(retrieve)(query)
         if not results:
             step.output = "No relevant documents found."
             await cl.Message(content="No relevant documents found in the course materials.").send()
@@ -115,15 +116,22 @@ async def on_message(message: cl.Message) -> None:
         sources = list({Path(r.source).name for r in results})
         step.output = f"{len(results)} chunks from: {', '.join(sources[:4])}"
 
-    async with cl.Step(name=f"Generating answer [{TASK_DESCRIPTIONS[task]}]"):
-        response = answer(query, results, task=task, history=history)
-        response = _fix_latex_delimiters(response)
-
     # Sources footer
     source_lines = "\n".join(f"- {source_label(r)}" for r in results)
     footer = f"\n\n---\n**Sources ({len(results)} chunks):**\n{source_lines}"
 
-    await cl.Message(content=response + footer).send()
+    # Stream the answer as it is generated, then replace the draft with the final
+    # text: LaTeX delimiters can only be fixed once the whole answer is known.
+    msg = cl.Message(content="")
+    parts: list[str] = []
+    async for delta in iterate_in_thread(
+        lambda: answer_stream(query, results, task=task, history=history)
+    ):
+        parts.append(delta)
+        await msg.stream_token(delta)
+    response = _fix_latex_delimiters("".join(parts))
+    msg.content = response + footer
+    await msg.send()
 
     # Update history (keep last 10 turns to avoid context overflow)
     history.append({"role": "user", "content": query})
